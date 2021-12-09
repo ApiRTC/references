@@ -1,0 +1,4600 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Namespace: Constants</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.apizee.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Constants.html">Constants</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Call.html">Call</a></li><li><a href="Conference.html">Conference</a></li><li><a href="Contact.html">Contact</a></li><li><a href="Conversation.html">Conversation</a></li><li><a href="ConversationCall.html">ConversationCall</a></li><li><a href="DataChannel.html">DataChannel</a></li><li><a href="Enterprise.html">Enterprise</a></li><li><a href="EventCenter.html">EventCenter</a></li><li><a href="EventEmitter.html">EventEmitter</a></li><li><a href="MediaDevice.html">MediaDevice</a></li><li><a href="Observable.html">Observable</a></li><li><a href="PointerSharingRoom.html">PointerSharingRoom</a></li><li><a href="ReceivedCallInvitation.html">ReceivedCallInvitation</a></li><li><a href="ReceivedConversationInvitation.html">ReceivedConversationInvitation</a></li><li><a href="ReceivedConversationJoinRequest.html">ReceivedConversationJoinRequest</a></li><li><a href="ReceivedDataChannelInvitation.html">ReceivedDataChannelInvitation</a></li><li><a href="ReceivedFileTransferInvitation.html">ReceivedFileTransferInvitation</a></li><li><a href="ReceivedInvitation.html">ReceivedInvitation</a></li><li><a href="ReceivedPointerSharingInvitation.html">ReceivedPointerSharingInvitation</a></li><li><a href="ReceivedWhiteboardInvitation.html">ReceivedWhiteboardInvitation</a></li><li><a href="SentInvitation.html">SentInvitation</a></li><li><a href="Session.html">Session</a></li><li><a href="Stream.html">Stream</a></li><li><a href="UserAgent.html">UserAgent</a></li><li><a href="UserData.html">UserData</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Call.html#event:accepted">Call#event:accepted</a></li><li><a href="Call.html#event:declined">Call#event:declined</a></li><li><a href="Call.html#event:desktopCapture">Call#event:desktopCapture</a></li><li><a href="Call.html#event:disconnectionWarning">Call#event:disconnectionWarning</a></li><li><a href="Call.html#event:error">Call#event:error</a></li><li><a href="Call.html#event:hangup">Call#event:hangup</a></li><li><a href="Call.html#event:localStreamAvailable">Call#event:localStreamAvailable</a></li><li><a href="Call.html#event:recordAvailable">Call#event:recordAvailable</a></li><li><a href="Call.html#event:recordingAvailable">Call#event:recordingAvailable</a></li><li><a href="Call.html#event:recordingStarted">Call#event:recordingStarted</a></li><li><a href="Call.html#event:recordingStopped">Call#event:recordingStopped</a></li><li><a href="Call.html#event:remoteStreamUpdated">Call#event:remoteStreamUpdated</a></li><li><a href="Call.html#event:response">Call#event:response</a></li><li><a href="Call.html#event:statsUpdate">Call#event:statsUpdate</a></li><li><a href="Call.html#event:streamAdded">Call#event:streamAdded</a></li><li><a href="Call.html#event:streamRemoved">Call#event:streamRemoved</a></li><li><a href="Call.html#event:userMediaError">Call#event:userMediaError</a></li><li><a href="Conference.html#event:audioAmplitude">Conference#event:audioAmplitude</a></li><li><a href="Conference.html#event:availableStreamsUpdated">Conference#event:availableStreamsUpdated</a></li><li><a href="Conference.html#event:callStatsUpdate">Conference#event:callStatsUpdate</a></li><li><a href="Conference.html#event:closed">Conference#event:closed</a></li><li><a href="Conference.html#event:contactJoined">Conference#event:contactJoined</a></li><li><a href="Conference.html#event:contactJoinedWaitingRoom">Conference#event:contactJoinedWaitingRoom</a></li><li><a href="Conference.html#event:contactLeft">Conference#event:contactLeft</a></li><li><a href="Conference.html#event:contactLeftWaitingRoom">Conference#event:contactLeftWaitingRoom</a></li><li><a href="Conference.html#event:customEvent">Conference#event:customEvent</a></li><li><a href="Conference.html#event:data">Conference#event:data</a></li><li><a href="Conference.html#event:disconnectionWarning">Conference#event:disconnectionWarning</a></li><li><a href="Conference.html#event:entryAllowed">Conference#event:entryAllowed</a></li><li><a href="Conference.html#event:entryDenied">Conference#event:entryDenied</a></li><li><a href="Conference.html#event:error">Conference#event:error</a></li><li><a href="Conference.html#event:hangup">Conference#event:hangup</a></li><li><a href="Conference.html#event:joined">Conference#event:joined</a></li><li><a href="Conference.html#event:left">Conference#event:left</a></li><li><a href="Conference.html#event:localStreamUpdated">Conference#event:localStreamUpdated</a></li><li><a href="Conference.html#event:message">Conference#event:message</a></li><li><a href="Conference.html#event:messageNotDelivered">Conference#event:messageNotDelivered</a></li><li><a href="Conference.html#event:moderatorConnected">Conference#event:moderatorConnected</a></li><li><a href="Conference.html#event:newMediaAvailable">Conference#event:newMediaAvailable</a></li><li><a href="Conference.html#event:newWhiteboardSession">Conference#event:newWhiteboardSession</a></li><li><a href="Conference.html#event:participantEjected">Conference#event:participantEjected</a></li><li><a href="Conference.html#event:persistentDataUpdated">Conference#event:persistentDataUpdated</a></li><li><a href="Conference.html#event:pointerLocationChanged">Conference#event:pointerLocationChanged</a></li><li><a href="Conference.html#event:pointerSharingEnabled">Conference#event:pointerSharingEnabled</a></li><li><a href="Conference.html#event:recordingAvailable">Conference#event:recordingAvailable</a></li><li><a href="Conference.html#event:recordingStarted">Conference#event:recordingStarted</a></li><li><a href="Conference.html#event:recordingStopped">Conference#event:recordingStopped</a></li><li><a href="Conference.html#event:remoteStreamUpdated">Conference#event:remoteStreamUpdated</a></li><li><a href="Conference.html#event:roomModeChanged">Conference#event:roomModeChanged</a></li><li><a href="Conference.html#event:simulcastFeedChanged">Conference#event:simulcastFeedChanged</a></li><li><a href="Conference.html#event:slowLink">Conference#event:slowLink</a></li><li><a href="Conference.html#event:streamAdded">Conference#event:streamAdded</a></li><li><a href="Conference.html#event:streamListChanged">Conference#event:streamListChanged</a></li><li><a href="Conference.html#event:streamRemoved">Conference#event:streamRemoved</a></li><li><a href="Conference.html#event:transferBegun">Conference#event:transferBegun</a></li><li><a href="Conference.html#event:transferEnded">Conference#event:transferEnded</a></li><li><a href="Conference.html#event:transferPending">Conference#event:transferPending</a></li><li><a href="Conference.html#event:transferProgress">Conference#event:transferProgress</a></li><li><a href="Conference.html#event:waitingForModeratorAcceptance">Conference#event:waitingForModeratorAcceptance</a></li><li><a href="Contact.html#event:conversationInvitation">Contact#event:conversationInvitation</a></li><li><a href="Contact.html#event:customEvent">Contact#event:customEvent</a></li><li><a href="Contact.html#event:data">Contact#event:data</a></li><li><a href="Contact.html#event:dataChannelInvitation">Contact#event:dataChannelInvitation</a></li><li><a href="Contact.html#event:fileSentSuccessfully">Contact#event:fileSentSuccessfully</a></li><li><a href="Contact.html#event:fileTransferError">Contact#event:fileTransferError</a></li><li><a href="Contact.html#event:fileTransferInvitation">Contact#event:fileTransferInvitation</a></li><li><a href="Contact.html#event:fileTransferProgress">Contact#event:fileTransferProgress</a></li><li><a href="Contact.html#event:incomingCall">Contact#event:incomingCall</a></li><li><a href="Contact.html#event:incomingScreenSharingCall">Contact#event:incomingScreenSharingCall</a></li><li><a href="Contact.html#event:incomingScreenSharingCallInvitation">Contact#event:incomingScreenSharingCallInvitation</a></li><li><a href="Contact.html#event:joinGroup">Contact#event:joinGroup</a></li><li><a href="Contact.html#event:leaveGroup">Contact#event:leaveGroup</a></li><li><a href="Contact.html#event:message">Contact#event:message</a></li><li><a href="Contact.html#event:newMediaAvailable">Contact#event:newMediaAvailable</a></li><li><a href="Contact.html#event:whiteboardInvitation">Contact#event:whiteboardInvitation</a></li><li><a href="Conversation.html#event:audioAmplitude">Conversation#event:audioAmplitude</a></li><li><a href="Conversation.html#event:availableStreamsUpdated">Conversation#event:availableStreamsUpdated</a></li><li><a href="Conversation.html#event:callStatsUpdate">Conversation#event:callStatsUpdate</a></li><li><a href="Conversation.html#event:closed">Conversation#event:closed</a></li><li><a href="Conversation.html#event:contactJoined">Conversation#event:contactJoined</a></li><li><a href="Conversation.html#event:contactJoinedWaitingRoom">Conversation#event:contactJoinedWaitingRoom</a></li><li><a href="Conversation.html#event:contactLeft">Conversation#event:contactLeft</a></li><li><a href="Conversation.html#event:contactLeftWaitingRoom">Conversation#event:contactLeftWaitingRoom</a></li><li><a href="Conversation.html#event:customEvent">Conversation#event:customEvent</a></li><li><a href="Conversation.html#event:data">Conversation#event:data</a></li><li><a href="Conversation.html#event:disconnectionWarning">Conversation#event:disconnectionWarning</a></li><li><a href="Conversation.html#event:entryAllowed">Conversation#event:entryAllowed</a></li><li><a href="Conversation.html#event:entryDenied">Conversation#event:entryDenied</a></li><li><a href="Conversation.html#event:error">Conversation#event:error</a></li><li><a href="Conversation.html#event:hangup">Conversation#event:hangup</a></li><li><a href="Conversation.html#event:joined">Conversation#event:joined</a></li><li><a href="Conversation.html#event:left">Conversation#event:left</a></li><li><a href="Conversation.html#event:localStreamUpdated">Conversation#event:localStreamUpdated</a></li><li><a href="Conversation.html#event:message">Conversation#event:message</a></li><li><a href="Conversation.html#event:messageNotDelivered">Conversation#event:messageNotDelivered</a></li><li><a href="Conversation.html#event:moderatorConnected">Conversation#event:moderatorConnected</a></li><li><a href="Conversation.html#event:newMediaAvailable">Conversation#event:newMediaAvailable</a></li><li><a href="Conversation.html#event:newWhiteboardSession">Conversation#event:newWhiteboardSession</a></li><li><a href="Conversation.html#event:participantEjected">Conversation#event:participantEjected</a></li><li><a href="Conversation.html#event:persistentDataUpdated">Conversation#event:persistentDataUpdated</a></li><li><a href="Conversation.html#event:pointerLocationChanged">Conversation#event:pointerLocationChanged</a></li><li><a href="Conversation.html#event:pointerSharingEnabled">Conversation#event:pointerSharingEnabled</a></li><li><a href="Conversation.html#event:recordingAvailable">Conversation#event:recordingAvailable</a></li><li><a href="Conversation.html#event:recordingStarted">Conversation#event:recordingStarted</a></li><li><a href="Conversation.html#event:recordingStopped">Conversation#event:recordingStopped</a></li><li><a href="Conversation.html#event:remoteStreamUpdated">Conversation#event:remoteStreamUpdated</a></li><li><a href="Conversation.html#event:roomModeChanged">Conversation#event:roomModeChanged</a></li><li><a href="Conversation.html#event:simulcastFeedChanged">Conversation#event:simulcastFeedChanged</a></li><li><a href="Conversation.html#event:slowLink">Conversation#event:slowLink</a></li><li><a href="Conversation.html#event:streamAdded">Conversation#event:streamAdded</a></li><li><a href="Conversation.html#event:streamListChanged">Conversation#event:streamListChanged</a></li><li><a href="Conversation.html#event:streamRemoved">Conversation#event:streamRemoved</a></li><li><a href="Conversation.html#event:transferBegun">Conversation#event:transferBegun</a></li><li><a href="Conversation.html#event:transferEnded">Conversation#event:transferEnded</a></li><li><a href="Conversation.html#event:transferPending">Conversation#event:transferPending</a></li><li><a href="Conversation.html#event:transferProgress">Conversation#event:transferProgress</a></li><li><a href="Conversation.html#event:waitingForModeratorAcceptance">Conversation#event:waitingForModeratorAcceptance</a></li><li><a href="DataChannel.html#event:accepted">DataChannel#event:accepted</a></li><li><a href="DataChannel.html#event:closed">DataChannel#event:closed</a></li><li><a href="DataChannel.html#event:dataReceived">DataChannel#event:dataReceived</a></li><li><a href="DataChannel.html#event:declined">DataChannel#event:declined</a></li><li><a href="DataChannel.html#event:ended">DataChannel#event:ended</a></li><li><a href="DataChannel.html#event:error">DataChannel#event:error</a></li><li><a href="DataChannel.html#event:opened">DataChannel#event:opened</a></li><li><a href="DataChannel.html#event:response">DataChannel#event:response</a></li><li><a href="DataChannel.html#event:transferComplete">DataChannel#event:transferComplete</a></li><li><a href="DataChannel.html#event:transferProgress">DataChannel#event:transferProgress</a></li><li><a href="ReceivedCallInvitation.html#event:expired">ReceivedCallInvitation#event:expired</a></li><li><a href="ReceivedCallInvitation.html#event:statusChange">ReceivedCallInvitation#event:statusChange</a></li><li><a href="ReceivedConversationInvitation.html#event:statusChange">ReceivedConversationInvitation#event:statusChange</a></li><li><a href="ReceivedConversationJoinRequest.html#event:statusChange">ReceivedConversationJoinRequest#event:statusChange</a></li><li><a href="ReceivedDataChannelInvitation.html#event:expired">ReceivedDataChannelInvitation#event:expired</a></li><li><a href="ReceivedDataChannelInvitation.html#event:statusChange">ReceivedDataChannelInvitation#event:statusChange</a></li><li><a href="ReceivedFileTransferInvitation.html#event:error">ReceivedFileTransferInvitation#event:error</a></li><li><a href="ReceivedFileTransferInvitation.html#event:progress">ReceivedFileTransferInvitation#event:progress</a></li><li><a href="ReceivedFileTransferInvitation.html#event:statusChange">ReceivedFileTransferInvitation#event:statusChange</a></li><li><a href="ReceivedInvitation.html#event:statusChange">ReceivedInvitation#event:statusChange</a></li><li><a href="ReceivedPointerSharingInvitation.html#event:statusChange">ReceivedPointerSharingInvitation#event:statusChange</a></li><li><a href="ReceivedWhiteboardInvitation.html#event:statusChange">ReceivedWhiteboardInvitation#event:statusChange</a></li><li><a href="SentInvitation.html#event:receive">SentInvitation#event:receive</a></li><li><a href="SentInvitation.html#event:response">SentInvitation#event:response</a></li><li><a href="SentInvitation.html#event:statusChange">SentInvitation#event:statusChange</a></li><li><a href="Session.html#event:contactData">Session#event:contactData</a></li><li><a href="Session.html#event:contactListUpdate">Session#event:contactListUpdate</a></li><li><a href="Session.html#event:contactMessage">Session#event:contactMessage</a></li><li><a href="Session.html#event:conversationData">Session#event:conversationData</a></li><li><a href="Session.html#event:conversationInvitation">Session#event:conversationInvitation</a></li><li><a href="Session.html#event:conversationJoinRequest">Session#event:conversationJoinRequest</a></li><li><a href="Session.html#event:conversationMessage">Session#event:conversationMessage</a></li><li><a href="Session.html#event:customEvent">Session#event:customEvent</a></li><li><a href="Session.html#event:dataChannelInvitation">Session#event:dataChannelInvitation</a></li><li><a href="Session.html#event:disconnect">Session#event:disconnect</a></li><li><a href="Session.html#event:error">Session#event:error</a></li><li><a href="Session.html#event:fileTransferInvitation">Session#event:fileTransferInvitation</a></li><li><a href="Session.html#event:incomingCall">Session#event:incomingCall</a></li><li><a href="Session.html#event:incomingScreenSharingCall">Session#event:incomingScreenSharingCall</a></li><li><a href="Session.html#event:incomingScreenSharingCallInvitation">Session#event:incomingScreenSharingCallInvitation</a></li><li><a href="Session.html#event:newMediaAvailableFromContact">Session#event:newMediaAvailableFromContact</a></li><li><a href="Session.html#event:pointerLocationChanged">Session#event:pointerLocationChanged</a></li><li><a href="Session.html#event:pointerSharingInvitation">Session#event:pointerSharingInvitation</a></li><li><a href="Session.html#event:rawData">Session#event:rawData</a></li><li><a href="Session.html#event:reconnecting">Session#event:reconnecting</a></li><li><a href="Session.html#event:reconnection">Session#event:reconnection</a></li><li><a href="Session.html#event:whiteboardInvitation">Session#event:whiteboardInvitation</a></li><li><a href="Session.html#event:whiteboardRoomMemberUpdate">Session#event:whiteboardRoomMemberUpdate</a></li><li><a href="Stream.html#event:activeStateChange">Stream#event:activeStateChange</a></li><li><a href="Stream.html#event:AIELog">Stream#event:AIELog</a></li><li><a href="Stream.html#event:AIESnapshot">Stream#event:AIESnapshot</a></li><li><a href="Stream.html#event:audioAmplitude">Stream#event:audioAmplitude</a></li><li><a href="Stream.html#event:audioAmplitudeInfo">Stream#event:audioAmplitudeInfo</a></li><li><a href="Stream.html#event:backgroundSubstractionStopComputeTime">Stream#event:backgroundSubstractionStopComputeTime</a></li><li><a href="Stream.html#event:backgroundSubstractionStopVisibilityChange">Stream#event:backgroundSubstractionStopVisibilityChange</a></li><li><a href="Stream.html#event:muteStateChange">Stream#event:muteStateChange</a></li><li><a href="Stream.html#event:remoteCapabilityRequest">Stream#event:remoteCapabilityRequest</a></li><li><a href="Stream.html#event:remoteCapabilityRequestAccepted">Stream#event:remoteCapabilityRequestAccepted</a></li><li><a href="Stream.html#event:remoteCapabilityRequestRefused">Stream#event:remoteCapabilityRequestRefused</a></li><li><a href="Stream.html#event:stopped">Stream#event:stopped</a></li><li><a href="Stream.html#event:streamCapabilities">Stream#event:streamCapabilities</a></li><li><a href="Stream.html#event:streamConstraints">Stream#event:streamConstraints</a></li><li><a href="Stream.html#event:streamSettings">Stream#event:streamSettings</a></li><li><a href="Stream.html#event:trackStopped">Stream#event:trackStopped</a></li><li><a href="UserAgent.html#event:ccsConnectionStatus">UserAgent#event:ccsConnectionStatus</a></li><li><a href="UserAgent.html#event:externalJsLoadingStatus">UserAgent#event:externalJsLoadingStatus</a></li><li><a href="UserAgent.html#event:mediaDeviceChanged">UserAgent#event:mediaDeviceChanged</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#getUserAgentUsername">getUserAgentUsername</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#updateConferencePresence">updateConferencePresence</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Namespace: Constants</h1>
+<section>
+
+<header>
+    
+        <h2>
+        Constants
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<hr>
+<dt class="name" id=".APIRTC_MEDIA_DEVICE_DETECTION_DELAY">
+    <h4 id=".APIRTC_MEDIA_DEVICE_DETECTION_DELAY"><span class="type-signature">&lt;static, constant> </span>APIRTC_MEDIA_DEVICE_DETECTION_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The interval between two media device detection for apiRTC media device detection process. Check apiRTCMediaDeviceDetectionEnabled on UserAgent</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CALL_STATUS_ENDED">
+    <h4 id=".CALL_STATUS_ENDED"><span class="type-signature">&lt;static, constant> </span>CALL_STATUS_ENDED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Call has ended</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CALL_STATUS_ONGOING">
+    <h4 id=".CALL_STATUS_ONGOING"><span class="type-signature">&lt;static, constant> </span>CALL_STATUS_ONGOING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Call is ongoing</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CALL_STATUS_WAITING_FOR_CALLEE">
+    <h4 id=".CALL_STATUS_WAITING_FOR_CALLEE"><span class="type-signature">&lt;static, constant> </span>CALL_STATUS_WAITING_FOR_CALLEE<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Call is waiting for callee to answer</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONTACT_DISCONNECTION_DELAY">
+    <h4 id=".CONTACT_DISCONNECTION_DELAY"><span class="type-signature">&lt;static, constant> </span>CONTACT_DISCONNECTION_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Delay before a contact is actually seen as offline after it disconnected (eg. short reconnection after page switching)</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_GROUP_CHAT_MEMBER_UPDATE_DELAY">
+    <h4 id=".CONVERSATION_GROUP_CHAT_MEMBER_UPDATE_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_GROUP_CHAT_MEMBER_UPDATE_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for group chat member update event.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_JOIN_REQUEST_INTERVAL">
+    <h4 id=".CONVERSATION_JOIN_REQUEST_INTERVAL"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_JOIN_REQUEST_INTERVAL<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The interval between join request message sendings.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_PARTICIPANT_EJECTION_DELAY">
+    <h4 id=".CONVERSATION_PARTICIPANT_EJECTION_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_PARTICIPANT_EJECTION_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for the ejected event.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_RECORDING_STARTED_DELAY">
+    <h4 id=".CONVERSATION_RECORDING_STARTED_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_RECORDING_STARTED_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for the recording started event.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_RECORDING_STOPPED_DELAY">
+    <h4 id=".CONVERSATION_RECORDING_STOPPED_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_RECORDING_STOPPED_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for the recording stopped event.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_STATUS_JOINED">
+    <h4 id=".CONVERSATION_STATUS_JOINED"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_STATUS_JOINED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Conversation is currently joined</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_STATUS_JOINING">
+    <h4 id=".CONVERSATION_STATUS_JOINING"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_STATUS_JOINING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>User agent is currently joining the conversation</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_STATUS_NOT_JOINED">
+    <h4 id=".CONVERSATION_STATUS_NOT_JOINED"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_STATUS_NOT_JOINED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Conversation is not joined</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_STATUS_WAITING">
+    <h4 id=".CONVERSATION_STATUS_WAITING"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_STATUS_WAITING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>User agent is in the conversation's waiting room, waiting for moderator acceptance to join</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_STREAMING_STARTED_DELAY">
+    <h4 id=".CONVERSATION_STREAMING_STARTED_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_STREAMING_STARTED_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for the streaming started event.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_STREAMING_STOPPED_DELAY">
+    <h4 id=".CONVERSATION_STREAMING_STOPPED_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_STREAMING_STOPPED_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for the streaming stopped event.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_WHITEBOARD_NOT_STARTED">
+    <h4 id=".CONVERSATION_WHITEBOARD_NOT_STARTED"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_WHITEBOARD_NOT_STARTED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Conversation is not joined</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_WHITEBOARD_START_DELAY">
+    <h4 id=".CONVERSATION_WHITEBOARD_START_DELAY"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_WHITEBOARD_START_DELAY<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Maximum delay to wait for whiteboard start.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".CONVERSATION_WHITEBOARD_STARTED">
+    <h4 id=".CONVERSATION_WHITEBOARD_STARTED"><span class="type-signature">&lt;static, constant> </span>CONVERSATION_WHITEBOARD_STARTED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Conversation is currently joined</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".DATACHANNEL_STATUS_ENDED">
+    <h4 id=".DATACHANNEL_STATUS_ENDED"><span class="type-signature">&lt;static, constant> </span>DATACHANNEL_STATUS_ENDED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>DataChannel session has ended</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".DATACHANNEL_STATUS_ONGOING">
+    <h4 id=".DATACHANNEL_STATUS_ONGOING"><span class="type-signature">&lt;static, constant> </span>DATACHANNEL_STATUS_ONGOING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>DataChannel session is ongoing</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".DATACHANNEL_STATUS_WAITING">
+    <h4 id=".DATACHANNEL_STATUS_WAITING"><span class="type-signature">&lt;static, constant> </span>DATACHANNEL_STATUS_WAITING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>DataChannel session is waiting for callee to answer</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".DATACHANNEL_TYPE_RECEIVE">
+    <h4 id=".DATACHANNEL_TYPE_RECEIVE"><span class="type-signature">&lt;static, constant> </span>DATACHANNEL_TYPE_RECEIVE<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>DataChannel session is on receive side only</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".DATACHANNEL_TYPE_SEND">
+    <h4 id=".DATACHANNEL_TYPE_SEND"><span class="type-signature">&lt;static, constant> </span>DATACHANNEL_TYPE_SEND<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>DataChannel session is on send side only</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_APIRTC_INITIALISATION_FAILED">
+    <h4 id=".ERROR_APIRTC_INITIALISATION_FAILED"><span class="type-signature">&lt;static, constant> </span>ERROR_APIRTC_INITIALISATION_FAILED<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_APIRTC_SESSION_ALREADY_ON">
+    <h4 id=".ERROR_APIRTC_SESSION_ALREADY_ON"><span class="type-signature">&lt;static, constant> </span>ERROR_APIRTC_SESSION_ALREADY_ON<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_BAD_PARAMETER">
+    <h4 id=".ERROR_BAD_PARAMETER"><span class="type-signature">&lt;static, constant> </span>ERROR_BAD_PARAMETER<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_HTTP">
+    <h4 id=".ERROR_HTTP"><span class="type-signature">&lt;static, constant> </span>ERROR_HTTP<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_INVALID_CREDENTIALS">
+    <h4 id=".ERROR_INVALID_CREDENTIALS"><span class="type-signature">&lt;static, constant> </span>ERROR_INVALID_CREDENTIALS<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_INVITATION_STATE_INVALID">
+    <h4 id=".ERROR_INVITATION_STATE_INVALID"><span class="type-signature">&lt;static, constant> </span>ERROR_INVITATION_STATE_INVALID<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_NETWORK_UNAVAILABLE">
+    <h4 id=".ERROR_NETWORK_UNAVAILABLE"><span class="type-signature">&lt;static, constant> </span>ERROR_NETWORK_UNAVAILABLE<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_NOT_ALLOWED">
+    <h4 id=".ERROR_NOT_ALLOWED"><span class="type-signature">&lt;static, constant> </span>ERROR_NOT_ALLOWED<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_NOT_FOUND">
+    <h4 id=".ERROR_NOT_FOUND"><span class="type-signature">&lt;static, constant> </span>ERROR_NOT_FOUND<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_OPERATION_CANCELED">
+    <h4 id=".ERROR_OPERATION_CANCELED"><span class="type-signature">&lt;static, constant> </span>ERROR_OPERATION_CANCELED<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_OTHER">
+    <h4 id=".ERROR_OTHER"><span class="type-signature">&lt;static, constant> </span>ERROR_OTHER<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_REGISTRATION_URI_INVALID">
+    <h4 id=".ERROR_REGISTRATION_URI_INVALID"><span class="type-signature">&lt;static, constant> </span>ERROR_REGISTRATION_URI_INVALID<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_SERVER_UNAVAILABLE">
+    <h4 id=".ERROR_SERVER_UNAVAILABLE"><span class="type-signature">&lt;static, constant> </span>ERROR_SERVER_UNAVAILABLE<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_STREAM_RECORD">
+    <h4 id=".ERROR_STREAM_RECORD"><span class="type-signature">&lt;static, constant> </span>ERROR_STREAM_RECORD<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_TIMED_OUT">
+    <h4 id=".ERROR_TIMED_OUT"><span class="type-signature">&lt;static, constant> </span>ERROR_TIMED_OUT<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_UNAUTHORIZED">
+    <h4 id=".ERROR_UNAUTHORIZED"><span class="type-signature">&lt;static, constant> </span>ERROR_UNAUTHORIZED<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".ERROR_WRONG_STATE">
+    <h4 id=".ERROR_WRONG_STATE"><span class="type-signature">&lt;static, constant> </span>ERROR_WRONG_STATE<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".INVITATION_STATUS_ACCEPTED">
+    <h4 id=".INVITATION_STATUS_ACCEPTED"><span class="type-signature">&lt;static, constant> </span>INVITATION_STATUS_ACCEPTED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Invitation has been accepted</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".INVITATION_STATUS_CANCELLED">
+    <h4 id=".INVITATION_STATUS_CANCELLED"><span class="type-signature">&lt;static, constant> </span>INVITATION_STATUS_CANCELLED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Invitation has been cancelled</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".INVITATION_STATUS_DECLINED">
+    <h4 id=".INVITATION_STATUS_DECLINED"><span class="type-signature">&lt;static, constant> </span>INVITATION_STATUS_DECLINED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Invitation has been declined</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".INVITATION_STATUS_ENDED">
+    <h4 id=".INVITATION_STATUS_ENDED"><span class="type-signature">&lt;static, constant> </span>INVITATION_STATUS_ENDED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Invitation is ended</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".INVITATION_STATUS_EXPIRED">
+    <h4 id=".INVITATION_STATUS_EXPIRED"><span class="type-signature">&lt;static, constant> </span>INVITATION_STATUS_EXPIRED<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Invitation has expired</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".INVITATION_STATUS_STANDBY">
+    <h4 id=".INVITATION_STATUS_STANDBY"><span class="type-signature">&lt;static, constant> </span>INVITATION_STATUS_STANDBY<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Invitation is waiting for a response</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_LEVEL_DEBUG">
+    <h4 id=".LOG_LEVEL_DEBUG"><span class="type-signature">&lt;static, constant> </span>LOG_LEVEL_DEBUG<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_LEVEL_ERROR">
+    <h4 id=".LOG_LEVEL_ERROR"><span class="type-signature">&lt;static, constant> </span>LOG_LEVEL_ERROR<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_LEVEL_INFO">
+    <h4 id=".LOG_LEVEL_INFO"><span class="type-signature">&lt;static, constant> </span>LOG_LEVEL_INFO<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_LEVEL_OFF">
+    <h4 id=".LOG_LEVEL_OFF"><span class="type-signature">&lt;static, constant> </span>LOG_LEVEL_OFF<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_LEVEL_TRACE">
+    <h4 id=".LOG_LEVEL_TRACE"><span class="type-signature">&lt;static, constant> </span>LOG_LEVEL_TRACE<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_LEVEL_WARN">
+    <h4 id=".LOG_LEVEL_WARN"><span class="type-signature">&lt;static, constant> </span>LOG_LEVEL_WARN<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".LOG_PREFIX">
+    <h4 id=".LOG_PREFIX"><span class="type-signature">&lt;static> </span>LOG_PREFIX<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>LOGGER</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STATE_ACTIVE">
+    <h4 id=".STATE_ACTIVE"><span class="type-signature">&lt;static, constant> </span>STATE_ACTIVE<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>General purpose state.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STATE_IDLE">
+    <h4 id=".STATE_IDLE"><span class="type-signature">&lt;static, constant> </span>STATE_IDLE<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>General purpose state.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STATE_JOINING">
+    <h4 id=".STATE_JOINING"><span class="type-signature">&lt;static, constant> </span>STATE_JOINING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>General purpose state.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STATE_LEAVING">
+    <h4 id=".STATE_LEAVING"><span class="type-signature">&lt;static, constant> </span>STATE_LEAVING<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>General purpose state.</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STREAM_AUDIO_ANALYSIS_THRESHOLD">
+    <h4 id=".STREAM_AUDIO_ANALYSIS_THRESHOLD"><span class="type-signature">&lt;static, constant> </span>STREAM_AUDIO_ANALYSIS_THRESHOLD<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Threshold applied for detecting voice or noise in the stream audio</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STREAM_TYPE_AUDIO">
+    <h4 id=".STREAM_TYPE_AUDIO"><span class="type-signature">&lt;static, constant> </span>STREAM_TYPE_AUDIO<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Stream is audio-only</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STREAM_TYPE_NO_INPUT">
+    <h4 id=".STREAM_TYPE_NO_INPUT"><span class="type-signature">&lt;static, constant> </span>STREAM_TYPE_NO_INPUT<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Stream has no input</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".STREAM_TYPE_VIDEO">
+    <h4 id=".STREAM_TYPE_VIDEO"><span class="type-signature">&lt;static, constant> </span>STREAM_TYPE_VIDEO<span class="type-signature"> :Symbol</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Stream has at least a video track</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Symbol</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	Apizee Copyright © 2013-2022 - apiRTC
+	</span>
+
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

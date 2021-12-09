@@ -1,0 +1,4616 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Class: Call</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.apizee.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Constants.html">Constants</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Call.html">Call</a></li><li><a href="Conference.html">Conference</a></li><li><a href="Contact.html">Contact</a></li><li><a href="Conversation.html">Conversation</a></li><li><a href="ConversationCall.html">ConversationCall</a></li><li><a href="DataChannel.html">DataChannel</a></li><li><a href="Enterprise.html">Enterprise</a></li><li><a href="EventCenter.html">EventCenter</a></li><li><a href="EventEmitter.html">EventEmitter</a></li><li><a href="MediaDevice.html">MediaDevice</a></li><li><a href="Observable.html">Observable</a></li><li><a href="PointerSharingRoom.html">PointerSharingRoom</a></li><li><a href="ReceivedCallInvitation.html">ReceivedCallInvitation</a></li><li><a href="ReceivedConversationInvitation.html">ReceivedConversationInvitation</a></li><li><a href="ReceivedConversationJoinRequest.html">ReceivedConversationJoinRequest</a></li><li><a href="ReceivedDataChannelInvitation.html">ReceivedDataChannelInvitation</a></li><li><a href="ReceivedFileTransferInvitation.html">ReceivedFileTransferInvitation</a></li><li><a href="ReceivedInvitation.html">ReceivedInvitation</a></li><li><a href="ReceivedPointerSharingInvitation.html">ReceivedPointerSharingInvitation</a></li><li><a href="ReceivedWhiteboardInvitation.html">ReceivedWhiteboardInvitation</a></li><li><a href="SentInvitation.html">SentInvitation</a></li><li><a href="Session.html">Session</a></li><li><a href="Stream.html">Stream</a></li><li><a href="UserAgent.html">UserAgent</a></li><li><a href="UserData.html">UserData</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Call.html#event:accepted">Call#event:accepted</a></li><li><a href="Call.html#event:declined">Call#event:declined</a></li><li><a href="Call.html#event:desktopCapture">Call#event:desktopCapture</a></li><li><a href="Call.html#event:disconnectionWarning">Call#event:disconnectionWarning</a></li><li><a href="Call.html#event:error">Call#event:error</a></li><li><a href="Call.html#event:hangup">Call#event:hangup</a></li><li><a href="Call.html#event:localStreamAvailable">Call#event:localStreamAvailable</a></li><li><a href="Call.html#event:recordAvailable">Call#event:recordAvailable</a></li><li><a href="Call.html#event:recordingAvailable">Call#event:recordingAvailable</a></li><li><a href="Call.html#event:recordingStarted">Call#event:recordingStarted</a></li><li><a href="Call.html#event:recordingStopped">Call#event:recordingStopped</a></li><li><a href="Call.html#event:remoteStreamUpdated">Call#event:remoteStreamUpdated</a></li><li><a href="Call.html#event:response">Call#event:response</a></li><li><a href="Call.html#event:statsUpdate">Call#event:statsUpdate</a></li><li><a href="Call.html#event:streamAdded">Call#event:streamAdded</a></li><li><a href="Call.html#event:streamRemoved">Call#event:streamRemoved</a></li><li><a href="Call.html#event:userMediaError">Call#event:userMediaError</a></li><li><a href="Conference.html#event:audioAmplitude">Conference#event:audioAmplitude</a></li><li><a href="Conference.html#event:availableStreamsUpdated">Conference#event:availableStreamsUpdated</a></li><li><a href="Conference.html#event:callStatsUpdate">Conference#event:callStatsUpdate</a></li><li><a href="Conference.html#event:closed">Conference#event:closed</a></li><li><a href="Conference.html#event:contactJoined">Conference#event:contactJoined</a></li><li><a href="Conference.html#event:contactJoinedWaitingRoom">Conference#event:contactJoinedWaitingRoom</a></li><li><a href="Conference.html#event:contactLeft">Conference#event:contactLeft</a></li><li><a href="Conference.html#event:contactLeftWaitingRoom">Conference#event:contactLeftWaitingRoom</a></li><li><a href="Conference.html#event:customEvent">Conference#event:customEvent</a></li><li><a href="Conference.html#event:data">Conference#event:data</a></li><li><a href="Conference.html#event:disconnectionWarning">Conference#event:disconnectionWarning</a></li><li><a href="Conference.html#event:entryAllowed">Conference#event:entryAllowed</a></li><li><a href="Conference.html#event:entryDenied">Conference#event:entryDenied</a></li><li><a href="Conference.html#event:error">Conference#event:error</a></li><li><a href="Conference.html#event:hangup">Conference#event:hangup</a></li><li><a href="Conference.html#event:joined">Conference#event:joined</a></li><li><a href="Conference.html#event:left">Conference#event:left</a></li><li><a href="Conference.html#event:localStreamUpdated">Conference#event:localStreamUpdated</a></li><li><a href="Conference.html#event:message">Conference#event:message</a></li><li><a href="Conference.html#event:messageNotDelivered">Conference#event:messageNotDelivered</a></li><li><a href="Conference.html#event:moderatorConnected">Conference#event:moderatorConnected</a></li><li><a href="Conference.html#event:newMediaAvailable">Conference#event:newMediaAvailable</a></li><li><a href="Conference.html#event:newWhiteboardSession">Conference#event:newWhiteboardSession</a></li><li><a href="Conference.html#event:participantEjected">Conference#event:participantEjected</a></li><li><a href="Conference.html#event:persistentDataUpdated">Conference#event:persistentDataUpdated</a></li><li><a href="Conference.html#event:pointerLocationChanged">Conference#event:pointerLocationChanged</a></li><li><a href="Conference.html#event:pointerSharingEnabled">Conference#event:pointerSharingEnabled</a></li><li><a href="Conference.html#event:recordingAvailable">Conference#event:recordingAvailable</a></li><li><a href="Conference.html#event:recordingStarted">Conference#event:recordingStarted</a></li><li><a href="Conference.html#event:recordingStopped">Conference#event:recordingStopped</a></li><li><a href="Conference.html#event:remoteStreamUpdated">Conference#event:remoteStreamUpdated</a></li><li><a href="Conference.html#event:roomModeChanged">Conference#event:roomModeChanged</a></li><li><a href="Conference.html#event:simulcastFeedChanged">Conference#event:simulcastFeedChanged</a></li><li><a href="Conference.html#event:slowLink">Conference#event:slowLink</a></li><li><a href="Conference.html#event:streamAdded">Conference#event:streamAdded</a></li><li><a href="Conference.html#event:streamListChanged">Conference#event:streamListChanged</a></li><li><a href="Conference.html#event:streamRemoved">Conference#event:streamRemoved</a></li><li><a href="Conference.html#event:transferBegun">Conference#event:transferBegun</a></li><li><a href="Conference.html#event:transferEnded">Conference#event:transferEnded</a></li><li><a href="Conference.html#event:transferPending">Conference#event:transferPending</a></li><li><a href="Conference.html#event:transferProgress">Conference#event:transferProgress</a></li><li><a href="Conference.html#event:waitingForModeratorAcceptance">Conference#event:waitingForModeratorAcceptance</a></li><li><a href="Contact.html#event:conversationInvitation">Contact#event:conversationInvitation</a></li><li><a href="Contact.html#event:customEvent">Contact#event:customEvent</a></li><li><a href="Contact.html#event:data">Contact#event:data</a></li><li><a href="Contact.html#event:dataChannelInvitation">Contact#event:dataChannelInvitation</a></li><li><a href="Contact.html#event:fileSentSuccessfully">Contact#event:fileSentSuccessfully</a></li><li><a href="Contact.html#event:fileTransferError">Contact#event:fileTransferError</a></li><li><a href="Contact.html#event:fileTransferInvitation">Contact#event:fileTransferInvitation</a></li><li><a href="Contact.html#event:fileTransferProgress">Contact#event:fileTransferProgress</a></li><li><a href="Contact.html#event:incomingCall">Contact#event:incomingCall</a></li><li><a href="Contact.html#event:incomingScreenSharingCall">Contact#event:incomingScreenSharingCall</a></li><li><a href="Contact.html#event:incomingScreenSharingCallInvitation">Contact#event:incomingScreenSharingCallInvitation</a></li><li><a href="Contact.html#event:joinGroup">Contact#event:joinGroup</a></li><li><a href="Contact.html#event:leaveGroup">Contact#event:leaveGroup</a></li><li><a href="Contact.html#event:message">Contact#event:message</a></li><li><a href="Contact.html#event:newMediaAvailable">Contact#event:newMediaAvailable</a></li><li><a href="Contact.html#event:whiteboardInvitation">Contact#event:whiteboardInvitation</a></li><li><a href="Conversation.html#event:audioAmplitude">Conversation#event:audioAmplitude</a></li><li><a href="Conversation.html#event:availableStreamsUpdated">Conversation#event:availableStreamsUpdated</a></li><li><a href="Conversation.html#event:callStatsUpdate">Conversation#event:callStatsUpdate</a></li><li><a href="Conversation.html#event:closed">Conversation#event:closed</a></li><li><a href="Conversation.html#event:contactJoined">Conversation#event:contactJoined</a></li><li><a href="Conversation.html#event:contactJoinedWaitingRoom">Conversation#event:contactJoinedWaitingRoom</a></li><li><a href="Conversation.html#event:contactLeft">Conversation#event:contactLeft</a></li><li><a href="Conversation.html#event:contactLeftWaitingRoom">Conversation#event:contactLeftWaitingRoom</a></li><li><a href="Conversation.html#event:customEvent">Conversation#event:customEvent</a></li><li><a href="Conversation.html#event:data">Conversation#event:data</a></li><li><a href="Conversation.html#event:disconnectionWarning">Conversation#event:disconnectionWarning</a></li><li><a href="Conversation.html#event:entryAllowed">Conversation#event:entryAllowed</a></li><li><a href="Conversation.html#event:entryDenied">Conversation#event:entryDenied</a></li><li><a href="Conversation.html#event:error">Conversation#event:error</a></li><li><a href="Conversation.html#event:hangup">Conversation#event:hangup</a></li><li><a href="Conversation.html#event:joined">Conversation#event:joined</a></li><li><a href="Conversation.html#event:left">Conversation#event:left</a></li><li><a href="Conversation.html#event:localStreamUpdated">Conversation#event:localStreamUpdated</a></li><li><a href="Conversation.html#event:message">Conversation#event:message</a></li><li><a href="Conversation.html#event:messageNotDelivered">Conversation#event:messageNotDelivered</a></li><li><a href="Conversation.html#event:moderatorConnected">Conversation#event:moderatorConnected</a></li><li><a href="Conversation.html#event:newMediaAvailable">Conversation#event:newMediaAvailable</a></li><li><a href="Conversation.html#event:newWhiteboardSession">Conversation#event:newWhiteboardSession</a></li><li><a href="Conversation.html#event:participantEjected">Conversation#event:participantEjected</a></li><li><a href="Conversation.html#event:persistentDataUpdated">Conversation#event:persistentDataUpdated</a></li><li><a href="Conversation.html#event:pointerLocationChanged">Conversation#event:pointerLocationChanged</a></li><li><a href="Conversation.html#event:pointerSharingEnabled">Conversation#event:pointerSharingEnabled</a></li><li><a href="Conversation.html#event:recordingAvailable">Conversation#event:recordingAvailable</a></li><li><a href="Conversation.html#event:recordingStarted">Conversation#event:recordingStarted</a></li><li><a href="Conversation.html#event:recordingStopped">Conversation#event:recordingStopped</a></li><li><a href="Conversation.html#event:remoteStreamUpdated">Conversation#event:remoteStreamUpdated</a></li><li><a href="Conversation.html#event:roomModeChanged">Conversation#event:roomModeChanged</a></li><li><a href="Conversation.html#event:simulcastFeedChanged">Conversation#event:simulcastFeedChanged</a></li><li><a href="Conversation.html#event:slowLink">Conversation#event:slowLink</a></li><li><a href="Conversation.html#event:streamAdded">Conversation#event:streamAdded</a></li><li><a href="Conversation.html#event:streamListChanged">Conversation#event:streamListChanged</a></li><li><a href="Conversation.html#event:streamRemoved">Conversation#event:streamRemoved</a></li><li><a href="Conversation.html#event:transferBegun">Conversation#event:transferBegun</a></li><li><a href="Conversation.html#event:transferEnded">Conversation#event:transferEnded</a></li><li><a href="Conversation.html#event:transferPending">Conversation#event:transferPending</a></li><li><a href="Conversation.html#event:transferProgress">Conversation#event:transferProgress</a></li><li><a href="Conversation.html#event:waitingForModeratorAcceptance">Conversation#event:waitingForModeratorAcceptance</a></li><li><a href="DataChannel.html#event:accepted">DataChannel#event:accepted</a></li><li><a href="DataChannel.html#event:closed">DataChannel#event:closed</a></li><li><a href="DataChannel.html#event:dataReceived">DataChannel#event:dataReceived</a></li><li><a href="DataChannel.html#event:declined">DataChannel#event:declined</a></li><li><a href="DataChannel.html#event:ended">DataChannel#event:ended</a></li><li><a href="DataChannel.html#event:error">DataChannel#event:error</a></li><li><a href="DataChannel.html#event:opened">DataChannel#event:opened</a></li><li><a href="DataChannel.html#event:response">DataChannel#event:response</a></li><li><a href="DataChannel.html#event:transferComplete">DataChannel#event:transferComplete</a></li><li><a href="DataChannel.html#event:transferProgress">DataChannel#event:transferProgress</a></li><li><a href="ReceivedCallInvitation.html#event:expired">ReceivedCallInvitation#event:expired</a></li><li><a href="ReceivedCallInvitation.html#event:statusChange">ReceivedCallInvitation#event:statusChange</a></li><li><a href="ReceivedConversationInvitation.html#event:statusChange">ReceivedConversationInvitation#event:statusChange</a></li><li><a href="ReceivedConversationJoinRequest.html#event:statusChange">ReceivedConversationJoinRequest#event:statusChange</a></li><li><a href="ReceivedDataChannelInvitation.html#event:expired">ReceivedDataChannelInvitation#event:expired</a></li><li><a href="ReceivedDataChannelInvitation.html#event:statusChange">ReceivedDataChannelInvitation#event:statusChange</a></li><li><a href="ReceivedFileTransferInvitation.html#event:error">ReceivedFileTransferInvitation#event:error</a></li><li><a href="ReceivedFileTransferInvitation.html#event:progress">ReceivedFileTransferInvitation#event:progress</a></li><li><a href="ReceivedFileTransferInvitation.html#event:statusChange">ReceivedFileTransferInvitation#event:statusChange</a></li><li><a href="ReceivedInvitation.html#event:statusChange">ReceivedInvitation#event:statusChange</a></li><li><a href="ReceivedPointerSharingInvitation.html#event:statusChange">ReceivedPointerSharingInvitation#event:statusChange</a></li><li><a href="ReceivedWhiteboardInvitation.html#event:statusChange">ReceivedWhiteboardInvitation#event:statusChange</a></li><li><a href="SentInvitation.html#event:receive">SentInvitation#event:receive</a></li><li><a href="SentInvitation.html#event:response">SentInvitation#event:response</a></li><li><a href="SentInvitation.html#event:statusChange">SentInvitation#event:statusChange</a></li><li><a href="Session.html#event:contactData">Session#event:contactData</a></li><li><a href="Session.html#event:contactListUpdate">Session#event:contactListUpdate</a></li><li><a href="Session.html#event:contactMessage">Session#event:contactMessage</a></li><li><a href="Session.html#event:conversationData">Session#event:conversationData</a></li><li><a href="Session.html#event:conversationInvitation">Session#event:conversationInvitation</a></li><li><a href="Session.html#event:conversationJoinRequest">Session#event:conversationJoinRequest</a></li><li><a href="Session.html#event:conversationMessage">Session#event:conversationMessage</a></li><li><a href="Session.html#event:customEvent">Session#event:customEvent</a></li><li><a href="Session.html#event:dataChannelInvitation">Session#event:dataChannelInvitation</a></li><li><a href="Session.html#event:disconnect">Session#event:disconnect</a></li><li><a href="Session.html#event:error">Session#event:error</a></li><li><a href="Session.html#event:fileTransferInvitation">Session#event:fileTransferInvitation</a></li><li><a href="Session.html#event:incomingCall">Session#event:incomingCall</a></li><li><a href="Session.html#event:incomingScreenSharingCall">Session#event:incomingScreenSharingCall</a></li><li><a href="Session.html#event:incomingScreenSharingCallInvitation">Session#event:incomingScreenSharingCallInvitation</a></li><li><a href="Session.html#event:newMediaAvailableFromContact">Session#event:newMediaAvailableFromContact</a></li><li><a href="Session.html#event:pointerLocationChanged">Session#event:pointerLocationChanged</a></li><li><a href="Session.html#event:pointerSharingInvitation">Session#event:pointerSharingInvitation</a></li><li><a href="Session.html#event:rawData">Session#event:rawData</a></li><li><a href="Session.html#event:reconnecting">Session#event:reconnecting</a></li><li><a href="Session.html#event:reconnection">Session#event:reconnection</a></li><li><a href="Session.html#event:whiteboardInvitation">Session#event:whiteboardInvitation</a></li><li><a href="Session.html#event:whiteboardRoomMemberUpdate">Session#event:whiteboardRoomMemberUpdate</a></li><li><a href="Stream.html#event:activeStateChange">Stream#event:activeStateChange</a></li><li><a href="Stream.html#event:AIELog">Stream#event:AIELog</a></li><li><a href="Stream.html#event:AIESnapshot">Stream#event:AIESnapshot</a></li><li><a href="Stream.html#event:audioAmplitude">Stream#event:audioAmplitude</a></li><li><a href="Stream.html#event:audioAmplitudeInfo">Stream#event:audioAmplitudeInfo</a></li><li><a href="Stream.html#event:backgroundSubstractionStopComputeTime">Stream#event:backgroundSubstractionStopComputeTime</a></li><li><a href="Stream.html#event:backgroundSubstractionStopVisibilityChange">Stream#event:backgroundSubstractionStopVisibilityChange</a></li><li><a href="Stream.html#event:muteStateChange">Stream#event:muteStateChange</a></li><li><a href="Stream.html#event:remoteCapabilityRequest">Stream#event:remoteCapabilityRequest</a></li><li><a href="Stream.html#event:remoteCapabilityRequestAccepted">Stream#event:remoteCapabilityRequestAccepted</a></li><li><a href="Stream.html#event:remoteCapabilityRequestRefused">Stream#event:remoteCapabilityRequestRefused</a></li><li><a href="Stream.html#event:stopped">Stream#event:stopped</a></li><li><a href="Stream.html#event:streamCapabilities">Stream#event:streamCapabilities</a></li><li><a href="Stream.html#event:streamConstraints">Stream#event:streamConstraints</a></li><li><a href="Stream.html#event:streamSettings">Stream#event:streamSettings</a></li><li><a href="Stream.html#event:trackStopped">Stream#event:trackStopped</a></li><li><a href="UserAgent.html#event:ccsConnectionStatus">UserAgent#event:ccsConnectionStatus</a></li><li><a href="UserAgent.html#event:externalJsLoadingStatus">UserAgent#event:externalJsLoadingStatus</a></li><li><a href="UserAgent.html#event:mediaDeviceChanged">UserAgent#event:mediaDeviceChanged</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#getUserAgentUsername">getUserAgentUsername</a></li><li><a href="global.html#setLogLevel">setLogLevel</a></li><li><a href="global.html#updateConferencePresence">updateConferencePresence</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: Call</h1>
+<section>
+
+<header>
+    
+        <h2>
+        Call
+        </h2>
+        
+            <div class="class-description"><p>Call</p>
+<p>Designates a 1-1 call with another contact.<br>
+During a call, both the user and the contact may publish and subscribe to each other's streams.</p></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="Call"><span class="type-signature"></span>new Call(id, contact)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Creates a new call</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>call id</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>contact</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Contact.html">Contact</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>called contact</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+    <h5>Fires:</h5>
+    <ul>
+        <li><a href="Call.html#event:streamAdded">Call#event:streamAdded</a></li>
+    
+        <li><a href="Call.html#event:streamRemoved">Call#event:streamRemoved</a></li>
+    
+        <li><a href="Call.html#event:response">Call#event:response</a></li>
+    
+        <li><a href="Call.html#event:accepted">Call#event:accepted</a></li>
+    
+        <li><a href="Call.html#event:declined">Call#event:declined</a></li>
+    
+        <li><a href="Call.html#event:hangup">Call#event:hangup</a></li>
+    
+        <li><a href="Call.html#event:localStreamAvailable">Call#event:localStreamAvailable</a></li>
+    
+        <li><a href="Call.html#event:recordAvailable">Call#event:recordAvailable</a></li>
+    
+        <li><a href="Call.html#event:statsUpdate">Call#event:statsUpdate</a></li>
+    
+        <li><a href="Call.html#event:error">Call#event:error</a></li>
+    
+        <li><a href="Call.html#event:disconnectionWarning">Call#event:disconnectionWarning</a></li>
+    
+        <li><a href="Call.html#event:userMediaError">Call#event:userMediaError</a></li>
+    
+        <li><a href="Call.html#event:desktopCapture">Call#event:desktopCapture</a></li>
+    
+        <li><a href="Call.html#event:remoteStreamUpdated">Call#event:remoteStreamUpdated</a></li>
+    
+        <li><a href="Call.html#event:recordingStarted">Call#event:recordingStarted</a></li>
+    
+        <li><a href="Call.html#event:recordingStopped">Call#event:recordingStopped</a></li>
+    
+        <li><a href="Call.html#event:recordingAvailable">Call#event:recordingAvailable</a></li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>this</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Call.html">Call</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Observable.html">Observable</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id=".getAvailableEvents"><span class="type-signature">&lt;static> </span>getAvailableEvents()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns available events for this class</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;string></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Cleans up all resources attached to this one.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getContact"><span class="type-signature"></span>getContact()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns called contact</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Called contact</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Contact.html">Contact</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getId"><span class="type-signature"></span>getId()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns call id</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Call id</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getPublishedStreams"><span class="type-signature"></span>getPublishedStreams()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns call's currently published streams</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Array of call currently published streams</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Streams></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getReceivedStreams"><span class="type-signature"></span>getReceivedStreams()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns call's currently received streams</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Array of call currently received streams</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Streams></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getRecordingInfo"><span class="type-signature"></span>getRecordingInfo()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns the recoding information, if any.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="global.html#RecordingInfo">RecordingInfo</a></span>
+|
+
+<span class="param-type">null</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getStatus"><span class="type-signature"></span>getStatus()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns called status</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Call status, value can be CALL_STATUS_WAITING_FOR_CALLEE, CALL_STATUS_ONGOING, CALL_STATUS_ENDED</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Symbol</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="hangUp"><span class="type-signature"></span>hangUp()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stops call with contact</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Void</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="isRecorded"><span class="type-signature"></span>isRecorded()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns whether call is recorded or not</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="on"><span class="type-signature"></span>on(listener)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Adds a listener to a Observable event</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Observable.html#on">Observable#on</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Observable.html#on">Observable#on</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>this instance for chaining</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Observable.html">Observable</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="removeListener"><span class="type-signature"></span>removeListener(eventType, listener)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Remove existing listener to Observable event</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Observable.html#removeListener">Observable#removeListener</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Observable.html#removeListener">Observable#removeListener</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>this instance for chaining</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Observable.html">Observable</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="replacePublishedStreams"><span class="type-signature"></span>replacePublishedStreams(newStream, callbacks, options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Replaces the currently published stream by a given one.<br>
+If the first parameter is null then the second parameter must provides a property named<br>
+getStream. The getStream property shall be a function returning a Promise of a Stream.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>newStream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>New stream to be published</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callbacks</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Callbacks.</p>
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>getStream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A function returning a promise of a stream.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Options.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>The newly assigned stream.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="startRecording"><span class="type-signature"></span>startRecording()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Starts recording the call represented by this one.<br>
+Only available for initially recorded call.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="stopPublishedStreams"><span class="type-signature"></span>stopPublishedStreams(options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stops the currently published stream.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Options.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>When it is done.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="stopRecording"><span class="type-signature"></span>stopRecording()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stops recording the call represented by this one.<br>
+Only available for initially recorded call.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Events</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:accepted">accepted</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when contact accepts call</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">Void</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:declined">declined</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when contact decline call</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>reason</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>can be User_Busy, User_Refused_Call, User_Media_Error, Hangup_From_Callee, Hangup_From_Caller, stop_ScreenSharing, Ice_disconnected, Ice_failed, WebRTC_Plugin_Installation_needed, User_Not_Found, disconnected, call take on other device, bye on other device, DataChannel_Not_Supported</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:desktopCapture">desktopCapture</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired on user media access error :<br>
+This event is fired when user has not granted the access to his micro and webcam or brower was not able to access medias</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>event that has happened. Values can be : UserMediaError_HTTPS_needed, UserMediaError, Extension_installation_Error, Extension_not_installed, Browser_Not_Compatible</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:disconnectionWarning">disconnectionWarning</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when an disconnection is detected<br>
+This event is fired as a warning once a disconnection error was detected on the call.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tries</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>number of warning send</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:error">error</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when an error is detected<br>
+This event is fired once an error was detected on the call.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Code description of the error. Check possible values below.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Code information about the error. Check possible values below.</p>
+<p>Possible errors values are the following: (errorInfo, errorCode)</p>
+<i>Connection errors:</i>
+<ul>
+<li>ice disconnection detected: ICE_CONNECTION_STATE_DISCONNECTED</li>
+<li>ice connection failed detected: ICE_CONNECTION_STATE_FAILED</li>
+<li>distant ice disconnection detected: DISTANT_ICE_CONNECTION_STATE_DISCONNECTED</li>
+<li>distant ice connection failed detected: DISTANT_ICE_CONNECTION_STATE_FAILED</li>
+</ul>
+<i>Errors on signaling processing:</i>
+<ul>
+<li>200OK received but callId is not matching, no process : NOT_MATCHING_CALLID_ON_200OK</li>
+<li>Cannot find call to process Update : CALL_NOT_FOUND_ON_UPDATE</li>
+<li>Cannot find call to process 200 Update : CALL_NOT_FOUND_ON_200UPDATE</li>
+<li>Call aborted after calls retries (maxCallsRetriesDuration reached) : CALL_ABORTED</li>
+</ul>
+<i>Errors on Media establishment processing:</i>
+<ul>
+<li>Set local Description Failure : SET_LOCAL_DESCRIPTION_FAILURE</li>
+<li>Set remote Description Failure : SET_REMOTE_DESCRIPTION_FAILURE</li>
+</ul>
+<i>Errors on calling API:</i>
+<ul>
+<li>parameter error when calling function: setUnidirectionalCall(): PARAMETER_ERROR_SETUNIDIRCALL</li>
+<li>parameter error when calling function: setNtoNConf(): PARAMETER_ERROR_SETNTONCONF</li>
+<li>parameter error when calling function: setRTPMedia(): PARAMETER_ERROR_SETRTPMEDIA</li>
+<li>parameter error when calling function: setMediaRoutingMode(): PARAMETER_ERROR_SETMEDIAROUTINGMODE</li>
+<li>parameter error when calling function: setUserAcceptOnIncomingCall(): PARAMETER_ERROR_SETUSERACCEPTONINCOCALL</li>
+<li>parameter error when calling function: hideLocalVideoOnCall(): PARAMETER_ERROR_SETHIDELOCALVIDEOONCALL</li>
+<li>Trying to add a listener on an unknown event: UNKNOWN_EVENT_ON_ADDLISTENER</li>
+<li>parameter error when calling function: setAllowMultipleCalls(): PARAMETER_ERROR_SETALLOWMULTIPLECALLS</li>
+</ul>
+<i>Errors about recording :</i>
+<ul>
+<li>Room not found when starting recording: START_RECORD_ROOM_NOT_FOUND</li>
+<li>Caller not found when starting recording: START_RECORD_CALLER_NOT_FOUND</li>
+<li>Media not found when starting recording: START_RECORD_MEDIA_FOUND</li>
+<li>Recording is already ongoing: START_RECORD_ALREADY_ON</li>
+<li>Room not found when stopping recording: STOP_RECORD_ROOM_NOT_FOUND</li>
+<li>Caller not found when stopping recording: STOP_RECORD_CALLER_NOT_FOUND</li>
+<li>Media not found when stopping recording: STOP_RECORD_MEDIA_FOUND</li>
+<li>Recorder not found when stopping recording: STOP_RECORD_ENDPOINT_NOT_FOUND</li>
+<li>Recording is not started stopping recording: STOP_RECORD_NOT_STARTED</li>
+<li>Recorder is not ready yet, record is not started: STOP_RECORD_RECORDER_NOT_READY</li>
+</ul>
+<i>Errors about media play:</i>
+<ul>
+<li>Autoplay was prevented: IOS_AUTOPLAY_PREVENTED</li>
+</ul>
+<i>Errors about media streams:</i>
+<ul>
+<li>Error during media update on call: MEDIA_UPDATE_ERROR</li>
+</ul>
+<i>Errors about user media:</i>
+<ul>
+<li>Error during media media access: USER_MEDIA_ERROR</li>
+</ul>
+<i>Errors about remote stream:</i>
+<ul>
+<li>Error during subscription: STREAM_NOT_AVAILABLE</li>
+</ul></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>descriptor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#CallIceErrorDescriptor">CallIceErrorDescriptor</a></span>
+|
+
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Detailed descriptor of the error</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:hangup">hangup</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when contact hangs up from 1-1 call<br>
+'from' property indicates which side initiated the hangup, either 'remote' or 'local'</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>from</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reason</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>can be User_Busy, User_Refused_Call, User_Media_Error, Hangup_From_Callee, Hangup_From_Caller, stop_ScreenSharing, Ice_disconnected, Ice_failed, WebRTC_Plugin_Installation_needed, User_Not_Found, disconnected, call take on other device, bye on other device, DataChannel_Not_Supported</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:localStreamAvailable">localStreamAvailable</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when local stream is available after calling the contact</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:recordAvailable">recordAvailable</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when call record is available.<br>
+This event is fired once the call is ended for both peers if the call was recorded.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>mediaURL</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>video file URL</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:recordingAvailable">recordingAvailable</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when a recording is available for play or download.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="global.html#RecordingInfo">RecordingInfo</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:recordingStarted">recordingStarted</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when a recording started.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="global.html#RecordingInfo">RecordingInfo</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:recordingStopped">recordingStopped</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when a recording stopped.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="global.html#RecordingInfo">RecordingInfo</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:remoteStreamUpdated">remoteStreamUpdated</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when remote stream properties changed.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>callId</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>audio</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether an audio line has been negotiated and active.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>audioMuted</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether the audio line is muted.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>video</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether a video line has been negotiated and active.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>videoMuted</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether the video line is muted.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:response">response</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when contact accepted or declined call</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">Void</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:statsUpdate">statsUpdate</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when call record is available.<br>
+This event is fired once the call is ended for both peers if the call was recorded.</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="global.html#CallStats">CallStats</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:streamAdded">streamAdded</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when contact's stream is received from 1-1 call</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:streamRemoved">streamRemoved</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired when contact's stream is removed from 1-1 call, stream may be null</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="event:userMediaError">userMediaError</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Fired on user media access error :<br>
+This event is fired when user has not granted the access to his micro and webcam or brower was not able to access medias</p>
+    </div>
+    
+
+    
+
+    
+        <h5>Type: 
+<span class="param-type">object</span>
+
+
+</h5>
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>onCallEstablishment</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>true or false, indicate whether access to media has been requested on call establishment or not (can be requested on autoAnswer feature activation)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>value can be 'media' or screenSharing</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>error given by WebRTC API</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userMediaStreamId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>stream id</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tryAudioCallActivated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>whether apiRTC will try to establish the call in audio only after this error detection</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	Apizee Copyright © 2013-2022 - apiRTC
+	</span>
+
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
