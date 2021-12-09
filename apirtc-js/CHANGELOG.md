@@ -4,20 +4,13 @@ All Notable changes to apiRTC are documented in this file.
 
 Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.5/apiRTC-latest.min.js)
 
-# [UNRELEASED 4.6.2](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.2.min.js) - 2021-12-06
-
-### Changed
-
-- Fixed token option for Conversation#fetchMediaList
 
 # [4.6.1](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.1.min.js) - 2021-11-24
 
 ### Added
-
 - Added error message for these browsers : Baidu, baidu, UCBrowser, QQ, QQBrowser and QQBrowserLite
 
 ### Fixed
-
 - Fixed Stream methods to remotely use capabilities functions
 
 # [4.6.0](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.0.min.js) - 2021-11-17
