@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - ApiRTC iOS SDK</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#classes">Classes</a></li><li><a href="#structures">Structures</a></li><li><a href="#enumerations">Enumerations</a></li><li><a href="#protocols">Protocols</a></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+                <section id="classes">
+        <h2>Classes</h2>
+        <dl>
+            <dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ApiRTC" title="class - ApiRTC">
+        Api​RTC
+    </a>
+</dt>
+<dd>
+    
+</dd>
+
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Call" title="class - Call">
+        Call
+    </a>
+</dt>
+<dd>
+    <p>Designates a P2P call with another contact.
+During a call, both the user and the contact may publish and subscribe to each other's streams.</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactMessage" title="class - ContactMessage">
+        Contact​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/GroupChatMessage" title="class - GroupChatMessage">
+        Group​Chat​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CloudApi" title="class - CloudApi">
+        Cloud​Api
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference" title="class - Conference">
+        Conference
+    </a>
+</dt>
+<dd>
+    <p>A conference is a type of Conversation that may require privilege to join
+Conference may only be created if your enterprise has the conference feature enabled on the Apizee platform</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact" title="class - Contact">
+        Contact
+    </a>
+</dt>
+<dd>
+    <p>Designates another user which may or may not be currently connected</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation" title="class - Conversation">
+        Conversation
+    </a>
+</dt>
+<dd>
+    <p>Users are able to interact with each other by entering a conversation in a N-N fashion.
+The client is able to listen to conversation events that will be fired once the conversation is joined</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationCall" title="class - ConversationCall">
+        Conversation​Call
+    </a>
+</dt>
+<dd>
+    <p>Represents a call within the context of a <code>Conversation</code>/<code>Conference</code></p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Enterprise" title="class - Enterprise">
+        Enterprise
+    </a>
+</dt>
+<dd>
+    <p>This class refers to the user's enterprise</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Invitation" title="class - Invitation">
+        Invitation
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ReceivedCallInvitation" title="class - ReceivedCallInvitation">
+        Received​Call​Invitation
+    </a>
+</dt>
+<dd>
+    <p>Defines an invitation received by this client for a call</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ReceivedConversationInvitation" title="class - ReceivedConversationInvitation">
+        Received​Conversation​Invitation
+    </a>
+</dt>
+<dd>
+    <p>Defines an invitation received by this client for a conversation</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ReceivedConversationJoinRequest" title="class - ReceivedConversationJoinRequest">
+        Received​Conversation​Join​Request
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ReceivedInvitation" title="class - ReceivedInvitation">
+        Received​Invitation
+    </a>
+</dt>
+<dd>
+    <p>Defines an invitation received by current user</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SentInvitation" title="class - SentInvitation">
+        Sent​Invitation
+    </a>
+</dt>
+<dd>
+    <p>Defines an invitation sent by current user</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Media" title="class - Media">
+        Media
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaUploaded" title="class - MediaUploaded">
+        Media​Uploaded
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaStream" title="class - MediaStream">
+        Media​Stream
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/AudioTrack" title="class - AudioTrack">
+        Audio​Track
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaTrack" title="class - MediaTrack">
+        Media​Track
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/VideoTrack" title="class - VideoTrack">
+        Video​Track
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable" title="class - Observable">
+        Observable
+    </a>
+</dt>
+<dd>
+    <p>Observable object</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Session" title="class - Session">
+        Session
+    </a>
+</dt>
+<dd>
+    <p>Session represent the connected environment of an UA.
+It's created after UA registration.</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream" title="class - Stream">
+        Stream
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/UserAgent" title="class - UserAgent">
+        User​Agent
+    </a>
+</dt>
+<dd>
+    <p>The <code>UserAgent</code> serves as the base to use apiRTC.
+A user can be authenticated or not.
+For an Apizee cloud user <code>UserAgentOptions.uri</code> is <code>UserAgentURI.apizee(_:)</code> .
+User can be anonymous if it's a client of an Apizee enterprise and use <code>UserAgentURI.apzkey(_:)</code> as uri.
+Once registered <code>Session</code> object can be used to communicate with other contacts using the platform on the same API key and CCS server</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CameraView" title="class - CameraView">
+        Camera​View
+    </a>
+</dt>
+<dd>
+    <p>Ready view handling local capture</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/VideoView" title="class - VideoView">
+        Video​View
+    </a>
+</dt>
+<dd>
+    <p>Ready view handling WebRTC video stream</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/DrawingElement" title="class - DrawingElement">
+        Drawing​Element
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardClient" title="class - WhiteboardClient">
+        Whiteboard​Client
+    </a>
+</dt>
+<dd>
+    <p>WhiteboardClient using to control whiteboard tools, colors, views etc</p>
+
+</dd>
+<dt class="class">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardView" title="class - WhiteboardView">
+        Whiteboard​View
+    </a>
+</dt>
+<dd>
+    <p>Whiteboard view</p>
+
+</dd>
+        </dl>
+    </section>
+    <section id="structures">
+        <h2>Structures</h2>
+        <dl>
+            <dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Agent" title="structure - Agent">
+        Agent
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/AnswerOptions" title="structure - AnswerOptions">
+        Answer​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CallOptions" title="structure - CallOptions">
+        Call​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactListUpdate" title="structure - ContactListUpdate">
+        Contact​List​Update
+    </a>
+</dt>
+<dd>
+    <p>Represents useful information about changes in the group</p>
+
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/DisconnectOptions" title="structure - DisconnectOptions">
+        Disconnect​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/EnterpriseInformation" title="structure - EnterpriseInformation">
+        Enterprise​Information
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/EnterpriseTag" title="structure - EnterpriseTag">
+        Enterprise​Tag
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/FetchEnterpriseInformationOptions" title="structure - FetchEnterpriseInformationOptions">
+        Fetch​Enterprise​Information​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/FetchSiteAgentsOptions" title="structure - FetchSiteAgentsOptions">
+        Fetch​Site​Agents​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/JoinOptions" title="structure - JoinOptions">
+        Join​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/PrivateConferenceCreationOptions" title="structure - PrivateConferenceCreationOptions">
+        Private​Conference​Creation​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/PublishOptions" title="structure - PublishOptions">
+        Publish​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/RegisterInformation" title="structure - RegisterInformation">
+        Register​Information
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/RoomMemberUpdate" title="structure - RoomMemberUpdate">
+        Room​Member​Update
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamInfo" title="structure - StreamInfo">
+        Stream​Info
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamMuteStateChange" title="structure - StreamMuteStateChange">
+        Stream​Mute​State​Change
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamUpdate" title="structure - StreamUpdate">
+        Stream​Update
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SubscribeOptions" title="structure - SubscribeOptions">
+        Subscribe​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="structure">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/UserAgentOptions" title="structure - UserAgentOptions">
+        User​Agent​Options
+    </a>
+</dt>
+<dd>
+    
+</dd>
+        </dl>
+    </section>
+    <section id="enumerations">
+        <h2>Enumerations</h2>
+        <dl>
+            <dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Friut2" title="enumeration - Friut2">
+        Friut2
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ExternalCameraState" title="enumeration - ExternalCameraState">
+        External​Camera​State
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CallEvent" title="enumeration - CallEvent">
+        Call​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Call</code> events</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CallStatus" title="enumeration - CallStatus">
+        Call​Status
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Call</code> status</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactMessageEvent" title="enumeration - ContactMessageEvent">
+        Contact​Message​Event
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/GroupChatMessageEvent" title="enumeration - GroupChatMessageEvent">
+        Group​Chat​Message​Event
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactEvent" title="enumeration - ContactEvent">
+        Contact​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Contact</code> events</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactCallState" title="enumeration - ContactCallState">
+        Contact​Call​State
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Contact</code> call state</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationEvent" title="enumeration - ConversationEvent">
+        Conversation​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Conversation</code> events</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationStatus" title="enumeration - ConversationStatus">
+        Conversation​Status
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Conversation</code> status</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccessType" title="enumeration - ConversationAccessType">
+        Conversation​Access​Type
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationUserRole" title="enumeration - ConversationUserRole">
+        Conversation​User​Role
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccess" title="enumeration - ConversationAccess">
+        Conversation​Access
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationCallStatus" title="enumeration - ConversationCallStatus">
+        Conversation​Call​Status
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>ConversationCall</code> status</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/InvitationStatus" title="enumeration - InvitationStatus">
+        Invitation​Status
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Invitation</code> status</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/InvitationEvent" title="enumeration - InvitationEvent">
+        Invitation​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Invitation</code> event</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaType" title="enumeration - MediaType">
+        Media​Type
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaTrackType" title="enumeration - MediaTrackType">
+        Media​Track​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>MediaTrack</code> type</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SessionConnectionState" title="enumeration - SessionConnectionState">
+        Session​Connection​State
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Session</code> connection states</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SessionEvent" title="enumeration - SessionEvent">
+        Session​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Session</code> events</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamEvent" title="enumeration - StreamEvent">
+        Stream​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Stream</code> event</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamType" title="enumeration - StreamType">
+        Stream​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Stream</code> type</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamMutingLineType" title="enumeration - StreamMutingLineType">
+        Stream​Muting​Line​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Stream</code> muting type</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamMediaRestriction" title="enumeration - StreamMediaRestriction">
+        Stream​Media​Restriction
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Stream</code> media restriction</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamDirection" title="enumeration - StreamDirection">
+        Stream​Direction
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>Stream</code> direction</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/AudioOutput" title="enumeration - AudioOutput">
+        Audio​Output
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactListUpdateType" title="enumeration - ContactListUpdateType">
+        Contact​List​Update​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents type of <code>ContactListUpdateType</code></p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/RoomMemberUpdateType" title="enumeration - RoomMemberUpdateType">
+        Room​Member​Update​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>RoomMemberUpdate</code> type</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamInfoType" title="enumeration - StreamInfoType">
+        Stream​Info​Type
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/UserAgentURI" title="enumeration - UserAgentURI">
+        User​Agent​URI
+    </a>
+</dt>
+<dd>
+    <p>Represents UserAgent URI types</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/RendererType" title="enumeration - RendererType">
+        Renderer​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents renderer type</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/DrawingElementType" title="enumeration - DrawingElementType">
+        Drawing​Element​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>DrawingElement</code> type</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardEvent" title="enumeration - WhiteboardEvent">
+        Whiteboard​Event
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>WhiteboardClient</code> events</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardTool" title="enumeration - WhiteboardTool">
+        Whiteboard​Tool
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>WhiteboardClient</code> drawing tools</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardViewMode" title="enumeration - WhiteboardViewMode">
+        Whiteboard​View​Mode
+    </a>
+</dt>
+<dd>
+    <p>Represents <code>WhiteboardView</code> mode</p>
+
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err" title="enumeration - Err">
+        Err
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_UserAgent" title="enumeration - Err.UserAgent">
+        Err.​User​Agent
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Sesssion" title="enumeration - Err.Sesssion">
+        Err.​Sesssion
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Network" title="enumeration - Err.Network">
+        Err.​Network
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Contact" title="enumeration - Err.Contact">
+        Err.​Contact
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Token" title="enumeration - Err.Token">
+        Err.​Token
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Stream" title="enumeration - Err.Stream">
+        Err.​Stream
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_StreamInfo" title="enumeration - Err.StreamInfo">
+        Err.​Stream​Info
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_CloudRequest" title="enumeration - Err.CloudRequest">
+        Err.​Cloud​Request
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_CloudMessage" title="enumeration - Err.CloudMessage">
+        Err.​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_CloudApi" title="enumeration - Err.CloudApi">
+        Err.​Cloud​Api
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_PreferredCSSCloudMessage" title="enumeration - Err.PreferredCSSCloudMessage">
+        Err.​Preferred​CSSCloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_CheckTokenCloudMessage" title="enumeration - Err.CheckTokenCloudMessage">
+        Err.​Check​Token​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConferenceInfo" title="enumeration - Err.ConferenceInfo">
+        Err.​Conference​Info
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_UserInfoCloudMessage" title="enumeration - Err.UserInfoCloudMessage">
+        Err.​User​Info​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_EnterpriseInfoCloudMessage" title="enumeration - Err.EnterpriseInfoCloudMessage">
+        Err.​Enterprise​Info​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_EnterpriseUsersListCloudMessage" title="enumeration - Err.EnterpriseUsersListCloudMessage">
+        Err.​Enterprise​Users​List​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_EnterpriseTagsCloudMessage" title="enumeration - Err.EnterpriseTagsCloudMessage">
+        Err.​Enterprise​Tags​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_EnterpriseCreateConferenceCloudMessage" title="enumeration - Err.EnterpriseCreateConferenceCloudMessage">
+        Err.​Enterprise​Create​Conference​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_EnterpriseUploadFileCloudMessage" title="enumeration - Err.EnterpriseUploadFileCloudMessage">
+        Err.​Enterprise​Upload​File​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationCheckAccessCloudMessage" title="enumeration - Err.ConversationCheckAccessCloudMessage">
+        Err.​Conversation​Check​Access​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationGetOrCreateCloudMessage" title="enumeration - Err.ConversationGetOrCreateCloudMessage">
+        Err.​Conversation​Get​OrCreate​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_MediaListCloudMessage" title="enumeration - Err.MediaListCloudMessage">
+        Err.​Media​List​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_MediaCloudMessage" title="enumeration - Err.MediaCloudMessage">
+        Err.​Media​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_MediaUploadCloudMessage" title="enumeration - Err.MediaUploadCloudMessage">
+        Err.​Media​Upload​Cloud​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Media" title="enumeration - Err.Media">
+        Err.​Media
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Utils" title="enumeration - Err.Utils">
+        Err.​Utils
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Socket" title="enumeration - Err.Socket">
+        Err.​Socket
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_SocketMessage" title="enumeration - Err.SocketMessage">
+        Err.​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_PresenceSocketMessage" title="enumeration - Err.PresenceSocketMessage">
+        Err.​Presence​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Call" title="enumeration - Err.Call">
+        Err.​Call
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_CallManager" title="enumeration - Err.CallManager">
+        Err.​Call​Manager
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCClient" title="enumeration - Err.RTCClient">
+        Err.​RTCClient
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCSocketMessage" title="enumeration - Err.RTCSocketMessage">
+        Err.​RTCSocket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCInviteSocketMessage" title="enumeration - Err.RTCInviteSocketMessage">
+        Err.​RTCInvite​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCAnswerSocketMessage" title="enumeration - Err.RTCAnswerSocketMessage">
+        Err.​RTCAnswer​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCCandidateSocketMessage" title="enumeration - Err.RTCCandidateSocketMessage">
+        Err.​RTCCandidate​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCByeSocketMessage" title="enumeration - Err.RTCByeSocketMessage">
+        Err.​RTCBye​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCUpdateSocketMessage" title="enumeration - Err.RTCUpdateSocketMessage">
+        Err.​RTCUpdate​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCAnswerUpdateSocketMessage" title="enumeration - Err.RTCAnswerUpdateSocketMessage">
+        Err.​RTCAnswer​Update​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_SDP" title="enumeration - Err.SDP">
+        Err.​SDP
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RTCCandidate" title="enumeration - Err.RTCCandidate">
+        Err.​RTCCandidate
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Conversation" title="enumeration - Err.Conversation">
+        Err.​Conversation
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationCall" title="enumeration - Err.ConversationCall">
+        Err.​Conversation​Call
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationManager" title="enumeration - Err.ConversationManager">
+        Err.​Conversation​Manager
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationJoinAnswerSocketMessage" title="enumeration - Err.ConversationJoinAnswerSocketMessage">
+        Err.​Conversation​Join​Answer​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationAvailableStreamsSocketMessage" title="enumeration - Err.ConversationAvailableStreamsSocketMessage">
+        Err.​Conversation​Available​Streams​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationRemoveStreamSocketMessage" title="enumeration - Err.ConversationRemoveStreamSocketMessage">
+        Err.​Conversation​Remove​Stream​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomSocketMessage" title="enumeration - Err.RoomSocketMessage">
+        Err.​Room​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomCreationSocketMessage" title="enumeration - Err.RoomCreationSocketMessage">
+        Err.​Room​Creation​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomJoinAnswerSocketMessage" title="enumeration - Err.RoomJoinAnswerSocketMessage">
+        Err.​Room​Join​Answer​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomInviteStatusSocketMessage" title="enumeration - Err.RoomInviteStatusSocketMessage">
+        Err.​Room​Invite​Status​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomInvitationSocketMessage" title="enumeration - Err.RoomInvitationSocketMessage">
+        Err.​Room​Invitation​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomMemberUpdateSocketMessage" title="enumeration - Err.RoomMemberUpdateSocketMessage">
+        Err.​Room​Member​Update​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_RoomMessageSocketMessage" title="enumeration - Err.RoomMessageSocketMessage">
+        Err.​Room​Message​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_DataSocketMessage" title="enumeration - Err.DataSocketMessage">
+        Err.​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_InvitationAnswerDataSocketMessage" title="enumeration - Err.InvitationAnswerDataSocketMessage">
+        Err.​Invitation​Answer​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ConversationInvitationDataSocketMessage" title="enumeration - Err.ConversationInvitationDataSocketMessage">
+        Err.​Conversation​Invitation​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_StreamTrackChangedDataSocketMessage" title="enumeration - Err.StreamTrackChangedDataSocketMessage">
+        Err.​Stream​Track​Changed​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_CommandDataSocketMessage" title="enumeration - Err.CommandDataSocketMessage">
+        Err.​Command​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_JoinAccessCommandDataSocketMessage" title="enumeration - Err.JoinAccessCommandDataSocketMessage">
+        Err.​Join​Access​Command​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_JoinAccessNewCommandDataSocketMessage" title="enumeration - Err.JoinAccessNewCommandDataSocketMessage">
+        Err.​Join​Access​New​Command​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_UserWaitingCommandDataSocketMessage" title="enumeration - Err.UserWaitingCommandDataSocketMessage">
+        Err.​User​Waiting​Command​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_UserWaitingNewCommandDataSocketMessage" title="enumeration - Err.UserWaitingNewCommandDataSocketMessage">
+        Err.​User​Waiting​New​Command​Data​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_WhiteboardManager" title="enumeration - Err.WhiteboardManager">
+        Err.​Whiteboard​Manager
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_DrawingElement" title="enumeration - Err.DrawingElement">
+        Err.​Drawing​Element
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_TextElement" title="enumeration - Err.TextElement">
+        Err.​Text​Element
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Invitation" title="enumeration - Err.Invitation">
+        Err.​Invitation
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ReceivedConversationInvitation" title="enumeration - Err.ReceivedConversationInvitation">
+        Err.​Received​Conversation​Invitation
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Enterprise" title="enumeration - Err.Enterprise">
+        Err.​Enterprise
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_Agent" title="enumeration - Err.Agent">
+        Err.​Agent
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_EnterpriseTag" title="enumeration - Err.EnterpriseTag">
+        Err.​Enterprise​Tag
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_ChatSocketMessage" title="enumeration - Err.ChatSocketMessage">
+        Err.​Chat​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_GroupChatMessage" title="enumeration - Err.GroupChatMessage">
+        Err.​Group​Chat​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_NewConversationCreated" title="enumeration - Err.NewConversationCreated">
+        Err.​New​Conversation​Created
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Err_GroupChatMemberUpdateSocketMessage" title="enumeration - Err.GroupChatMemberUpdateSocketMessage">
+        Err.​Group​Chat​Member​Update​Socket​Message
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="enumeration">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/LogType" title="enumeration - LogType">
+        Log​Type
+    </a>
+</dt>
+<dd>
+    <p>Represents SDK log types.</p>
+
+</dd>
+        </dl>
+    </section>
+    <section id="protocols">
+        <h2>Protocols</h2>
+        <dl>
+            <dt class="protocol">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Event" title="protocol - Event">
+        Event
+    </a>
+</dt>
+<dd>
+    
+</dd>
+<dt class="protocol">
+    <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/E" title="protocol - E">
+        E
+    </a>
+</dt>
+<dd>
+    
+</dd>
+        </dl>
+    </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:07+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>

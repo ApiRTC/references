@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - ConversationCall</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#conversationcall.id">id</a></li><li class="variable"><a href="#conversationcall.status">status</a></li><li class="variable"><a href="#conversationcall.stream">stream</a></li></ul></li><li><a href="#methods">Methods</a><ul><li class="function"><a href="#conversationcall.replacepublishedstream(streamid:withstream:completion:)">replace​Published​Stream(stream​Id:​with​Stream:​completion:​)</a></li><li class="function"><a href="#conversationcall.getconversation()">get​Conversation()</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">Conversation​Call</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">ConversationCall</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Represents a call within the context of a <code>Conversation</code>/<code>Conference</code></p>
+
+</div>
+
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="conversationcall.id">
+    <h3>
+        <code><a href="#conversationcall.id">id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">id</span>: <span class="type">String</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversationcall.status">
+    <h3>
+        <code><a href="#conversationcall.status">status</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">status</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationCallStatus"><span class="type">ConversationCallStatus</span></a>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversationcall.stream">
+    <h3>
+        <code><a href="#conversationcall.stream">stream</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>? </body></html></code></pre>
+</div>
+</div>
+    </section>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="conversationcall.replacepublishedstream(streamid:withstream:completion:)">
+    <h3>
+        <code><a href="#conversationcall.replacepublishedstream(streamid:withstream:completion:)">replace​Published​Stream(stream​Id:​with​Stream:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">replacePublishedStream</span>(<span class="variable">streamId</span>: <span class="type">String</span>, <span class="variable">withStream</span> <span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Replaces the currently published stream by a given one.
+If the first parameter is null then the second parameter must provides a property named
+getStream. The getStream property shall be a function returning a Promise of a Stream</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversationcall.getconversation()">
+    <h3>
+        <code><a href="#conversationcall.getconversation()">get​Conversation()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getConversation</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation"><span class="type">Conversation</span></a>?  </body></html></code></pre>
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:07+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>

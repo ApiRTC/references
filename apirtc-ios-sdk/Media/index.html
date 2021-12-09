@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - Media</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#media.instanceid">instance​Id</a></li><li class="variable"><a href="#media.id">id</a></li><li class="variable"><a href="#media.filename">filename</a></li><li class="variable"><a href="#media.title">title</a></li><li class="variable"><a href="#media.type">type</a></li><li class="variable"><a href="#media.hash">hash</a></li><li class="variable"><a href="#media.description">description</a></li><li class="variable"><a href="#media.metadata">metadata</a></li><li class="variable"><a href="#media.url">url</a></li><li class="variable"><a href="#media.createdat">created​At</a></li><li class="variable"><a href="#media.thumbnail">thumbnail</a></li></ul></li><li><a href="#methods">Methods</a><ul><li class="function"><a href="#media.thumbnailurl()">thumbnail​Url()</a></li><li class="function"><a href="#media.imageurl()">image​Url()</a></li><li class="function"><a href="#media.getthumbnail(completion:)">get​Thumbnail(completion:​)</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">Media</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Media</span>  </body></html></code></pre>
+</div>
+
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="media.instanceid">
+    <h3>
+        <code><a href="#media.instanceid">instance​Id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">instanceId</span> = <span class="variable">UUID</span>().<span class="variable">uuidString</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.id">
+    <h3>
+        <code><a href="#media.id">id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">id</span>: <span class="type">Int</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.filename">
+    <h3>
+        <code><a href="#media.filename">filename</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">filename</span>: <span class="type">String</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.title">
+    <h3>
+        <code><a href="#media.title">title</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">title</span>: <span class="type">String</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.type">
+    <h3>
+        <code><a href="#media.type">type</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">type</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaType"><span class="type">MediaType</span></a>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.hash">
+    <h3>
+        <code><a href="#media.hash">hash</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">hash</span>: <span class="type">String</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.description">
+    <h3>
+        <code><a href="#media.description">description</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">description</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.metadata">
+    <h3>
+        <code><a href="#media.metadata">metadata</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">metadata</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.url">
+    <h3>
+        <code><a href="#media.url">url</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">url</span>: <span class="type">String</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.createdat">
+    <h3>
+        <code><a href="#media.createdat">created​At</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">createdAt</span>: <span class="type">Date</span>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="media.thumbnail">
+    <h3>
+        <code><a href="#media.thumbnail">thumbnail</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">thumbnail</span>: <span class="type">UIImage</span>? </body></html></code></pre>
+</div>
+</div>
+    </section>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="media.thumbnailurl()">
+    <h3>
+        <code><a href="#media.thumbnailurl()">thumbnail​Url()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">thumbnailUrl</span>() -&gt; <span class="type">URL</span>?  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="media.imageurl()">
+    <h3>
+        <code><a href="#media.imageurl()">image​Url()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">imageUrl</span>() -&gt; <span class="type">URL</span>?  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="media.getthumbnail(completion:)">
+    <h3>
+        <code><a href="#media.getthumbnail(completion:)">get​Thumbnail(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getThumbnail</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">UIImage</span>?, <span class="type">Error</span>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:07+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>

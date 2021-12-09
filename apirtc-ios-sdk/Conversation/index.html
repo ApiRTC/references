@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - Conversation</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#relationships">Relationships</a><ul><li><a href="#relationships">Subclasses</a></li><li><a href="#relationships">Conforms To</a></li></ul></li><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#conversation.id">id</a></li><li class="variable"><a href="#conversation.publicid">public​Id</a></li><li class="variable"><a href="#conversation.cloudpublicid">cloud​Public​Id</a></li><li class="variable"><a href="#conversation.instanceid">instance​Id</a></li><li class="variable"><a href="#conversation.accesstype">access​Type</a></li><li class="variable"><a href="#conversation.status">status</a></li><li class="variable"><a href="#conversation.groupchatstatus">group​Chat​Status</a></li><li class="variable"><a href="#conversation.access">access</a></li><li class="variable"><a href="#conversation.role">role</a></li><li class="variable"><a href="#conversation.friendlyname">friendly​Name</a></li><li class="variable"><a href="#conversation.moderatorid">moderator​Id</a></li><li class="variable"><a href="#conversation.ownerid">owner​Id</a></li><li class="variable"><a href="#conversation.haspassword">has​Password</a></li></ul></li><li><a href="#methods">Methods</a><ul><li class="function"><a href="#conversation.join(options:completion:)">join(options:​completion:​)</a></li><li class="function"><a href="#conversation.canceljoin()">cancel​Join()</a></li><li class="function"><a href="#conversation.leave(completion:)">leave(completion:​)</a></li><li class="function"><a href="#conversation.sendinvitation(contact:completion:)">send​Invitation(contact:​completion:​)</a></li><li class="function"><a href="#conversation.isgroupchatjoined()">is​Group​Chat​Joined()</a></li><li class="function"><a href="#conversation.joingroupchat(completion:)">join​Group​Chat(completion:​)</a></li><li class="function"><a href="#conversation.leavegroupchat(completion:)">leave​Group​Chat(completion:​)</a></li><li class="function"><a href="#conversation.sendmessage(message:completion:)">send​Message(message:​completion:​)</a></li><li class="function"><a href="#conversation.publish(stream:options:completion:)">publish(stream:​options:​completion:​)</a></li><li class="function"><a href="#conversation.unpublishstreamwithid(_:completion:)">unpublish​Stream​With​Id(_:​completion:​)</a></li><li class="function"><a href="#conversation.subscribetostream(streamid:options:)">subscribe​ToStream(stream​Id:​options:​)</a></li><li class="function"><a href="#conversation.unsubscribefromstreamwithid(_:)">unsubscribe​From​Stream​With​Id(_:​)</a></li><li class="function"><a href="#conversation.getavailablestreamlist()">get​Available​Stream​List()</a></li><li class="function"><a href="#conversation.getpublishedstreams()">get​Published​Streams()</a></li><li class="function"><a href="#conversation.getsubscribedstreams()">get​Subscribed​Streams()</a></li><li class="function"><a href="#conversation.getcontacts()">get​Contacts()</a></li><li class="function"><a href="#conversation.getname()">get​Name()</a></li><li class="function"><a href="#conversation.getconversationcall(_:)">get​Conversation​Call(_:​)</a></li><li class="function"><a href="#conversation.isjoined()">is​Joined()</a></li><li class="function"><a href="#conversation.startnewwhiteboardsession(completion:)">start​New​Whiteboard​Session(completion:​)</a></li><li class="function"><a href="#conversation.stopwhiteboardsession()">stop​Whiteboard​Session()</a></li><li class="function"><a href="#conversation.checkaccess(completion:)">check​Access(completion:​)</a></li><li class="function"><a href="#conversation.pushmedia(media:options:completion:)">push​Media(media:​options:​completion:​)</a></li><li class="function"><a href="#conversation.fetchmedialist(options:completion:)">fetch​Media​List(options:​completion:​)</a></li><li class="function"><a href="#conversation.getmoderator()">get​Moderator()</a></li><li class="function"><a href="#conversation.sendrawdata(data:)">send​Raw​Data(data:​)</a></li><li class="function"><a href="#conversation.typeofname(_:)">type​OfName(_:​)</a></li><li class="function"><a href="#conversation.isnamevalid(_:)">is​Name​Valid(_:​)</a></li><li class="function"><a href="#conversation.onevent(_:_:)">on​Event(_:​_:​)</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">Conversation</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Conversation</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationEvent"><span class="type">ConversationEvent</span></a>&gt;  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Users are able to interact with each other by entering a conversation in a N-N fashion.
+The client is able to listen to conversation events that will be fired once the conversation is joined</p>
+
+</div>
+<section id="relationships">
+    <h2 hidden>Relationships</h2>
+        <figure>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.47.2 (20210527.0053)
+ -->
+<!-- Pages: 1 -->
+<svg width="1067pt" height="242pt"
+ viewBox="0.00 0.00 1066.99 241.73" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 237.73)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-237.73 1062.99,-237.73 1062.99,4 -4,4"/>
+<!-- Conversation -->
+<g id="node1" class="node class current">
+<title>Conversation</title>
+<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation" xlink:title="Conversation">
+<path fill="none" stroke="black" stroke-width="3" d="M542.15,-143.64C542.15,-143.64 350.15,-143.64 350.15,-143.64 344.15,-143.64 338.15,-137.64 338.15,-131.64 338.15,-131.64 338.15,-119.64 338.15,-119.64 338.15,-113.64 344.15,-107.64 350.15,-107.64 350.15,-107.64 542.15,-107.64 542.15,-107.64 548.15,-107.64 554.15,-113.64 554.15,-119.64 554.15,-119.64 554.15,-131.64 554.15,-131.64 554.15,-137.64 548.15,-143.64 542.15,-143.64"/>
+<text text-anchor="middle" x="446.15" y="-121.94" font-family="Menlo" font-size="14.00">Conversation</text>
+</a>
+</g>
+</g>
+<!-- Descriptable -->
+<g id="node2" class="node protocol">
+<title>Descriptable</title>
+<path fill="none" stroke="black" d="M1046.99,-161.31C1046.99,-161.31 854.99,-161.31 854.99,-161.31 848.99,-161.31 842.99,-155.31 842.99,-149.31 842.99,-149.31 842.99,-137.31 842.99,-137.31 842.99,-131.31 848.99,-125.31 854.99,-125.31 854.99,-125.31 1046.99,-125.31 1046.99,-125.31 1052.99,-125.31 1058.99,-131.31 1058.99,-137.31 1058.99,-137.31 1058.99,-149.31 1058.99,-149.31 1058.99,-155.31 1052.99,-161.31 1046.99,-161.31"/>
+<text text-anchor="middle" x="950.99" y="-139.61" font-family="Menlo" font-size="14.00">Descriptable</text>
+</g>
+<!-- Conversation&#45;&gt;Descriptable -->
+<g id="edge1" class="edge conformsTo">
+<title>Conversation&#45;&gt;Descriptable</title>
+<path fill="none" stroke="black" d="M554.45,-129.43C636.3,-132.29 748.56,-136.22 832.74,-139.17"/>
+<polygon fill="black" stroke="black" points="832.75,-142.67 842.87,-139.52 832.99,-135.67 832.75,-142.67"/>
+</g>
+<!-- Observable&lt;ConversationEvent&gt; -->
+<g id="node4" class="node unknown">
+<title>Observable&lt;ConversationEvent&gt;</title>
+<path fill="none" stroke="black" d="M244,-233.73C244,-233.73 12,-233.73 12,-233.73 6,-233.73 0,-227.73 0,-221.73 0,-221.73 0,-209.73 0,-209.73 0,-203.73 6,-197.73 12,-197.73 12,-197.73 244,-197.73 244,-197.73 250,-197.73 256,-203.73 256,-209.73 256,-209.73 256,-221.73 256,-221.73 256,-227.73 250,-233.73 244,-233.73"/>
+<text text-anchor="middle" x="128" y="-212.03" font-family="Menlo" font-size="14.00">Observable&lt;ConversationEvent&gt;</text>
+</g>
+<!-- Conversation&#45;&gt;Observable&lt;ConversationEvent&gt; -->
+<g id="edge3" class="edge conformsTo">
+<title>Conversation&#45;&gt;Observable&lt;ConversationEvent&gt;</title>
+<path fill="none" stroke="black" d="M382.53,-143.65C330.27,-158.45 256.2,-179.43 201.43,-194.94"/>
+<polygon fill="black" stroke="black" points="200.45,-191.58 191.78,-197.67 202.35,-198.31 200.45,-191.58"/>
+</g>
+<!-- Conference -->
+<g id="node3" class="node class">
+<title>Conference</title>
+<g id="a_node3"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference" xlink:title="Conference">
+<path fill="none" stroke="black" d="M360.76,-36C360.76,-36 168.76,-36 168.76,-36 162.76,-36 156.76,-30 156.76,-24 156.76,-24 156.76,-12 156.76,-12 156.76,-6 162.76,0 168.76,0 168.76,0 360.76,0 360.76,0 366.76,0 372.76,-6 372.76,-12 372.76,-12 372.76,-24 372.76,-24 372.76,-30 366.76,-36 360.76,-36"/>
+<text text-anchor="middle" x="264.76" y="-14.3" font-family="Menlo" font-size="14.00">Conference</text>
+</a>
+</g>
+</g>
+<!-- Conference&#45;&gt;Conversation -->
+<g id="edge2" class="edge inheritsFrom">
+<title>Conference&#45;&gt;Conversation</title>
+<path fill="none" stroke="black" d="M295.12,-36.02C325.85,-54.26 373.51,-82.54 407.05,-102.44"/>
+<polygon fill="black" stroke="black" points="405.3,-105.47 415.69,-107.56 408.87,-99.45 405.3,-105.47"/>
+</g>
+</g>
+</svg>
+
+
+    <figcaption hidden>Inheritance graph for Conversation.</figcaption>
+</figure>
+        <h3>Subclasses</h3>
+<dl>
+    <dt class="class"><code><a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference">Conference</a></code></dt>
+<dd><p>A conference is a type of Conversation that may require privilege to join
+Conference may only be created if your enterprise has the conference feature enabled on the Apizee platform</p>
+</dd>
+</dl>
+<h3>Conforms To</h3>
+<dl>
+    <dt class="unknown"><code>Observable&lt;ConversationEvent&gt;</code></dt>
+</dl>
+</section>
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="conversation.id">
+    <h3>
+        <code><a href="#conversation.id">id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">id</span>: <span class="type">Int</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.publicid">
+    <h3>
+        <code><a href="#conversation.publicid">public​Id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">publicId</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.cloudpublicid">
+    <h3>
+        <code><a href="#conversation.cloudpublicid">cloud​Public​Id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">cloudPublicId</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.instanceid">
+    <h3>
+        <code><a href="#conversation.instanceid">instance​Id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">instanceId</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.accesstype">
+    <h3>
+        <code><a href="#conversation.accesstype">access​Type</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">accessType</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccessType"><span class="type">ConversationAccessType</span></a>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.status">
+    <h3>
+        <code><a href="#conversation.status">status</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">status</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationStatus"><span class="type">ConversationStatus</span></a>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.groupchatstatus">
+    <h3>
+        <code><a href="#conversation.groupchatstatus">group​Chat​Status</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">groupChatStatus</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationStatus"><span class="type">ConversationStatus</span></a>! </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.access">
+    <h3>
+        <code><a href="#conversation.access">access</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">access</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccess"><span class="type">ConversationAccess</span></a>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.role">
+    <h3>
+        <code><a href="#conversation.role">role</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">role</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationUserRole"><span class="type">ConversationUserRole</span></a>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.friendlyname">
+    <h3>
+        <code><a href="#conversation.friendlyname">friendly​Name</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">friendlyName</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.moderatorid">
+    <h3>
+        <code><a href="#conversation.moderatorid">moderator​Id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">moderatorId</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.ownerid">
+    <h3>
+        <code><a href="#conversation.ownerid">owner​Id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">ownerId</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="conversation.haspassword">
+    <h3>
+        <code><a href="#conversation.haspassword">has​Password</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">hasPassword</span>: <span class="type">Bool</span>? </body></html></code></pre>
+</div>
+</div>
+    </section>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="conversation.join(options:completion:)">
+    <h3>
+        <code><a href="#conversation.join(options:completion:)">join(options:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">join</span>(<span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/JoinOptions"><span class="type">JoinOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">accessAllowed</span>: <span class="type">Bool</span>) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Connects to a conversation if not already joined. Once in the conversation the user will be able to see other contacts inside it, send and receive messages, publish streams and subscribe to conversation's streams</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.canceljoin()">
+    <h3>
+        <code><a href="#conversation.canceljoin()">cancel​Join()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">cancelJoin</span>()  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.leave(completion:)">
+    <h3>
+        <code><a href="#conversation.leave(completion:)">leave(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">leave</span>(<span class="variable">completion</span>: (() -&gt; <span class="type">Void</span>)? = <span class="keyword">nil</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Leaves conversation. The user will automatically stop publishing its streams to the conversation and stop subscribing to streams from the conversation. The user will no longer receive events from the conversation. The user will no longer see who's within the conversation</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.sendinvitation(contact:completion:)">
+    <h3>
+        <code><a href="#conversation.sendinvitation(contact:completion:)">send​Invitation(contact:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendInvitation</span>(<span class="variable">contact</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">invitation</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SentInvitation"><span class="type">SentInvitation</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Invites a contact to the conversation
+If returns nil, <code>ConversationEvent.error(_:)</code> should be dispatched</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.isgroupchatjoined()">
+    <h3>
+        <code><a href="#conversation.isgroupchatjoined()">is​Group​Chat​Joined()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">isGroupChatJoined</span>() -&gt; <span class="type">Bool</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.joingroupchat(completion:)">
+    <h3>
+        <code><a href="#conversation.joingroupchat(completion:)">join​Group​Chat(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">joinGroupChat</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.leavegroupchat(completion:)">
+    <h3>
+        <code><a href="#conversation.leavegroupchat(completion:)">leave​Group​Chat(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">leaveGroupChat</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.sendmessage(message:completion:)">
+    <h3>
+        <code><a href="#conversation.sendmessage(message:completion:)">send​Message(message:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendMessage</span>(<span class="variable">message</span>: <span class="type">String</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">message</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/GroupChatMessage"><span class="type">GroupChatMessage</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.publish(stream:options:completion:)">
+    <h3>
+        <code><a href="#conversation.publish(stream:options:completion:)">publish(stream:​options:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">publish</span>(<span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>, <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/PublishOptions"><span class="type">PublishOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Publish stream to conversation
+The stream will be able to be subscribed by other contacts within the conversation</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.unpublishstreamwithid(_:completion:)">
+    <h3>
+        <code><a href="#conversation.unpublishstreamwithid(_:completion:)">unpublish​Stream​With​Id(_:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">unpublishStreamWithId</span>(<span class="keyword">_</span> <span class="variable">streamId</span>: <span class="type">String</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> () -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Unpublishes currently published stream to conversation. If other users within the conversation subscribed to this stream, it will be stopped on their side</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.subscribetostream(streamid:options:)">
+    <h3>
+        <code><a href="#conversation.subscribetostream(streamid:options:)">subscribe​ToStream(stream​Id:​options:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">subscribeToStream</span>(<span class="variable">streamId</span>: <span class="type">String</span>, <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SubscribeOptions"><span class="type">SubscribeOptions</span></a>? = <span class="keyword">nil</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Subscribes to a stream.
+The subscription will automatically stop if the contact publishing the stream unpublishes it.
+The <code>ConversationEvent.streamAdded(_:)</code> event will be fired when the stream becomes available.
+The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when the stream is no longer available.</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.unsubscribefromstreamwithid(_:)">
+    <h3>
+        <code><a href="#conversation.unsubscribefromstreamwithid(_:)">unsubscribe​From​Stream​With​Id(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">unsubscribeFromStreamWithId</span>(<span class="keyword">_</span> <span class="variable">streamId</span>: <span class="type">String</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Unsubscribes from a conversation's stream. The stream will be stopped on the user's side</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.getavailablestreamlist()">
+    <h3>
+        <code><a href="#conversation.getavailablestreamlist()">get​Available​Stream​List()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getAvailableStreamList</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamInfo"><span class="type">StreamInfo</span></a>]  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns information for media streams available in the conversation</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.getpublishedstreams()">
+    <h3>
+        <code><a href="#conversation.getpublishedstreams()">get​Published​Streams()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getPublishedStreams</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>]?  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns published streams list</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.getsubscribedstreams()">
+    <h3>
+        <code><a href="#conversation.getsubscribedstreams()">get​Subscribed​Streams()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getSubscribedStreams</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>]?  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns subscribed streams list</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.getcontacts()">
+    <h3>
+        <code><a href="#conversation.getcontacts()">get​Contacts()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContacts</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>]?  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns contacts list within the conversation</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.getname()">
+    <h3>
+        <code><a href="#conversation.getname()">get​Name()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getName</span>() -&gt; <span class="type">String</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns this conversation's room name</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.getconversationcall(_:)">
+    <h3>
+        <code><a href="#conversation.getconversationcall(_:)">get​Conversation​Call(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getConversationCall</span>(<span class="keyword">_</span> <span class="variable">streamId</span>: <span class="type">String</span>) -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationCall"><span class="type">ConversationCall</span></a>?  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns the conversation call for a stream with a given stream id</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.isjoined()">
+    <h3>
+        <code><a href="#conversation.isjoined()">is​Joined()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">isJoined</span>() -&gt; <span class="type">Bool</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Checks if the conversation is joined</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.startnewwhiteboardsession(completion:)">
+    <h3>
+        <code><a href="#conversation.startnewwhiteboardsession(completion:)">start​New​Whiteboard​Session(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">startNewWhiteboardSession</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">client</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardClient"><span class="type">WhiteboardClient</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.stopwhiteboardsession()">
+    <h3>
+        <code><a href="#conversation.stopwhiteboardsession()">stop​Whiteboard​Session()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">stopWhiteboardSession</span>()  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.checkaccess(completion:)">
+    <h3>
+        <code><a href="#conversation.checkaccess(completion:)">check​Access(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">checkAccess</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">access</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccess"><span class="type">ConversationAccess</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns the access status of the conversation</p>
+
+</div>
+</div>
+<div role="article" class="function" id="conversation.pushmedia(media:options:completion:)">
+    <h3>
+        <code><a href="#conversation.pushmedia(media:options:completion:)">push​Media(media:​options:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">pushMedia</span>(<span class="variable">media</span>: <span class="type">Data</span>, <span class="variable">options</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">media</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaUploaded"><span class="type">MediaUploaded</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.fetchmedialist(options:completion:)">
+    <h3>
+        <code><a href="#conversation.fetchmedialist(options:completion:)">fetch​Media​List(options:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">fetchMediaList</span>(<span class="variable">options</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">medias</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Media"><span class="type">Media</span></a>]?) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.getmoderator()">
+    <h3>
+        <code><a href="#conversation.getmoderator()">get​Moderator()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getModerator</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>?  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.sendrawdata(data:)">
+    <h3>
+        <code><a href="#conversation.sendrawdata(data:)">send​Raw​Data(data:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendRawData</span>(<span class="variable">data</span>: [<span class="type">String</span>: <span class="keyword">Any</span>])  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.typeofname(_:)">
+    <h3>
+        <code><a href="#conversation.typeofname(_:)">type​OfName(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">typeOfName</span>(<span class="keyword">_</span> <span class="variable">name</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccessType"><span class="type">ConversationAccessType</span></a>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.isnamevalid(_:)">
+    <h3>
+        <code><a href="#conversation.isnamevalid(_:)">is​Name​Valid(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">isNameValid</span>(<span class="keyword">_</span> <span class="variable">name</span>: <span class="type">String</span>) -&gt; <span class="type">Bool</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="conversation.onevent(_:_:)">
+    <h3>
+        <code><a href="#conversation.onevent(_:_:)">on​Event(_:​_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationEvent"><span class="type">ConversationEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:08+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>

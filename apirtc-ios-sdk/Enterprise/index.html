@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - Enterprise</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#methods">Methods</a><ul><li class="function"><a href="#enterprise.getid()">get​Id()</a></li><li class="function"><a href="#enterprise.fetchenterpriseinformation(options:completion:)">fetch​Enterprise​Information(options:​completion:​)</a></li><li class="function"><a href="#enterprise.fetchsiteagents(sitekey:options:completion:)">fetch​Site​Agents(site​Key:​options:​completion:​)</a></li><li class="function"><a href="#enterprise.createprivateconference(_:completion:)">create​Private​Conference(_:​completion:​)</a></li><li class="function"><a href="#enterprise.getavailableconferences(completion:)">get​Available​Conferences(completion:​)</a></li><li class="function"><a href="#enterprise.getcontacts(completion:)">get​Contacts(completion:​)</a></li><li class="function"><a href="#enterprise.gettags(webconferenceid:completion:)">get​Tags(web​Conference​Id:​completion:​)</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">Enterprise</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Enterprise</span>  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>This class refers to the user's enterprise</p>
+
+</div>
+
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="enterprise.getid()">
+    <h3>
+        <code><a href="#enterprise.getid()">get​Id()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getId</span>() -&gt; <span class="type">Int</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="enterprise.fetchenterpriseinformation(options:completion:)">
+    <h3>
+        <code><a href="#enterprise.fetchenterpriseinformation(options:completion:)">fetch​Enterprise​Information(options:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">fetchEnterpriseInformation</span>(<span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/FetchEnterpriseInformationOptions"><span class="type">FetchEnterpriseInformationOptions</span></a>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">info</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/EnterpriseInformation"><span class="type">EnterpriseInformation</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Fetch enterprise information if available</p>
+
+</div>
+</div>
+<div role="article" class="function" id="enterprise.fetchsiteagents(sitekey:options:completion:)">
+    <h3>
+        <code><a href="#enterprise.fetchsiteagents(sitekey:options:completion:)">fetch​Site​Agents(site​Key:​options:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">fetchSiteAgents</span>(<span class="variable">siteKey</span>: <span class="type">String</span>, <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/FetchSiteAgentsOptions"><span class="type">FetchSiteAgentsOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">agents</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Agent"><span class="type">Agent</span></a>]?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Fetch agents from a site using its siteKey</p>
+
+</div>
+</div>
+<div role="article" class="function" id="enterprise.createprivateconference(_:completion:)">
+    <h3>
+        <code><a href="#enterprise.createprivateconference(_:completion:)">create​Private​Conference(_:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">createPrivateConference</span>(<span class="keyword">_</span> <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/PrivateConferenceCreationOptions"><span class="type">PrivateConferenceCreationOptions</span></a>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">conference</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference"><span class="type">Conference</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Create a new private conference on the cloud</p>
+
+</div>
+</div>
+<div role="article" class="function" id="enterprise.getavailableconferences(completion:)">
+    <h3>
+        <code><a href="#enterprise.getavailableconferences(completion:)">get​Available​Conferences(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getAvailableConferences</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">conferences</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference"><span class="type">Conference</span></a>]?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns enterprise conferences available to the user</p>
+
+</div>
+</div>
+<div role="article" class="function" id="enterprise.getcontacts(completion:)">
+    <h3>
+        <code><a href="#enterprise.getcontacts(completion:)">get​Contacts(completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContacts</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">conferences</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>]?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns contact list for enterprise</p>
+
+</div>
+</div>
+<div role="article" class="function" id="enterprise.gettags(webconferenceid:completion:)">
+    <h3>
+        <code><a href="#enterprise.gettags(webconferenceid:completion:)">get​Tags(web​Conference​Id:​completion:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getTags</span>(<span class="variable">webConferenceId</span>: <span class="type">String</span>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">tags</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/EnterpriseTag"><span class="type">EnterpriseTag</span></a>]?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:07+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>

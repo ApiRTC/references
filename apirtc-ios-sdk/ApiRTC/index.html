@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - ApiRTC</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#apirtc.test">test</a></li><li class="variable"><a href="#apirtc.cloudapi">cloud​Api</a></li><li class="variable"><a href="#apirtc.version">version</a></li><li class="variable"><a href="#apirtc.build">build</a></li><li class="variable"><a href="#apirtc.iscloudserveravailabilitycheckerenabled">is​Cloud​Server​Availability​Checker​Enabled</a></li><li class="variable"><a href="#apirtc.isautoreconnectenabled">is​Auto​Reconnect​Enabled</a></li><li class="variable"><a href="#apirtc.logtypes">log​Types</a></li><li class="variable"><a href="#apirtc.issocketdebuglogenabled">is​Socket​Debug​Log​Enabled</a></li><li class="variable"><a href="#apirtc.ismetainfologenabled">is​Meta​Info​Log​Enabled</a></li><li class="variable"><a href="#apirtc.ispresenceupdateslogsuppressed">is​Presence​Updates​Log​Suppressed</a></li><li class="variable"><a href="#apirtc.islogtofileenabled">is​Log​ToFile​Enabled</a></li></ul></li><li><a href="#methods">Methods</a><ul><li class="function"><a href="#apirtc.setcloudserveravailabilitychecker(enabled:)">set​Cloud​Server​Availability​Checker(enabled:​)</a></li><li class="function"><a href="#apirtc.setautoreconnectenabled(enabled:)">set​Auto​Reconnect​Enabled(enabled:​)</a></li><li class="function"><a href="#apirtc.setlogtypes(_:)">set​Log​Types(_:​)</a></li><li class="function"><a href="#apirtc.setsocketdebuglog(enabled:)">set​Socket​Debug​Log(enabled:​)</a></li><li class="function"><a href="#apirtc.setmetainfolog(enabled:)">set​Meta​Info​Log(enabled:​)</a></li><li class="function"><a href="#apirtc.setpresencelogsuppressed(_:)">set​Presence​Log​Suppressed(_:​)</a></li><li class="function"><a href="#apirtc.setexternalcameramanagementenabled(_:)">set​External​Camera​Management​Enabled(_:​)</a></li><li class="function"><a href="#apirtc.setlogtofile(enabled:)">set​Log​ToFile(enabled:​)</a></li><li class="function"><a href="#apirtc.addtologfile(_:)">add​ToLog​File(_:​)</a></li><li class="function"><a href="#apirtc.clearlogfile()">clear​Log​File()</a></li><li class="function"><a href="#apirtc.getlogfileurl()">get​Log​File​URL()</a></li><li class="function"><a href="#apirtc.setaudiooutput(_:)">set​Audio​Output(_:​)</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Class</small>
+    <code class="name">Api​RTC</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ApiRTC"><span class="type">ApiRTC</span></a>  </body></html></code></pre>
+</div>
+
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="apirtc.test">
+    <h3>
+        <code><a href="#apirtc.test">test</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">var</span> <span class="variable">test</span> = <span class="string literal">"</span><span class="string literal">Test</span><span class="string literal">"</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.cloudapi">
+    <h3>
+        <code><a href="#apirtc.cloudapi">cloud​Api</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">var</span> <span class="variable">cloudApi</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CloudApi"><span class="type">CloudApi</span></a>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.version">
+    <h3>
+        <code><a href="#apirtc.version">version</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">var</span> <span class="variable">version</span>: <span class="type">String</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.build">
+    <h3>
+        <code><a href="#apirtc.build">build</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">var</span> <span class="variable">build</span>: <span class="type">String</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.iscloudserveravailabilitycheckerenabled">
+    <h3>
+        <code><a href="#apirtc.iscloudserveravailabilitycheckerenabled">is​Cloud​Server​Availability​Checker​Enabled</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">isCloudServerAvailabilityCheckerEnabled</span>: <span class="type">Bool</span> = <span class="keyword">false</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.isautoreconnectenabled">
+    <h3>
+        <code><a href="#apirtc.isautoreconnectenabled">is​Auto​Reconnect​Enabled</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">isAutoReconnectEnabled</span>: <span class="type">Bool</span> = <span class="keyword">true</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.logtypes">
+    <h3>
+        <code><a href="#apirtc.logtypes">log​Types</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">logTypes</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/LogType"><span class="type">LogType</span></a>]? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Enabled log types</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.issocketdebuglogenabled">
+    <h3>
+        <code><a href="#apirtc.issocketdebuglogenabled">is​Socket​Debug​Log​Enabled</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">isSocketDebugLogEnabled</span>: <span class="type">Bool</span> = <span class="keyword">false</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.ismetainfologenabled">
+    <h3>
+        <code><a href="#apirtc.ismetainfologenabled">is​Meta​Info​Log​Enabled</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">isMetaInfoLogEnabled</span>: <span class="type">Bool</span> = <span class="keyword">false</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.ispresenceupdateslogsuppressed">
+    <h3>
+        <code><a href="#apirtc.ispresenceupdateslogsuppressed">is​Presence​Updates​Log​Suppressed</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">isPresenceUpdatesLogSuppressed</span>: <span class="type">Bool</span> = <span class="keyword">false</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="apirtc.islogtofileenabled">
+    <h3>
+        <code><a href="#apirtc.islogtofileenabled">is​Log​ToFile​Enabled</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">isLogToFileEnabled</span>: <span class="type">Bool</span> = <span class="keyword">false</span></body></html></code></pre>
+</div>
+</div>
+    </section>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="apirtc.setcloudserveravailabilitychecker(enabled:)">
+    <h3>
+        <code><a href="#apirtc.setcloudserveravailabilitychecker(enabled:)">set​Cloud​Server​Availability​Checker(enabled:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setCloudServerAvailabilityChecker</span>(<span class="variable">enabled</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Enables network checker that checks state of network (wi-fi, cellular, none) and connection between SDK and Cloud server. <code>Session</code> connection state will also depend on that. Should be set before <code>Session</code> creation</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setautoreconnectenabled(enabled:)">
+    <h3>
+        <code><a href="#apirtc.setautoreconnectenabled(enabled:)">set​Auto​Reconnect​Enabled(enabled:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setAutoReconnectEnabled</span>(<span class="variable">enabled</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Enables session autoreconnect with network availability</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setlogtypes(_:)">
+    <h3>
+        <code><a href="#apirtc.setlogtypes(_:)">set​Log​Types(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setLogTypes</span>(<span class="keyword">_</span> <span class="variable">types</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/LogType"><span class="type">LogType</span></a>]?)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Sets log types</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setsocketdebuglog(enabled:)">
+    <h3>
+        <code><a href="#apirtc.setsocketdebuglog(enabled:)">set​Socket​Debug​Log(enabled:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setSocketDebugLog</span>(<span class="variable">enabled</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Enables logging of socket connection debug info (large amount of output)</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setmetainfolog(enabled:)">
+    <h3>
+        <code><a href="#apirtc.setmetainfolog(enabled:)">set​Meta​Info​Log(enabled:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setMetaInfoLog</span>(<span class="variable">enabled</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Enables log emta enfo output (file name, method name, line number)</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setpresencelogsuppressed(_:)">
+    <h3>
+        <code><a href="#apirtc.setpresencelogsuppressed(_:)">set​Presence​Log​Suppressed(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setPresenceLogSuppressed</span>(<span class="keyword">_</span> <span class="variable">value</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Mutes excessive presence updates log output</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setexternalcameramanagementenabled(_:)">
+    <h3>
+        <code><a href="#apirtc.setexternalcameramanagementenabled(_:)">set​External​Camera​Management​Enabled(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setExternalCameraManagementEnabled</span>(<span class="keyword">_</span> <span class="variable">value</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Mutes excessive presence updates log output</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setlogtofile(enabled:)">
+    <h3>
+        <code><a href="#apirtc.setlogtofile(enabled:)">set​Log​ToFile(enabled:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setLogToFile</span>(<span class="variable">enabled</span>: <span class="type">Bool</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Enables log output writing to file that may be retrived by <code>ApiRTC.getLogFileURL()</code>
+Note that the log file may grow fast with detailed log level</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.addtologfile(_:)">
+    <h3>
+        <code><a href="#apirtc.addtologfile(_:)">add​ToLog​File(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">addToLogFile</span>(<span class="keyword">_</span> <span class="variable">string</span>: <span class="type">String</span>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Adds arbitrary string to the log file</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.clearlogfile()">
+    <h3>
+        <code><a href="#apirtc.clearlogfile()">clear​Log​File()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">clearLogFile</span>()  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Cleans log file</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.getlogfileurl()">
+    <h3>
+        <code><a href="#apirtc.getlogfileurl()">get​Log​File​URL()</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">getLogFileURL</span>() <span class="keyword">throws</span> -&gt; <span class="type">URL</span>?  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Returns log file URL</p>
+
+</div>
+</div>
+<div role="article" class="function" id="apirtc.setaudiooutput(_:)">
+    <h3>
+        <code><a href="#apirtc.setaudiooutput(_:)">set​Audio​Output(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">setAudioOutput</span>(<span class="keyword">_</span> <span class="variable">output</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/AudioOutput"><span class="type">AudioOutput</span></a>)  </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>/</p>
+
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:07+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>

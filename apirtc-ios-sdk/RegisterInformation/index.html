@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRTC iOS SDK - RegisterInformation</title>
+    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+            <strong>
+                ApiRTC iOS SDK
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#initializers">Initializers</a><ul><li class="initializer"><a href="#registerinformation.init(cloudurl:cloudfetchretries:id:cloudfetchretrydelay:mcu:css:password:groups:subscribeto:userdata:turnserveraddress:)">init(cloud​Url:​cloud​Fetch​Retries:​id:​cloud​Fetch​Retry​Delay:​mcu:​css:​password:​groups:​subscribe​To:​user​Data:​turn​Server​Address:​)</a></li><li class="initializer"><a href="#registerinformation.init(password:)">init(password:​)</a></li></ul></li><li><a href="#properties">Properties</a><ul><li class="variable"><a href="#registerinformation.cloudurl">cloud​Url</a></li><li class="variable"><a href="#registerinformation.cloudfetchretries">cloud​Fetch​Retries</a></li><li class="variable"><a href="#registerinformation.cloudfetchretrydelay">cloud​Fetch​Retry​Delay</a></li><li class="variable"><a href="#registerinformation.id">id</a></li><li class="variable"><a href="#registerinformation.mcu">mcu</a></li><li class="variable"><a href="#registerinformation.ccs">ccs</a></li><li class="variable"><a href="#registerinformation.password">password</a></li><li class="variable"><a href="#registerinformation.groups">groups</a></li><li class="variable"><a href="#registerinformation.subscribeto">subscribe​To</a></li><li class="variable"><a href="#registerinformation.userdata">user​Data</a></li><li class="variable"><a href="#registerinformation.turnserveraddress">turn​Server​Address</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Structure</small>
+    <code class="name">Register​Information</code>
+</h1>
+
+<div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">struct</span> <span class="type">RegisterInformation</span>  </body></html></code></pre>
+</div>
+
+    <section id="initializers">
+        <h2>Initializers</h2>
+
+        <div role="article" class="initializer" id="registerinformation.init(cloudurl:cloudfetchretries:id:cloudfetchretrydelay:mcu:css:password:groups:subscribeto:userdata:turnserveraddress:)">
+    <h3>
+        <code><a href="#registerinformation.init(cloudurl:cloudfetchretries:id:cloudfetchretrydelay:mcu:css:password:groups:subscribeto:userdata:turnserveraddress:)">init(cloud​Url:​cloud​Fetch​Retries:​id:​cloud​Fetch​Retry​Delay:​mcu:​css:​password:​groups:​subscribe​To:​user​Data:​turn​Server​Address:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">init</span>(
+        <span class="variable">cloudUrl</span>: <span class="type">String</span>? = <span class="keyword">nil</span>,
+        <span class="variable">cloudFetchRetries</span>: <span class="type">Int</span>? = <span class="keyword">nil</span>,
+        <span class="variable">id</span>: <span class="type">String</span>? = <span class="keyword">nil</span>,
+        <span class="variable">cloudFetchRetryDelay</span>: <span class="type">TimeInterval</span>? = <span class="keyword">nil</span>,
+        <span class="variable">mcu</span>: <span class="type">String</span>? = <span class="keyword">nil</span>,
+        <span class="variable">css</span>: <span class="type">String</span>? = <span class="keyword">nil</span>,
+        <span class="variable">password</span>: <span class="type">String</span>? = <span class="keyword">nil</span>,
+        <span class="variable">groups</span>: [<span class="type">String</span>]? = <span class="keyword">nil</span>,
+        <span class="variable">subscribeTo</span>: [<span class="type">String</span>]? = <span class="keyword">nil</span>,
+        <span class="variable">userData</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>,
+        <span class="variable">turnServerAddress</span>: <span class="type">String</span>? = <span class="keyword">nil</span>
+        )  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="initializer" id="registerinformation.init(password:)">
+    <h3>
+        <code><a href="#registerinformation.init(password:)">init(password:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">init</span>(<span class="variable">password</span>: <span class="type">String</span>)  </body></html></code></pre>
+</div>
+</div>
+    </section>
+    <section id="properties">
+        <h2>Properties</h2>
+
+        <div role="article" class="variable" id="registerinformation.cloudurl">
+    <h3>
+        <code><a href="#registerinformation.cloudurl">cloud​Url</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">cloudUrl</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Registration Apizee cloud url</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.cloudfetchretries">
+    <h3>
+        <code><a href="#registerinformation.cloudfetchretries">cloud​Fetch​Retries</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">cloudFetchRetries</span>: <span class="type">Int</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Number of fetch retries when sending request to Apizee cloud (default value is 100)</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.cloudfetchretrydelay">
+    <h3>
+        <code><a href="#registerinformation.cloudfetchretrydelay">cloud​Fetch​Retry​Delay</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">cloudFetchRetryDelay</span>: <span class="type">TimeInterval</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Delay in s between fetch retries when sending request to Apizee cloud. This delay is increased on each retry: retryDelay = retryDelay x retryNumber (default value is 0.2 s)</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.id">
+    <h3>
+        <code><a href="#registerinformation.id">id</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">id</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Set a predefined id for the session instead of the cloud id or a random id</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.mcu">
+    <h3>
+        <code><a href="#registerinformation.mcu">mcu</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">mcu</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Preferred MCU server</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.ccs">
+    <h3>
+        <code><a href="#registerinformation.ccs">ccs</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">ccs</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Preferred CCS server</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.password">
+    <h3>
+        <code><a href="#registerinformation.password">password</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">password</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>UserAgent password for <code>UserAgentURI.apizee(_:)</code></p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.groups">
+    <h3>
+        <code><a href="#registerinformation.groups">groups</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">groups</span>: [<span class="type">String</span>]? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Presence groups the user agent will join on registration</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.subscribeto">
+    <h3>
+        <code><a href="#registerinformation.subscribeto">subscribe​To</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">subscribeTo</span>: [<span class="type">String</span>]? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Presence groups the user agent will subscribe to on registration</p>
+
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.userdata">
+    <h3>
+        <code><a href="#registerinformation.userdata">user​Data</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">userData</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="variable" id="registerinformation.turnserveraddress">
+    <h3>
+        <code><a href="#registerinformation.turnserveraddress">turn​Server​Address</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">turnServerAddress</span>: <span class="type">String</span>? </body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Turn server address to be used for all calls (Default value is : mp1.apizee.com)</p>
+
+</div>
+</div>
+    </section>
+
+
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-06-16T17:10:07+0200">June 16, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>
