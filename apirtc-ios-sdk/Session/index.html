@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - Session</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -37,7 +37,7 @@
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Session</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SessionEvent"><span class="type">SessionEvent</span></a>&gt;  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Session</span>: <a href="./Observable"><span class="type">Observable</span></a>&lt;<a href="./SessionEvent"><span class="type">SessionEvent</span></a>&gt;  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Session represent the connected environment of an UA.
@@ -60,7 +60,7 @@ It's created after UA registration.</p>
 <!-- Session -->
 <g id="node1" class="node class current">
 <title>Session</title>
-<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Session" xlink:title="Session">
+<g id="a_node1"><a xlink:href="./Session" xlink:title="Session">
 <path fill="none" stroke="black" stroke-width="3" d="M528,-108C528,-108 336,-108 336,-108 330,-108 324,-102 324,-96 324,-96 324,-84 324,-84 324,-78 330,-72 336,-72 336,-72 528,-72 528,-72 534,-72 540,-78 540,-84 540,-84 540,-96 540,-96 540,-102 534,-108 528,-108"/>
 <text text-anchor="middle" x="432" y="-86.3" font-family="Menlo" font-size="14.00">Session</text>
 </a>
@@ -117,7 +117,7 @@ It's created after UA registration.</p>
         <code><a href="#session.connectionstate">connection​State</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">connectionState</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SessionConnectionState"><span class="type">SessionConnectionState</span></a> = .<span class="variable">offline</span>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">connectionState</span>: <a href="./SessionConnectionState"><span class="type">SessionConnectionState</span></a> = .<span class="variable">offline</span>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Session connection state</p>
@@ -129,7 +129,7 @@ It's created after UA registration.</p>
         <code><a href="#session.externalcamerastate">external​Camera​State</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">var</span> <span class="variable">externalCameraState</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ExternalCameraState"><span class="type">ExternalCameraState</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">var</span> <span class="variable">externalCameraState</span>: <a href="./ExternalCameraState"><span class="type">ExternalCameraState</span></a>  </body></html></code></pre>
 </div>
 </div>
     </section>
@@ -179,7 +179,7 @@ Users within the group and users who subscribed to it will be notified</p>
         <code><a href="#session.getcontact(id:)">get​Contact(id:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContact</span>(<span class="variable">id</span>: <span class="type">String</span>) -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContact</span>(<span class="variable">id</span>: <span class="type">String</span>) -&gt; <a href="./Contact"><span class="type">Contact</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns contact with id</p>
@@ -191,7 +191,7 @@ Users within the group and users who subscribed to it will be notified</p>
         <code><a href="#session.getcontacts(group:)">get​Contacts(group:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContacts</span>(<span class="variable">group</span>: <span class="type">String</span>? = <span class="keyword">nil</span>) -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>]?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContacts</span>(<span class="variable">group</span>: <span class="type">String</span>? = <span class="keyword">nil</span>) -&gt; [<a href="./Contact"><span class="type">Contact</span></a>]?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns contact for a given group</p>
@@ -203,7 +203,7 @@ Users within the group and users who subscribed to it will be notified</p>
         <code><a href="#session.getorcreateconversation(name:)">get​OrCreate​Conversation(name:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getOrCreateConversation</span>(<span class="variable">name</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation"><span class="type">Conversation</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getOrCreateConversation</span>(<span class="variable">name</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="./Conversation"><span class="type">Conversation</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Gets or creates a conversation for a given name
@@ -217,7 +217,7 @@ Private conversation name format is alphanumeric:alphanumeric</p>
         <code><a href="#session.getorcreateconversation(url:)">get​OrCreate​Conversation(url:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getOrCreateConversation</span>(<span class="variable">url</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation"><span class="type">Conversation</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getOrCreateConversation</span>(<span class="variable">url</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="./Conversation"><span class="type">Conversation</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Gets or creates a conversation for a given url, convenient if the application handles links.
@@ -232,7 +232,7 @@ Private conversation: http(s)://example.com/private/enterpriseId(alphanumeric)/c
         <code><a href="#session.getactiveconversations()">get​Active​Conversations()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getActiveConversations</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation"><span class="type">Conversation</span></a>]?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getActiveConversations</span>() -&gt; [<a href="./Conversation"><span class="type">Conversation</span></a>]?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Gets all currently joined conversations</p>
@@ -252,7 +252,7 @@ Private conversation: http(s)://example.com/private/enterpriseId(alphanumeric)/c
         <code><a href="#session.sendrawdata(contact:data:)">send​Raw​Data(contact:​data:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendRawData</span>(<span class="variable">contact</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>, <span class="variable">data</span>: [<span class="type">String</span>: <span class="keyword">Any</span>])  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendRawData</span>(<span class="variable">contact</span>: <a href="./Contact"><span class="type">Contact</span></a>, <span class="variable">data</span>: [<span class="type">String</span>: <span class="keyword">Any</span>])  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="session.getactivesession()">
@@ -260,7 +260,7 @@ Private conversation: http(s)://example.com/private/enterpriseId(alphanumeric)/c
         <code><a href="#session.getactivesession()">get​Active​Session()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">getActiveSession</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Session"><span class="type">Session</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">getActiveSession</span>() -&gt; <a href="./Session"><span class="type">Session</span></a>?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns currently active session</p>
@@ -272,7 +272,7 @@ Private conversation: http(s)://example.com/private/enterpriseId(alphanumeric)/c
         <code><a href="#session.getuseragent()">get​User​Agent()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getUserAgent</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/UserAgent"><span class="type">UserAgent</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getUserAgent</span>() -&gt; <a href="./UserAgent"><span class="type">UserAgent</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns session's <code>UserAgent</code></p>
@@ -284,7 +284,7 @@ Private conversation: http(s)://example.com/private/enterpriseId(alphanumeric)/c
         <code><a href="#session.onevent(_:_:)">on​Event(_:​_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SessionEvent"><span class="type">SessionEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="./SessionEvent"><span class="type">SessionEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
     </section>

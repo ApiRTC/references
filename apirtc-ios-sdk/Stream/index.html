@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - Stream</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -37,7 +37,7 @@
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamEvent"><span class="type">StreamEvent</span></a>&gt;  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Stream</span>: <a href="./Observable"><span class="type">Observable</span></a>&lt;<a href="./StreamEvent"><span class="type">StreamEvent</span></a>&gt;  </body></html></code></pre>
 </div>
 <section id="relationships">
     <h2 hidden>Relationships</h2>
@@ -55,7 +55,7 @@
 <!-- Stream -->
 <g id="node1" class="node class current">
 <title>Stream</title>
-<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream" xlink:title="Stream">
+<g id="a_node1"><a xlink:href="./Stream" xlink:title="Stream">
 <path fill="none" stroke="black" stroke-width="3" d="M481.35,-143.64C481.35,-143.64 289.35,-143.64 289.35,-143.64 283.35,-143.64 277.35,-137.64 277.35,-131.64 277.35,-131.64 277.35,-119.64 277.35,-119.64 277.35,-113.64 283.35,-107.64 289.35,-107.64 289.35,-107.64 481.35,-107.64 481.35,-107.64 487.35,-107.64 493.35,-113.64 493.35,-119.64 493.35,-119.64 493.35,-131.64 493.35,-131.64 493.35,-137.64 487.35,-143.64 481.35,-143.64"/>
 <text text-anchor="middle" x="385.35" y="-121.94" font-family="Menlo" font-size="14.00">Stream</text>
 </a>
@@ -125,7 +125,7 @@
         <code><a href="#stream.type">type</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">type</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamType"><span class="type">StreamType</span></a> = .<span class="variable">unknown</span></body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">type</span>: <a href="./StreamType"><span class="type">StreamType</span></a> = .<span class="variable">unknown</span></body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="stream.direction">
@@ -133,7 +133,7 @@
         <code><a href="#stream.direction">direction</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">var</span> <span class="variable">direction</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamDirection"><span class="type">StreamDirection</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">var</span> <span class="variable">direction</span>: <a href="./StreamDirection"><span class="type">StreamDirection</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Stream pub/sub direction</p>
@@ -181,7 +181,7 @@
         <code><a href="#stream.mediastream">media​Stream</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">mediaStream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaStream"><span class="type">MediaStream</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">mediaStream</span>: <a href="./MediaStream"><span class="type">MediaStream</span></a>?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p><code>MediaStream</code> if applicable</p>
@@ -197,7 +197,7 @@
         <code><a href="#stream.createcamerastream(position:format:)">create​Camera​Stream(position:​format:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">createCameraStream</span>(<span class="variable">position</span>: <span class="type">AVCaptureDevice</span>.<span class="type">Position</span>, <span class="variable">format</span>: <span class="type">AVCaptureDevice</span>.<span class="type">Format</span>? = <span class="keyword">nil</span>) <span class="keyword">throws</span> -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">createCameraStream</span>(<span class="variable">position</span>: <span class="type">AVCaptureDevice</span>.<span class="type">Position</span>, <span class="variable">format</span>: <span class="type">AVCaptureDevice</span>.<span class="type">Format</span>? = <span class="keyword">nil</span>) <span class="keyword">throws</span> -&gt; <a href="./Stream"><span class="type">Stream</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Creates a camera stream with given settings</p>
@@ -209,7 +209,7 @@
         <code><a href="#stream.createaudiostream()">create​Audio​Stream()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">createAudioStream</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">createAudioStream</span>() -&gt; <a href="./Stream"><span class="type">Stream</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Creates audio stream</p>
@@ -221,7 +221,7 @@
         <code><a href="#stream.createexternalcamerastream()">create​External​Camera​Stream()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">createExternalCameraStream</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">createExternalCameraStream</span>() -&gt; <a href="./Stream"><span class="type">Stream</span></a>  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="stream.muteaudio()">
@@ -357,7 +357,7 @@ If this stream is subscribed from another contact, muting the stream will have n
         <code><a href="#stream.getowner()">get​Owner()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getOwner</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getOwner</span>() -&gt; <a href="./Contact"><span class="type">Contact</span></a>  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns stream's owner</p>
@@ -369,7 +369,7 @@ If this stream is subscribed from another contact, muting the stream will have n
         <code><a href="#stream.getconversations()">get​Conversations()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getConversations</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation"><span class="type">Conversation</span></a>]?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getConversations</span>() -&gt; [<a href="./Conversation"><span class="type">Conversation</span></a>]?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns conversations the stream is published in</p>
@@ -393,7 +393,7 @@ If this stream is subscribed from another contact, muting the stream will have n
         <code><a href="#stream.onevent(_:_:)">on​Event(_:​_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamEvent"><span class="type">StreamEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="./StreamEvent"><span class="type">StreamEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="stream.captureoutput(_:didoutput:from:)">

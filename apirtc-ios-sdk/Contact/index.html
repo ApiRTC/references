@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - Contact</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -37,7 +37,7 @@
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Contact</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactEvent"><span class="type">ContactEvent</span></a>&gt;  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Contact</span>: <a href="./Observable"><span class="type">Observable</span></a>&lt;<a href="./ContactEvent"><span class="type">ContactEvent</span></a>&gt;  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Designates another user which may or may not be currently connected</p>
@@ -59,7 +59,7 @@
 <!-- Contact -->
 <g id="node1" class="node class current">
 <title>Contact</title>
-<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact" xlink:title="Contact">
+<g id="a_node1"><a xlink:href="./Contact" xlink:title="Contact">
 <path fill="none" stroke="black" stroke-width="3" d="M528,-108C528,-108 336,-108 336,-108 330,-108 324,-102 324,-96 324,-96 324,-84 324,-84 324,-78 330,-72 336,-72 336,-72 528,-72 528,-72 534,-72 540,-78 540,-84 540,-84 540,-96 540,-96 540,-102 534,-108 528,-108"/>
 <text text-anchor="middle" x="432" y="-86.3" font-family="Menlo" font-size="14.00">Contact</text>
 </a>
@@ -116,7 +116,7 @@
         <code><a href="#contact.callstate">call​State</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">callState</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactCallState"><span class="type">ContactCallState</span></a>! </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">callState</span>: <a href="./ContactCallState"><span class="type">ContactCallState</span></a>! </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="contact.userdata">
@@ -160,7 +160,7 @@
         <code><a href="#contact.call(stream:options:completion:)">call(stream:​options:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">call</span>(<span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>? = <span class="keyword">nil</span>, <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/CallOptions"><span class="type">CallOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">call</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Call"><span class="type">Call</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">call</span>(<span class="variable">stream</span>: <a href="./Stream"><span class="type">Stream</span></a>? = <span class="keyword">nil</span>, <span class="variable">options</span>: <a href="./CallOptions"><span class="type">CallOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">call</span>: <a href="./Call"><span class="type">Call</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Invites the contact to a P2P call</p>
@@ -172,7 +172,7 @@
         <code><a href="#contact.onevent(_:_:)">on​Event(_:​_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ContactEvent"><span class="type">ContactEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="./ContactEvent"><span class="type">ContactEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="contact.sendmessage(message:completion:)">

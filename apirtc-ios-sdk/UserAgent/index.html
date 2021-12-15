@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - UserAgent</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -56,7 +56,7 @@ Once registered <code>Session</code> object can be used to communicate with othe
         <code><a href="#useragent.init(_:)">init(_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">init</span>(<span class="keyword">_</span> <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/UserAgentOptions"><span class="type">UserAgentOptions</span></a>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">init</span>(<span class="keyword">_</span> <span class="variable">options</span>: <a href="./UserAgentOptions"><span class="type">UserAgentOptions</span></a>)  </body></html></code></pre>
 </div>
 </div>
     </section>
@@ -88,7 +88,7 @@ Once registered <code>Session</code> object can be used to communicate with othe
         <code><a href="#useragent.register(registerinformation:completion:)">register(register​Information:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">register</span>(<span class="variable">registerInformation</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/RegisterInformation"><span class="type">RegisterInformation</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ( <span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">session</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Session"><span class="type">Session</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">register</span>(<span class="variable">registerInformation</span>: <a href="./RegisterInformation"><span class="type">RegisterInformation</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ( <span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">session</span>: <a href="./Session"><span class="type">Session</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Registers user on the server. If <code>UserAgentURI.apizee(_:)</code> is used, a password has to be specified in the <code>RegisterInformation</code></p>
@@ -100,7 +100,7 @@ Once registered <code>Session</code> object can be used to communicate with othe
         <code><a href="#useragent.unregister(options:completion:)">unregister(options:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">unregister</span>(<span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/DisconnectOptions"><span class="type">DisconnectOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">unregister</span>(<span class="variable">options</span>: <a href="./DisconnectOptions"><span class="type">DisconnectOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Unregisters and disconnects current <code>Session</code></p>
@@ -112,7 +112,7 @@ Once registered <code>Session</code> object can be used to communicate with othe
         <code><a href="#useragent.getcurrentsession()">get​Current​Session()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getCurrentSession</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Session"><span class="type">Session</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getCurrentSession</span>() -&gt; <a href="./Session"><span class="type">Session</span></a>?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns connected <code>Session</code> for this <code>UserAgent</code></p>
@@ -136,7 +136,7 @@ Once registered <code>Session</code> object can be used to communicate with othe
         <code><a href="#useragent.getwhiteboardclient()">get​Whiteboard​Client()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getWhiteboardClient</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardClient"><span class="type">WhiteboardClient</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getWhiteboardClient</span>() -&gt; <a href="./WhiteboardClient"><span class="type">WhiteboardClient</span></a>?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns current whiteboard client</p>
@@ -148,7 +148,7 @@ Once registered <code>Session</code> object can be used to communicate with othe
         <code><a href="#useragent.getenterprise()">get​Enterprise()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getEnterprise</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Enterprise"><span class="type">Enterprise</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getEnterprise</span>() -&gt; <a href="./Enterprise"><span class="type">Enterprise</span></a>?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns <code>Enterprise</code> (if user is registered using <code>UserAgentURI.apizee(_:)</code>)</p>

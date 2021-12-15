@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - WhiteboardClient</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -37,7 +37,7 @@
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">WhiteboardClient</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardEvent"><span class="type">WhiteboardEvent</span></a>&gt;  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">WhiteboardClient</span>: <a href="./Observable"><span class="type">Observable</span></a>&lt;<a href="./WhiteboardEvent"><span class="type">WhiteboardEvent</span></a>&gt;  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>WhiteboardClient using to control whiteboard tools, colors, views etc</p>
@@ -59,7 +59,7 @@
 <!-- WhiteboardClient -->
 <g id="node1" class="node class current">
 <title>WhiteboardClient</title>
-<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardClient" xlink:title="WhiteboardClient">
+<g id="a_node1"><a xlink:href="./WhiteboardClient" xlink:title="WhiteboardClient">
 <path fill="none" stroke="black" stroke-width="3" d="M518.13,-108C518.13,-108 326.13,-108 326.13,-108 320.13,-108 314.13,-102 314.13,-96 314.13,-96 314.13,-84 314.13,-84 314.13,-78 320.13,-72 326.13,-72 326.13,-72 518.13,-72 518.13,-72 524.13,-72 530.13,-78 530.13,-84 530.13,-84 530.13,-96 530.13,-96 530.13,-102 524.13,-108 518.13,-108"/>
 <text text-anchor="middle" x="422.13" y="-86.3" font-family="Menlo" font-size="14.00">WhiteboardClient</text>
 </a>
@@ -108,7 +108,7 @@
         <code><a href="#whiteboardclient.view">view</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="attribute">weak</span> <span class="keyword">var</span> <span class="variable">view</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardView"><span class="type">WhiteboardView</span></a>? </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="attribute">weak</span> <span class="keyword">var</span> <span class="variable">view</span>: <a href="./WhiteboardView"><span class="type">WhiteboardView</span></a>? </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Actual whiteboard view</p>
@@ -180,7 +180,7 @@
         <code><a href="#whiteboardclient.tool">tool</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">tool</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardTool"><span class="type">WhiteboardTool</span></a> = .<span class="variable">pen</span>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">tool</span>: <a href="./WhiteboardTool"><span class="type">WhiteboardTool</span></a> = .<span class="variable">pen</span>  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="whiteboardclient.sheetid">
@@ -220,7 +220,7 @@
         <code><a href="#whiteboardclient.setview(_:)">set​View(_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">setView</span>(<span class="keyword">_</span> <span class="variable">view</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardView"><span class="type">WhiteboardView</span></a>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">setView</span>(<span class="keyword">_</span> <span class="variable">view</span>: <a href="./WhiteboardView"><span class="type">WhiteboardView</span></a>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Sets whiteboard view</p>
@@ -292,7 +292,7 @@
         <code><a href="#whiteboardclient.settool(_:)">set​Tool(_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">setTool</span>(<span class="keyword">_</span> <span class="variable">tool</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardTool"><span class="type">WhiteboardTool</span></a>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">setTool</span>(<span class="keyword">_</span> <span class="variable">tool</span>: <a href="./WhiteboardTool"><span class="type">WhiteboardTool</span></a>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Sets actual tool</p>
@@ -364,7 +364,7 @@
         <code><a href="#whiteboardclient.onevent(_:_:)">on​Event(_:​_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardEvent"><span class="type">WhiteboardEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="./WhiteboardEvent"><span class="type">WhiteboardEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
     </section>

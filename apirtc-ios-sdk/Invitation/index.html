@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - Invitation</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -37,7 +37,7 @@
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Invitation</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/InvitationEvent"><span class="type">InvitationEvent</span></a>&gt;  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Invitation</span>: <a href="./Observable"><span class="type">Observable</span></a>&lt;<a href="./InvitationEvent"><span class="type">InvitationEvent</span></a>&gt;  </body></html></code></pre>
 </div>
 <section id="relationships">
     <h2 hidden>Relationships</h2>
@@ -55,7 +55,7 @@
 <!-- Invitation -->
 <g id="node1" class="node class current">
 <title>Invitation</title>
-<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Invitation" xlink:title="Invitation">
+<g id="a_node1"><a xlink:href="./Invitation" xlink:title="Invitation">
 <path fill="none" stroke="black" stroke-width="3" d="M653.93,-136.04C653.93,-136.04 461.93,-136.04 461.93,-136.04 455.93,-136.04 449.93,-130.04 449.93,-124.04 449.93,-124.04 449.93,-112.04 449.93,-112.04 449.93,-106.04 455.93,-100.04 461.93,-100.04 461.93,-100.04 653.93,-100.04 653.93,-100.04 659.93,-100.04 665.93,-106.04 665.93,-112.04 665.93,-112.04 665.93,-124.04 665.93,-124.04 665.93,-130.04 659.93,-136.04 653.93,-136.04"/>
 <text text-anchor="middle" x="557.93" y="-114.34" font-family="Menlo" font-size="14.00">Invitation</text>
 </a>
@@ -88,7 +88,7 @@
 <!-- ReceivedInvitation -->
 <g id="node2" class="node class">
 <title>ReceivedInvitation</title>
-<g id="a_node2"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/ReceivedInvitation" xlink:title="ReceivedInvitation">
+<g id="a_node2"><a xlink:href="./ReceivedInvitation" xlink:title="ReceivedInvitation">
 <path fill="none" stroke="black" d="M1095.37,-71.16C1095.37,-71.16 903.37,-71.16 903.37,-71.16 897.37,-71.16 891.37,-65.16 891.37,-59.16 891.37,-59.16 891.37,-47.16 891.37,-47.16 891.37,-41.16 897.37,-35.16 903.37,-35.16 903.37,-35.16 1095.37,-35.16 1095.37,-35.16 1101.37,-35.16 1107.37,-41.16 1107.37,-47.16 1107.37,-47.16 1107.37,-59.16 1107.37,-59.16 1107.37,-65.16 1101.37,-71.16 1095.37,-71.16"/>
 <text text-anchor="middle" x="999.37" y="-49.46" font-family="Menlo" font-size="14.00">ReceivedInvitation</text>
 </a>
@@ -103,7 +103,7 @@
 <!-- SentInvitation -->
 <g id="node3" class="node class">
 <title>SentInvitation</title>
-<g id="a_node3"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/SentInvitation" xlink:title="SentInvitation">
+<g id="a_node3"><a xlink:href="./SentInvitation" xlink:title="SentInvitation">
 <path fill="none" stroke="black" d="M368.44,-36C368.44,-36 176.44,-36 176.44,-36 170.44,-36 164.44,-30 164.44,-24 164.44,-24 164.44,-12 164.44,-12 164.44,-6 170.44,0 176.44,0 176.44,0 368.44,0 368.44,0 374.44,0 380.44,-6 380.44,-12 380.44,-12 380.44,-24 380.44,-24 380.44,-30 374.44,-36 368.44,-36"/>
 <text text-anchor="middle" x="272.44" y="-14.3" font-family="Menlo" font-size="14.00">SentInvitation</text>
 </a>
@@ -123,10 +123,10 @@
 </figure>
         <h3>Subclasses</h3>
 <dl>
-    <dt class="class"><code><a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ReceivedInvitation">ReceivedInvitation</a></code></dt>
+    <dt class="class"><code><a href="./ReceivedInvitation">ReceivedInvitation</a></code></dt>
 <dd><p>Defines an invitation received by current user</p>
 </dd>
-<dt class="class"><code><a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SentInvitation">SentInvitation</a></code></dt>
+<dt class="class"><code><a href="./SentInvitation">SentInvitation</a></code></dt>
 <dd><p>Defines an invitation sent by current user</p>
 </dd>
 </dl>
@@ -151,7 +151,7 @@
         <code><a href="#invitation.status">status</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">status</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/InvitationStatus"><span class="type">InvitationStatus</span></a> = .<span class="variable">standBy</span>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">status</span>: <a href="./InvitationStatus"><span class="type">InvitationStatus</span></a> = .<span class="variable">standBy</span>  </body></html></code></pre>
 </div>
 </div>
     </section>
@@ -163,7 +163,7 @@
         <code><a href="#invitation.onevent(_:_:)">on​Event(_:​_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/InvitationEvent"><span class="type">InvitationEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="./InvitationEvent"><span class="type">InvitationEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
     </section>

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApiRTC iOS SDK - Conversation</title>
-    <link rel="stylesheet" type="text/css" href="https://dev.apirtc.com/apiRTC_iOS-SDK/all.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
 </head>
 <body>
     <header>
-        <a href="https://dev.apirtc.com/apiRTC_iOS-SDK">
+        <a href=".">
             <strong>
                 ApiRTC iOS SDK
             </strong>
@@ -37,7 +37,7 @@
 </h1>
 
 <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Conversation</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Observable"><span class="type">Observable</span></a>&lt;<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationEvent"><span class="type">ConversationEvent</span></a>&gt;  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="type">Conversation</span>: <a href="./Observable"><span class="type">Observable</span></a>&lt;<a href="./ConversationEvent"><span class="type">ConversationEvent</span></a>&gt;  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Users are able to interact with each other by entering a conversation in a N-N fashion.
@@ -60,7 +60,7 @@ The client is able to listen to conversation events that will be fired once the 
 <!-- Conversation -->
 <g id="node1" class="node class current">
 <title>Conversation</title>
-<g id="a_node1"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conversation" xlink:title="Conversation">
+<g id="a_node1"><a xlink:href="./Conversation" xlink:title="Conversation">
 <path fill="none" stroke="black" stroke-width="3" d="M542.15,-143.64C542.15,-143.64 350.15,-143.64 350.15,-143.64 344.15,-143.64 338.15,-137.64 338.15,-131.64 338.15,-131.64 338.15,-119.64 338.15,-119.64 338.15,-113.64 344.15,-107.64 350.15,-107.64 350.15,-107.64 542.15,-107.64 542.15,-107.64 548.15,-107.64 554.15,-113.64 554.15,-119.64 554.15,-119.64 554.15,-131.64 554.15,-131.64 554.15,-137.64 548.15,-143.64 542.15,-143.64"/>
 <text text-anchor="middle" x="446.15" y="-121.94" font-family="Menlo" font-size="14.00">Conversation</text>
 </a>
@@ -93,7 +93,7 @@ The client is able to listen to conversation events that will be fired once the 
 <!-- Conference -->
 <g id="node3" class="node class">
 <title>Conference</title>
-<g id="a_node3"><a xlink:href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference" xlink:title="Conference">
+<g id="a_node3"><a xlink:href="./Conference" xlink:title="Conference">
 <path fill="none" stroke="black" d="M360.76,-36C360.76,-36 168.76,-36 168.76,-36 162.76,-36 156.76,-30 156.76,-24 156.76,-24 156.76,-12 156.76,-12 156.76,-6 162.76,0 168.76,0 168.76,0 360.76,0 360.76,0 366.76,0 372.76,-6 372.76,-12 372.76,-12 372.76,-24 372.76,-24 372.76,-30 366.76,-36 360.76,-36"/>
 <text text-anchor="middle" x="264.76" y="-14.3" font-family="Menlo" font-size="14.00">Conference</text>
 </a>
@@ -113,7 +113,7 @@ The client is able to listen to conversation events that will be fired once the 
 </figure>
         <h3>Subclasses</h3>
 <dl>
-    <dt class="class"><code><a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Conference">Conference</a></code></dt>
+    <dt class="class"><code><a href="./Conference">Conference</a></code></dt>
 <dd><p>A conference is a type of Conversation that may require privilege to join
 Conference may only be created if your enterprise has the conference feature enabled on the Apizee platform</p>
 </dd>
@@ -163,7 +163,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.accesstype">access​Type</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">accessType</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccessType"><span class="type">ConversationAccessType</span></a>! </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">accessType</span>: <a href="./ConversationAccessType"><span class="type">ConversationAccessType</span></a>! </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="conversation.status">
@@ -171,7 +171,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.status">status</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">status</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationStatus"><span class="type">ConversationStatus</span></a>! </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">status</span>: <a href="./ConversationStatus"><span class="type">ConversationStatus</span></a>! </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="conversation.groupchatstatus">
@@ -179,7 +179,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.groupchatstatus">group​Chat​Status</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">groupChatStatus</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationStatus"><span class="type">ConversationStatus</span></a>! </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">groupChatStatus</span>: <a href="./ConversationStatus"><span class="type">ConversationStatus</span></a>! </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="conversation.access">
@@ -187,7 +187,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.access">access</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">access</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccess"><span class="type">ConversationAccess</span></a>? </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">access</span>: <a href="./ConversationAccess"><span class="type">ConversationAccess</span></a>? </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="conversation.role">
@@ -195,7 +195,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.role">role</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">role</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationUserRole"><span class="type">ConversationUserRole</span></a>? </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">private</span>(<span class="variable">set</span>) <span class="keyword">var</span> <span class="variable">role</span>: <a href="./ConversationUserRole"><span class="type">ConversationUserRole</span></a>? </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="variable" id="conversation.friendlyname">
@@ -239,7 +239,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.join(options:completion:)">join(options:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">join</span>(<span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/JoinOptions"><span class="type">JoinOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">accessAllowed</span>: <span class="type">Bool</span>) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">join</span>(<span class="variable">options</span>: <a href="./JoinOptions"><span class="type">JoinOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">accessAllowed</span>: <span class="type">Bool</span>) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Connects to a conversation if not already joined. Once in the conversation the user will be able to see other contacts inside it, send and receive messages, publish streams and subscribe to conversation's streams</p>
@@ -271,7 +271,7 @@ Conference may only be created if your enterprise has the conference feature ena
         <code><a href="#conversation.sendinvitation(contact:completion:)">send​Invitation(contact:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendInvitation</span>(<span class="variable">contact</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">invitation</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SentInvitation"><span class="type">SentInvitation</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendInvitation</span>(<span class="variable">contact</span>: <a href="./Contact"><span class="type">Contact</span></a>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">invitation</span>: <a href="./SentInvitation"><span class="type">SentInvitation</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Invites a contact to the conversation
@@ -308,7 +308,7 @@ If returns nil, <code>ConversationEvent.error(_:)</code> should be dispatched</p
         <code><a href="#conversation.sendmessage(message:completion:)">send​Message(message:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendMessage</span>(<span class="variable">message</span>: <span class="type">String</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">message</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/GroupChatMessage"><span class="type">GroupChatMessage</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">sendMessage</span>(<span class="variable">message</span>: <span class="type">String</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">message</span>: <a href="./GroupChatMessage"><span class="type">GroupChatMessage</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="conversation.publish(stream:options:completion:)">
@@ -316,7 +316,7 @@ If returns nil, <code>ConversationEvent.error(_:)</code> should be dispatched</p
         <code><a href="#conversation.publish(stream:options:completion:)">publish(stream:​options:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">publish</span>(<span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>, <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/PublishOptions"><span class="type">PublishOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">stream</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">publish</span>(<span class="variable">stream</span>: <a href="./Stream"><span class="type">Stream</span></a>, <span class="variable">options</span>: <a href="./PublishOptions"><span class="type">PublishOptions</span></a>? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">stream</span>: <a href="./Stream"><span class="type">Stream</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Publish stream to conversation
@@ -341,7 +341,7 @@ The stream will be able to be subscribed by other contacts within the conversati
         <code><a href="#conversation.subscribetostream(streamid:options:)">subscribe​ToStream(stream​Id:​options:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">subscribeToStream</span>(<span class="variable">streamId</span>: <span class="type">String</span>, <span class="variable">options</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/SubscribeOptions"><span class="type">SubscribeOptions</span></a>? = <span class="keyword">nil</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">subscribeToStream</span>(<span class="variable">streamId</span>: <span class="type">String</span>, <span class="variable">options</span>: <a href="./SubscribeOptions"><span class="type">SubscribeOptions</span></a>? = <span class="keyword">nil</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Subscribes to a stream.
@@ -368,7 +368,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.getavailablestreamlist()">get​Available​Stream​List()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getAvailableStreamList</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/StreamInfo"><span class="type">StreamInfo</span></a>]  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getAvailableStreamList</span>() -&gt; [<a href="./StreamInfo"><span class="type">StreamInfo</span></a>]  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns information for media streams available in the conversation</p>
@@ -380,7 +380,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.getpublishedstreams()">get​Published​Streams()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getPublishedStreams</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>]?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getPublishedStreams</span>() -&gt; [<a href="./Stream"><span class="type">Stream</span></a>]?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns published streams list</p>
@@ -392,7 +392,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.getsubscribedstreams()">get​Subscribed​Streams()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getSubscribedStreams</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Stream"><span class="type">Stream</span></a>]?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getSubscribedStreams</span>() -&gt; [<a href="./Stream"><span class="type">Stream</span></a>]?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns subscribed streams list</p>
@@ -404,7 +404,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.getcontacts()">get​Contacts()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContacts</span>() -&gt; [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>]?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getContacts</span>() -&gt; [<a href="./Contact"><span class="type">Contact</span></a>]?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns contacts list within the conversation</p>
@@ -428,7 +428,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.getconversationcall(_:)">get​Conversation​Call(_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getConversationCall</span>(<span class="keyword">_</span> <span class="variable">streamId</span>: <span class="type">String</span>) -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationCall"><span class="type">ConversationCall</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getConversationCall</span>(<span class="keyword">_</span> <span class="variable">streamId</span>: <span class="type">String</span>) -&gt; <a href="./ConversationCall"><span class="type">ConversationCall</span></a>?  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns the conversation call for a stream with a given stream id</p>
@@ -452,7 +452,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.startnewwhiteboardsession(completion:)">start​New​Whiteboard​Session(completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">startNewWhiteboardSession</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">client</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/WhiteboardClient"><span class="type">WhiteboardClient</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">startNewWhiteboardSession</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">client</span>: <a href="./WhiteboardClient"><span class="type">WhiteboardClient</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="conversation.stopwhiteboardsession()">
@@ -468,7 +468,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.checkaccess(completion:)">check​Access(completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">checkAccess</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">access</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccess"><span class="type">ConversationAccess</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">checkAccess</span>(<span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">access</span>: <a href="./ConversationAccess"><span class="type">ConversationAccess</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 <div class="summary" role="doc-abstract">
     <p>Returns the access status of the conversation</p>
@@ -480,7 +480,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.pushmedia(media:options:completion:)">push​Media(media:​options:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">pushMedia</span>(<span class="variable">media</span>: <span class="type">Data</span>, <span class="variable">options</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">media</span>: <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/MediaUploaded"><span class="type">MediaUploaded</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">pushMedia</span>(<span class="variable">media</span>: <span class="type">Data</span>, <span class="variable">options</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">media</span>: <a href="./MediaUploaded"><span class="type">MediaUploaded</span></a>?) -&gt; <span class="type">Void</span>)  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="conversation.fetchmedialist(options:completion:)">
@@ -488,7 +488,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.fetchmedialist(options:completion:)">fetch​Media​List(options:​completion:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">fetchMediaList</span>(<span class="variable">options</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">medias</span>: [<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Media"><span class="type">Media</span></a>]?) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">fetchMediaList</span>(<span class="variable">options</span>: [<span class="type">String</span>: <span class="keyword">Any</span>?]? = <span class="keyword">nil</span>, <span class="variable">completion</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<span class="keyword">_</span> <span class="variable">error</span>: <span class="type">Error</span>?, <span class="keyword">_</span> <span class="variable">medias</span>: [<a href="./Media"><span class="type">Media</span></a>]?) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="conversation.getmoderator()">
@@ -496,7 +496,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.getmoderator()">get​Moderator()</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getModerator</span>() -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/Contact"><span class="type">Contact</span></a>?  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">func</span> <span class="function">getModerator</span>() -&gt; <a href="./Contact"><span class="type">Contact</span></a>?  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="conversation.sendrawdata(data:)">
@@ -512,7 +512,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.typeofname(_:)">type​OfName(_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">typeOfName</span>(<span class="keyword">_</span> <span class="variable">name</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationAccessType"><span class="type">ConversationAccessType</span></a>  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="keyword">class</span> <span class="keyword">func</span> <span class="function">typeOfName</span>(<span class="keyword">_</span> <span class="variable">name</span>: <span class="type">String</span>) <span class="keyword">throws</span> -&gt; <a href="./ConversationAccessType"><span class="type">ConversationAccessType</span></a>  </body></html></code></pre>
 </div>
 </div>
 <div role="article" class="function" id="conversation.isnamevalid(_:)">
@@ -528,7 +528,7 @@ The <code>ConversationEvent.streamRemoved(_:)</code> event will be fired when th
         <code><a href="#conversation.onevent(_:_:)">on​Event(_:​_:​)</a></code>
     </h3>
     <div class="declaration">
-<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="https://dev.apirtc.com/apiRTC_iOS-SDK/ConversationEvent"><span class="type">ConversationEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
+<pre class="highlight"><code><html><body><span class="attribute">open</span> <span class="attribute">override</span> <span class="keyword">func</span> <span class="function">onEvent</span>(<span class="keyword">_</span> <span class="variable">observer</span>: <span class="type">AnyObject</span>, <span class="keyword">_</span> <span class="variable">callback</span>: <span class="attribute">@</span><span class="attribute">escaping</span> ((<a href="./ConversationEvent"><span class="type">ConversationEvent</span></a>) -&gt; <span class="type">Void</span>))  </body></html></code></pre>
 </div>
 </div>
     </section>
