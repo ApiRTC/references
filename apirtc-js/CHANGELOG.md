@@ -2,15 +2,41 @@
 
 All Notable changes to apiRTC are documented in this file.
 
-Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.5/apiRTC-latest.min.js)
+Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-latest.min.js)
 
+# [4.6.2](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.2.min.js) - 2022-01-12
+
+### Added
+
+- Added Stream#applyConstraint
+- Added Stream#applyConstraints
+- Added Stream#mergeReality
+- Added Stream#unmergeReality
+- Added Conversation#fetchMessageHistory new "options.token" possibility
+- Added EventCenter#disableStorage
+
+### Changed
+
+- Fixed token option for Conversation#fetchMediaList
+- Deprecated Stream#setCapability
+- Removed all references to Apizee from ApiRTC
+- Removed cookie usage to sessionStorage
+- Forced parameter bandwidth type to number for WebRTC_Client#setVideoBandwidth
+- Forced parameter bandwidth type to number for ApiCCWebRTCClient#setRemoteVideoBandwidth
+- Forced parameter bandwidth type to number for ApiCCWebRTCClient#setOverallIncomingVideoBandwidth
+- Forced parameter bandwidth type to number for ApiCCWebRTCClient#setOverallOutgoingVideoBandwidth
+- Forced parameter bandwidth type to number for ApiCCWebRTCClient#setPerCallIncomingVideoBandwidth
+- Forced parameter bandwidth type to number for ApiCCWebRTCClient#setPerCallOutgoingVideoBandwidth
+- Forced parameter kbps type to number for UserAgent#setTargetBandwidthUsage
 
 # [4.6.1](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.1.min.js) - 2021-11-24
 
 ### Added
+
 - Added error message for these browsers : Baidu, baidu, UCBrowser, QQ, QQBrowser and QQBrowserLite
 
 ### Fixed
+
 - Fixed Stream methods to remotely use capabilities functions
 
 # [4.6.0](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.0.min.js) - 2021-11-17

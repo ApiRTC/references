@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Documentation Class: UserAgent</title>
-
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+	
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -97,8 +98,8 @@
         
             <div class="class-description"><p>User Agent</p>
 <p>The UserAgent serves as the base to use apiRTC.<br>
-A user agent can be authenticated or not. For an Apizee cloud user , the uri is prefixed with 'apizee:'.<br>
-He can be anonymous if it's a client of an Apizee enterprise and use prefix apzkey:<APIKey> as uri.<br>
+A user agent can be authenticated or not. For an ApiRTC cloud platform user , the uri is prefixed with 'apirtc:'.<br>
+He can be anonymous if it's a client of an ApiRTC cloud platform enterprise, use prefix apiKey:<APIKey> as uri.<br>
 Once registered, its Session object can be used to communicate with other contacts using the platform on the same API key and CCS server</p></div>
         
     
@@ -269,7 +270,7 @@ Once registered, its Session object can be used to communicate with other contac
         <p class="code-caption">Create an UserAgent</p>
     
     <pre class="sunlight-highlight-javascript">var user1 = new apiRTC.UserAgent({
-  uri: &#x27;apizee:user2@apizee.com&#x27;
+  uri: &#x27;apirtc:user2@apirtc.com&#x27;
 });</pre>
 
 
@@ -2990,7 +2991,7 @@ Use getUserMediaDevices() instead of this function</p>
 
     
     <div class="description">
-        <p>Returns user agent enterprise (set when registered using 'apizee:' URI)</p>
+        <p>Returns user agent enterprise (set when registered using 'apirtc:' URI)</p>
     </div>
     
 
@@ -4172,7 +4173,7 @@ Use getUserMediaDevices() instead of this function</p>
 
     
     <div class="description">
-        <p>Register a UA to the server. If the User Agent URI is prefixed with 'apizee:', a password has to be specified in the options</p>
+        <p>Register a UA to the server. If the User Agent URI is prefixed with 'apirtc:', a password has to be specified in the options</p>
     </div>
     
 
@@ -4318,10 +4319,10 @@ Use getUserMediaDevices() instead of this function</p>
          password: &#x27;aaaa&#x27;
      })
      .then((session) =&gt; {
-         // OK : UserAgent is connected to the Apizee platform
+         // OK : UserAgent is connected to the ApiRTC platform
      })
      .catch((error) =&gt; {
-         // error : UserAgent could not be connected to the Apizee platform
+         // error : UserAgent could not be connected to the ApiRTC platform
      });</pre>
 
 
@@ -6325,7 +6326,7 @@ User data is visible from other users</p>
     
     <pre class="sunlight-highlight-javascript">ua.unregister()
      .then(() =&gt; {
-         // OK : UserAgent is disconnected from the Apizee platform
+         // OK : UserAgent is disconnected from the ApiRTC platform
      })
      .catch((error) =&gt; {
          // error : an error occured during unregistration
