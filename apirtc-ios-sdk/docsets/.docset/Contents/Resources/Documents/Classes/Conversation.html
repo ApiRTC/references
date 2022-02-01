@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Conversation Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Conversation" class="dashAnchor"></a>
+    <a title="Conversation Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fapirtc.github.io%2Freferences%2Fapirtc-ios-sdk%2Fdocsets%2F.xml"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        Conversation Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApiRTC.html">ApiRTC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9ApiRTCSDK10AudioTrackC">AudioTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Call.html">Call</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CameraView.html">CameraView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChatMessage.html">ChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CloudApi.html">CloudApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CloudApi/Err.html">– Err</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CloudMediaInfo.html">CloudMediaInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9ApiRTCSDK10ConferenceC">Conference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Conversation.html">Conversation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Conversation/Err.html">– Err</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConversationCall.html">ConversationCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataChannel.html">DataChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DrawingElement.html">DrawingElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Enterprise.html">Enterprise</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Invitation.html">Invitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Media.html">Media</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MediaStream.html">MediaStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MediaTrack.html">MediaTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Observable.html">Observable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceivedCallInvitation.html">ReceivedCallInvitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceivedConversationInvitation.html">ReceivedConversationInvitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceivedConversationJoinRequest.html">ReceivedConversationJoinRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReceivedInvitation.html">ReceivedInvitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SentInvitation.html">SentInvitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Session.html">Session</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Stream.html">Stream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserAgent.html">UserAgent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoTrack.html">VideoTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoView.html">VideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WhiteboardClient.html">WhiteboardClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WhiteboardView.html">WhiteboardView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ApiRTCEvent.html">ApiRTCEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AudioOutput.html">AudioOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CallEvent.html">CallEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ChatMessageType.html">ChatMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContactCallState.html">ContactCallState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContactEvent.html">ContactEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContactListUpdateType.html">ContactListUpdateType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConversationAccess.html">ConversationAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConversationAccessType.html">ConversationAccessType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConversationCallType.html">ConversationCallType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConversationEvent.html">ConversationEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConversationStatus.html">ConversationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConversationUserRole.html">ConversationUserRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DrawingElementType.html">DrawingElementType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ExternalCameraState.html">ExternalCameraState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FileType.html">FileType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InvitationEvent.html">InvitationEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InvitationStatus.html">InvitationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogType.html">LogType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MediaTrackType.html">MediaTrackType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MediaType.html">MediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkConnection.html">NetworkConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkInterface.html">NetworkInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RendererType.html">RendererType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SessionConnectionState.html">SessionConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SessionEvent.html">SessionEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamDirection.html">StreamDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamEvent.html">StreamEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamInfoType.html">StreamInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamLineType.html">StreamLineType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamType.html">StreamType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserAgentURI.html">UserAgentURI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WhiteboardEvent.html">WhiteboardEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WhiteboardTool.html">WhiteboardTool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WhiteboardViewMode.html">WhiteboardViewMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9ApiRTCSDK5EventP">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:9ApiRTCSDK8SDKErrorP">SDKError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Agent.html">Agent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CallOptions.html">CallOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContactListUpdate.html">ContactListUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DisconnectOptions.html">DisconnectOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EnterpriseInformation.html">EnterpriseInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EnterpriseTag.html">EnterpriseTag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FetchEnterpriseInformationOptions.html">FetchEnterpriseInformationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FetchSiteAgentsOptions.html">FetchSiteAgentsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FileInfo.html">FileInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkState.html">NetworkState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivateConferenceCreationOptions.html">PrivateConferenceCreationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushBufferDataDescriptor.html">PushBufferDataDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisterInformation.html">RegisterInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamInfo.html">StreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamMuteStateChange.html">StreamMuteStateChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamUpdate.html">StreamUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransferProgress.html">TransferProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserAgentOptions.html">UserAgentOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Conversation</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Conversation</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Observable.html">Observable</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ConversationEvent.html">ConversationEvent</a></span><span class="o">&gt;</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Conversation</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents conversation N-N communication context</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC13cloudPublicIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cloudPublicId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC13cloudPublicIdSSSgvp">cloudPublicId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">cloudPublicId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC10instanceIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/instanceId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC10instanceIdSSSgvp">instanceId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC10accessTypeAA0c6AccessE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accessType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC10accessTypeAA0c6AccessE0OSgvp">accessType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">accessType</span><span class="p">:</span> <span class="kt"><a href="../Enums/ConversationAccessType.html">ConversationAccessType</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC6statusAA0C6StatusOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC6statusAA0C6StatusOSgvp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/ConversationStatus.html">ConversationStatus</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC6accessAA0C6AccessOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/access" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC6accessAA0C6AccessOSgvp">access</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">access</span><span class="p">:</span> <span class="kt"><a href="../Enums/ConversationAccess.html">ConversationAccess</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC4roleAA0C8UserRoleOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/role" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC4roleAA0C8UserRoleOSgvp">role</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Local user conversation related role</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">role</span><span class="p">:</span> <span class="kt"><a href="../Enums/ConversationUserRole.html">ConversationUserRole</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC12friendlyNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/friendlyName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC12friendlyNameSSSgvp">friendlyName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">friendlyName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC11moderatorIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/moderatorId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC11moderatorIdSSSgvp">moderatorId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Conversation&rsquo;s moderator user id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">moderatorId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC3ErrO"></a>
+                    <a name="//apple_ref/swift/Enum/Err" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC3ErrO">Err</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/Conversation/Err.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Err</span> <span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:9ApiRTCSDK8SDKErrorP">SDKError</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC4join10completionyys5Error_pSg_Sbtc_tF"></a>
+                    <a name="//apple_ref/swift/Method/join(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC4join10completionyys5Error_pSg_Sbtc_tF">join(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Joins a conversation. Once in the conversation the user will be able to see other contacts inside it, send and receive messages, publish and subscribe to streams</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">join</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">accessAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC10cancelJoinyyF"></a>
+                    <a name="//apple_ref/swift/Method/cancelJoin()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC10cancelJoinyyF">cancelJoin()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancel joining process</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">cancelJoin</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC5leave10completionyyyc_tF"></a>
+                    <a name="//apple_ref/swift/Method/leave(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC5leave10completionyyyc_tF">leave(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Leaves conversation. The user will automatically stop publishing its streams to the conversation and stop subscribing to any events from the conversation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">leave</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC14sendInvitation7contact10completionyAA7ContactC_yAA04SentE0CSgctF"></a>
+                    <a name="//apple_ref/swift/Method/sendInvitation(contact:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC14sendInvitation7contact10completionyAA7ContactC_yAA04SentE0CSgctF">sendInvitation(contact:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invites <code><a href="../Classes/Contact.html">Contact</a></code> to the conversation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">sendInvitation</span><span class="p">(</span><span class="nv">contact</span><span class="p">:</span> <span class="kt"><a href="../Classes/Contact.html">Contact</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">invitation</span><span class="p">:</span> <span class="kt"><a href="../Classes/SentInvitation.html">SentInvitation</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC11sendMessage7message4file10completionySS_AA8FileInfoVSgys5Error_pSg_AA04ChatE0CSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/sendMessage(message:file:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC11sendMessage7message4file10completionySS_AA8FileInfoVSgys5Error_pSg_AA04ChatE0CSgtctF">sendMessage(message:<wbr>file:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt"><a href="../Structs/FileInfo.html">FileInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Classes/ChatMessage.html">ChatMessage</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC7publish6stream10completionyAA6StreamC_ys5Error_pSg_AHSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/publish(stream:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC7publish6stream10completionyAA6StreamC_ys5Error_pSg_AHSgtctF">publish(stream:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Publish stream to conversation
+The stream will be able to be subscribed by other contacts within the conversation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">publish</span><span class="p">(</span><span class="nv">stream</span><span class="p">:</span> <span class="kt"><a href="../Classes/Stream.html">Stream</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="kt"><a href="../Classes/Stream.html">Stream</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC21unpublishStreamWithId_10completionySS_yycSgtF"></a>
+                    <a name="//apple_ref/swift/Method/unpublishStreamWithId(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC21unpublishStreamWithId_10completionySS_yycSgtF">unpublishStreamWithId(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unpublishes currently published stream to conversation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">unpublishStreamWithId</span><span class="p">(</span><span class="n">_</span> <span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC17subscribeToStream8streamIdySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/subscribeToStream(streamId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC17subscribeToStream8streamIdySS_tF">subscribeToStream(streamId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscribes to a stream.
+The subscription will automatically stop if the contact publishing the stream unpublishes it.
+The <code><a href="../Enums/ConversationEvent.html#/s:9ApiRTCSDK17ConversationEventO11streamAddedyAcA6StreamCcACmF">ConversationEvent.streamAdded(_:)</a></code> event will be fired when the stream becomes available.
+The <code><a href="../Enums/ConversationEvent.html#/s:9ApiRTCSDK17ConversationEventO13streamRemovedyAcA6StreamCcACmF">ConversationEvent.streamRemoved(_:)</a></code> event will be fired when the stream is no longer available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">subscribeToStream</span><span class="p">(</span><span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC27unsubscribeFromStreamWithId_10completionySS_yycSgtF"></a>
+                    <a name="//apple_ref/swift/Method/unsubscribeFromStreamWithId(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC27unsubscribeFromStreamWithId_10completionySS_yycSgtF">unsubscribeFromStreamWithId(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unsubscribes from a conversation&rsquo;s stream</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">unsubscribeFromStreamWithId</span><span class="p">(</span><span class="n">_</span> <span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC22getAvailableStreamListSayAA0F4InfoVGSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getAvailableStreamList()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC22getAvailableStreamListSayAA0F4InfoVGSgyF">getAvailableStreamList()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getAvailableStreamList</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/StreamInfo.html">StreamInfo</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Information for media streams available in the conversation</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC012getStreamForC4Call6callIdAA0E0CSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/getStreamForConversationCall(callId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC012getStreamForC4Call6callIdAA0E0CSgSS_tF">getStreamForConversationCall(callId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a stream using <code><a href="../Classes/ConversationCall.html#/s:9ApiRTCSDK16ConversationCallC2idSSSgvp">ConversationCall.id</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getStreamForConversationCall</span><span class="p">(</span><span class="nv">callId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Stream.html">Stream</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC19getPublishedStreamsSayAA6StreamCGSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getPublishedStreams()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC19getPublishedStreamsSayAA6StreamCGSgyF">getPublishedStreams()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getPublishedStreams</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Stream.html">Stream</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Published streams list</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC20getSubscribedStreamsSayAA6StreamCGSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getSubscribedStreams()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC20getSubscribedStreamsSayAA6StreamCGSgyF">getSubscribedStreams()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getSubscribedStreams</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Stream.html">Stream</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Subscribed streams list</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC9getStream8streamIdAA0E0CSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/getStream(streamId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC9getStream8streamIdAA0E0CSgSS_tF">getStream(streamId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getStream</span><span class="p">(</span><span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Stream.html">Stream</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC12getModeratorAA7ContactCSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getModerator()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC12getModeratorAA7ContactCSgyF">getModerator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getModerator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Contact.html">Contact</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Conversation moderator <code><a href="../Classes/Contact.html">Contact</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC11getContactsSayAA7ContactCGSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getContacts()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC11getContactsSayAA7ContactCGSgyF">getContacts()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getContacts</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Contact.html">Contact</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Contacts list within the conversation</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC7getNameSSyF"></a>
+                    <a name="//apple_ref/swift/Method/getName()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC7getNameSSyF">getName()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Conversation name</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC03getC4CallyAA0cE0CSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/getConversationCall(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC03getC4CallyAA0cE0CSgSSF">getConversationCall(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getConversationCall</span><span class="p">(</span><span class="n">_</span> <span class="nv">streamId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConversationCall.html">ConversationCall</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/ConversationCall.html">ConversationCall</a></code> using <code><a href="../Classes/Stream.html#/s:9ApiRTCSDK6StreamC2idSSSgvp">Stream.id</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC8isJoinedSbyF"></a>
+                    <a name="//apple_ref/swift/Method/isJoined()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC8isJoinedSbyF">isJoined()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if the conversation is joined</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">isJoined</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Whiteboard"></a>
+                <a name="//apple_ref/swift/Section/Whiteboard" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Whiteboard"></a>
+                  <h3 class="section-name"><span>Whiteboard</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC22startWhiteboardSession10completionyys5Error_pSg_AA0E6ClientCSgtc_tF"></a>
+                    <a name="//apple_ref/swift/Method/startWhiteboardSession(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC22startWhiteboardSession10completionyys5Error_pSg_AA0E6ClientCSgtc_tF">startWhiteboardSession(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts new whiteboard session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">startWhiteboardSession</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/WhiteboardClient.html">WhiteboardClient</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC21stopWhiteboardSessionyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopWhiteboardSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC21stopWhiteboardSessionyyF">stopWhiteboardSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops whiteboard session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">stopWhiteboardSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC11uploadMedia5media10completiony10Foundation4DataV_ys5Error_pSg_AA05CloudE4InfoCSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/uploadMedia(media:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC11uploadMedia5media10completiony10Foundation4DataV_ys5Error_pSg_AA05CloudE4InfoCSgtctF">uploadMedia(media:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uploads media
+Currently limited to .jpeg only
+Use <code>Conversation.pushData</code> to upload other data types</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">uploadMedia</span><span class="p">(</span><span class="nv">media</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">media</span><span class="p">:</span> <span class="kt"><a href="../Classes/CloudMediaInfo.html">CloudMediaInfo</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC14fetchMediaList7options10completionySDySSypSgGSg_ys5Error_pSg_SayAA0E0CGSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/fetchMediaList(options:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC14fetchMediaList7options10completionySDySSypSgGSg_ys5Error_pSg_SayAA0E0CGSgtctF">fetchMediaList(options:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch conversation media list from the cloud</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">fetchMediaList</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">?]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">medias</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Media.html">Media</a></span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC8pushData10descriptor10completionyAA010PushBufferE10DescriptorV_ys5Error_pSg_AA14CloudMediaInfoCSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/pushData(descriptor:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC8pushData10descriptor10completionyAA010PushBufferE10DescriptorV_ys5Error_pSg_AA14CloudMediaInfoCSgtctF">pushData(descriptor:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pushes arbitrary data using data channel
+Limited by 50MB</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">pushData</span><span class="p">(</span><span class="nv">descriptor</span><span class="p">:</span> <span class="kt"><a href="../Structs/PushBufferDataDescriptor.html">PushBufferDataDescriptor</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="kt"><a href="../Classes/CloudMediaInfo.html">CloudMediaInfo</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC14cancelPushData2id10completionySS_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/cancelPushData(id:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC14cancelPushData2id10completionySS_yyctF">cancelPushData(id:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">cancelPushData</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC11sendRawData4dataySDySSypG_tF"></a>
+                    <a name="//apple_ref/swift/Method/sendRawData(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC11sendRawData4dataySDySSypG_tF">sendRawData(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send raw data json message to conversation contacts
+Use <code>Conversation.pushData</code> to upload data of large amounts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">sendRawData</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Helpers"></a>
+                <a name="//apple_ref/swift/Section/Helpers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Helpers"></a>
+                  <h3 class="section-name"><span>Helpers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC10typeOfNameyAA0C10AccessTypeOSSKFZ"></a>
+                    <a name="//apple_ref/swift/Method/typeOfName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC10typeOfNameyAA0C10AccessTypeOSSKFZ">typeOfName(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Classes/Conversation/Err.html">Conversation.Err</a></code> if the name is not valid
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">typeOfName</span><span class="p">(</span><span class="n">_</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ConversationAccessType.html">ConversationAccessType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Enums/ConversationAccessType.html">ConversationAccessType</a></code> using conversation name</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC11isNameValidySbSSFZ"></a>
+                    <a name="//apple_ref/swift/Method/isNameValid(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC11isNameValidySbSSFZ">isNameValid(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">isNameValid</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Name check result</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK12ConversationC7onEventyyyXl_yAA0cE0OctF"></a>
+                    <a name="//apple_ref/swift/Method/onEvent(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK12ConversationC7onEventyyyXl_yAA0cE0OctF">onEvent(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">onEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">observer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">,</span> <span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt"><a href="../Enums/ConversationEvent.html">ConversationEvent</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Conversation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://apizee.com" target="_blank" rel="external noopener">Apizee</a>. All rights reserved. (Last updated: 2022-01-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

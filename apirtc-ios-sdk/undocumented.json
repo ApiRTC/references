@@ -1,0 +1,390 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/ApiRTC.swift",
+      "line": 13,
+      "symbol": "ApiRTCEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/ApiRTC.swift",
+      "line": 35,
+      "symbol": "ApiRTC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/ApiRTC.swift",
+      "line": 170,
+      "symbol": "ApiRTC.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Cloud/CloudApi.swift",
+      "line": 22,
+      "symbol": "CloudApi.Err",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Cloud/CloudApi.swift",
+      "line": 23,
+      "symbol": "CloudApi.Err.cssNil",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Cloud/CloudApi.swift",
+      "line": 24,
+      "symbol": "CloudApi.Err.responseHasNoData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Cloud/CloudApi.swift",
+      "line": 25,
+      "symbol": "CloudApi.Err.requestError(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Cloud/CloudApi.swift",
+      "line": 26,
+      "symbol": "CloudApi.Err.imageLoadWrongResponse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Cloud/CloudApi.swift",
+      "line": 27,
+      "symbol": "CloudApi.Err.imageLoadInsufficientImageData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Contact.swift",
+      "line": 131,
+      "symbol": "Contact.getUsername()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Contact.swift",
+      "line": 135,
+      "symbol": "Contact.getPhotoUrl()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Contact.swift",
+      "line": 148,
+      "symbol": "Contact.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 113,
+      "symbol": "ConversationAccessType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 114,
+      "symbol": "ConversationAccessType.public",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 115,
+      "symbol": "ConversationAccessType.private",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 149,
+      "symbol": "Conversation.cloudPublicId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 151,
+      "symbol": "Conversation.instanceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 182,
+      "symbol": "Conversation.Err",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 183,
+      "symbol": "Conversation.Err.wrongEnterpriseIdFormat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 184,
+      "symbol": "Conversation.Err.wrongConversationIdFormat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 185,
+      "symbol": "Conversation.Err.idNotValid",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 186,
+      "symbol": "Conversation.Err.publishAttemptsExceeded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 235,
+      "symbol": "Conversation.sendMessage(message:file:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 376,
+      "symbol": "Conversation.cancelPushData(id:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/Conversation.swift",
+      "line": 428,
+      "symbol": "Conversation.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Conversation/ConversationCall.swift",
+      "line": 70,
+      "symbol": "ConversationCall.getConversation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Invitation/Invitation.swift",
+      "line": 60,
+      "symbol": "Invitation.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Invitation/ReceivedCallInvitation.swift",
+      "line": 19,
+      "symbol": "ReceivedCallInvitation.callerId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Invitation/ReceivedInvitation.swift",
+      "line": 17,
+      "symbol": "ReceivedInvitation.senderId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/P2PCall/Call.swift",
+      "line": 95,
+      "symbol": "Call.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Session.swift",
+      "line": 81,
+      "symbol": "Session.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Session.swift",
+      "line": 165,
+      "symbol": "Session.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Stream.swift",
+      "line": 80,
+      "symbol": "Stream.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Stream.swift",
+      "line": 119,
+      "symbol": "Stream.hasAudio",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Stream.swift",
+      "line": 120,
+      "symbol": "Stream.hasVideo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Stream.swift",
+      "line": 121,
+      "symbol": "Stream.isAudioMuted",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Stream.swift",
+      "line": 122,
+      "symbol": "Stream.isVideoMuted",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Stream.swift",
+      "line": 404,
+      "symbol": "Stream.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/FetchSiteAgentsOptions.swift",
+      "line": 26,
+      "symbol": "FetchSiteAgentsOptions.init(usePresence:useAcd:convId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/FileInfo.swift",
+      "line": 51,
+      "symbol": "FileInfo.init(id:type:url:filename:title:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/FileInfo.swift",
+      "line": 90,
+      "symbol": "FileInfo.parseType(filename:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/RegisterInformation.swift",
+      "line": 23,
+      "symbol": "RegisterInformation.init(cloudUrl:password:conversationSpace:userData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/StreamInfo.swift",
+      "line": 14,
+      "symbol": "StreamInfoType.added",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/StreamInfo.swift",
+      "line": 15,
+      "symbol": "StreamInfoType.removed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/StreamInfo.swift",
+      "line": 150,
+      "symbol": "StreamInfo.init(stream:callerId:roomId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Types/StreamInfo.swift",
+      "line": 171,
+      "symbol": "StreamInfo.dict()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/UserAgent.swift",
+      "line": 54,
+      "symbol": "UserAgent.getUsername()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/UserAgent.swift",
+      "line": 58,
+      "symbol": "UserAgent.getPhotoUrl()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/UserAgent.swift",
+      "line": 64,
+      "symbol": "UserAgent.getUserData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/VideoViews/CameraView.swift",
+      "line": 20,
+      "symbol": "CameraView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/VideoViews/CameraView.swift",
+      "line": 24,
+      "symbol": "CameraView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Whiteboard/DrawingElement.swift",
+      "line": 50,
+      "symbol": "DrawingElement.prevPoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Whiteboard/WhiteboardClient.swift",
+      "line": 151,
+      "symbol": "WhiteboardClient.isOwned",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Public/Whiteboard/WhiteboardClient.swift",
+      "line": 494,
+      "symbol": "WhiteboardClient.onEvent(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk/ApiRTCSDK/Utils/Error/SDKError.swift",
+      "line": 10,
+      "symbol": "SDKError",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/ak/Desktop/Apizee/src/ios/ios-apirtc-sdk"
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>  Reference</title>
+    <title>Protocols  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,7 +13,8 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a title="  Reference"></a>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (90% documented)</p>
@@ -29,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
-          Reference
+        Protocols  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -324,33 +325,68 @@
       <article class="main-content">
         <section>
           <section class="section">
-            
-            <h1 id='apirtc-ios-sdk' class='heading'>ApiRTC iOS SDK</h1>
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
 
-<p>ApiRTC cloud-based WebRTC API are built for web and mobile developers. Empower you website with real-time text, audio and video interaction by leveraging our javascript library (compatible Node.js or Angular.js) or use our plugins for your mobile apps. </p>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK5EventP"></a>
+                    <a name="//apple_ref/swift/Protocol/Event" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK5EventP">Event</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
-<p><a href="https://apizee.com/">Apizee</a> takes care of browser compatibility, security and NAT traversal issues for you.</p>
-<h1 id='requirements' class='heading'>Requirements</h1>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9ApiRTCSDK8SDKErrorP"></a>
+                    <a name="//apple_ref/swift/Protocol/SDKError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9ApiRTCSDK8SDKErrorP">SDKError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
 
-<p>Requires iOS 14+, Swift 5+, Xcode 13+</p>
-<h1 id='installation' class='heading'>Installation</h1>
-<h2 id='cocoapods' class='heading'>CocoaPods</h2>
-<pre class="highlight plaintext"><code>pod 'ApiRTCSDK'
-</code></pre>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SDKError</span> <span class="p">:</span> <span class="kt">LocalizedError</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
-<p>Use Podfile post_install setup to properly link dependencies:</p>
-<pre class="highlight plaintext"><code>post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-        end
-    end
-end
-</code></pre>
-<h1 id='samples' class='heading'>Samples</h1>
-
-<p>Check our <a href="https://github.com/apizee/ApiRTC-iOS-Samples">iOS samples</a></p>
-
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
