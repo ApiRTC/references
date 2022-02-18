@@ -2,7 +2,62 @@
 
 All Notable changes to apiRTC are documented in this file.
 
-Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-latest.min.js)
+Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-latest.min.js)
+# [4.7.1](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.1.min.js) - 2022-02-16
+
+### Added
+
+- Added Contact#fetchUserData
+
+### Changed
+
+- Desactivated Stream#applyConstraint
+- Desactivated Stream#setCapability
+- Changed sentry events location for mute/unmute to Core
+- Changed Stream#applyConstraints
+- Changed Stream#getSettings
+- Changed Stream#getConstraints
+- Changed Stream#getCapabilities
+- Removed Stream#askRemoteCapabilityAuthorization
+- Removed Stream#acceptRemoteCapabilityRequest
+- Removed Stream#refuseRemoteCapabilityRequest
+
+### Fixed
+
+- Fixed types for messages history
+
+
+# [4.7.0](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.0.min.js) - 2022-01-25
+
+### Added
+
+- Added Stream#enableVideo
+- Added Stream#disableVideo
+- Added Stream#enableAudio
+- Added Stream#disableAudio
+- Added Stream#getAudioFlowStatus
+- Added Stream#getVideoFlowStatus
+- Added Stream#getRemoteAudioFlowStatus
+- Added Stream#getRemoteVideoFlowStatus
+- Added Stream events :
+  - audioFlowStatusChanged
+  - videoFlowStatusChanged
+  - remoteAudioFlowStatusChanged
+  - remoteVideoFlowStatusChanged
+- Added Contact#fetchUserData
+
+### Changed
+
+- Deprecated Stream#muteAudio
+- Deprecated Stream#unmuteAudio
+- Deprecated Stream#muteVideo
+- Deprecated Stream#unmuteVideo
+
+# [4.6.5](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.5.min.js) - 2022-01-24
+
+### Fixed
+
+- Fixed room mode transition.
 
 # [4.6.2](https://cloud.apizee.com/apiRTC/v4.6/apiRTC-4.6.2.min.js) - 2022-01-12
 
