@@ -3,6 +3,18 @@
 All Notable changes to apiRTC are documented in this file.
 
 Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-latest.min.js)
+# [4.7.2](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.2.min.js) - 2022-03-01
+
+### Added
+
+- Added Conversation#sendMessage options.token optionnal parameter
+- Added Stream background image
+
+### Changed
+
+- Fixed apirtc.d.ts file
+- Fixed documentation errors
+
 # [4.7.1](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.1.min.js) - 2022-02-16
 
 ### Added
