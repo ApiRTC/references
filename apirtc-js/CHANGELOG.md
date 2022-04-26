@@ -3,6 +3,26 @@
 All Notable changes to apiRTC are documented in this file.
 
 Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-latest.min.js)
+
+# [4.7.3](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.3.min.js) - 2022-04-26
+
+### Added
+
+- Added Conversation#callVoIP
+- Added CONVERSATION_WAITING_ROOM_PREFIX into apirtc.d.ts
+- Added a separate apiRTC file with socket.io embedded
+- Added UserAgent#getCPUArchitecture
+- Added UserAgent#getDeviceVendor
+- Added UserAgent#getDeviceModel
+- Added UserAgent#getEngineName
+- Added UserAgent#getEngineVersion
+- Added deviceVendor, deviceModel, cpuArchitecture, engineName and engineVersion to basic userData
+
+### Fixed
+
+- Fixed Promise rejection upon register
+- Fixed UserAgent#getBrowser
+
 # [4.7.2](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.2.min.js) - 2022-03-01
 
 ### Added
