@@ -4,6 +4,32 @@ All Notable changes to apiRTC are documented in this file.
 
 Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-latest.min.js)
 
+apizee_version : 5.0
+
+# [4.7.5](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.5.min.js) - 2022-06-29
+
+### Added
+
+- Added Stream#applyVideoProcessor
+
+### Fixed
+
+- Fixed : no reconnection on server rejected errors (authentication, deactivated enterprise ...)
+- Fixed : audioMuted, videoMuted state for processed videos (blur, background)
+- Fixed : Fired on error when trying to apply video processing on an audio stream
+
+# [4.7.4](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.4.min.js) - 2022-06-15
+### Added
+
+- Added Promise on unblur() and unBackgroundImage()
+
+### Fixed
+
+- Cleaning code : remove callURLDestRoom, remove DOM displayed elements (setStatus, ...  )
+- Fixed : isScreensharing value in streamInfo for screensharing with audio stream
+- Fixed : Blur and background image optimization and error management
+- Fixed : add default values for device infos
+
 # [4.7.3](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.3.min.js) - 2022-04-26
 
 ### Added

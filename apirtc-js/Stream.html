@@ -2105,6 +2105,183 @@ Usage is different depending the browser :<br>
             
 <hr>
 <dt>
+    <h4 class="name" id="applyVideoProcessor"><span class="type-signature"></span>applyVideoProcessor(videoProcessorType, options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>A promise for applying a stream filter<br>
+Possible filters are &quot;none&quot;, ”blur” : people background is blurred, people background is replaced by a background image</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>videoProcessorType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>type of filter to be applied . Value can be &quot;none&quot;||”blur”||”backgroundImage”</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#VideoProcessorOptions">VideoProcessorOptions</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Created Stream with applied filter in a promise</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
     <h4 class="name" id="attachToElement"><span class="type-signature"></span>attachToElement(element)</h4>
     
     
@@ -2237,6 +2414,157 @@ Usage is different depending the browser :<br>
     <dd>
         
 <span class="param-type">void</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="backgroundImage"><span class="type-signature"></span>backgroundImage()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Creates a stream which is a clone version of the actual stream with an image in background.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>imageUrl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>url of the image to apply in background</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
 
 
 
@@ -6750,7 +7078,7 @@ The stream can only have one record process active at a time</p>
             
 <hr>
 <dt>
-    <h4 class="name" id="unblur"><span class="type-signature"></span>unblur()</h4>
+    <h4 class="name" id="unBackgroundImage"><span class="type-signature"></span>unBackgroundImage()</h4>
     
     
 </dt>
@@ -6758,7 +7086,8 @@ The stream can only have one record process active at a time</p>
 
     
     <div class="description">
-        <p>Stops the blur process if started for this stream.</p>
+        <p>Stops the background image process if started for this stream and return the original stream.<br>
+Can be applied on original Stream or on the backgrounded stream</p>
     </div>
     
 
@@ -6831,7 +7160,106 @@ The stream can only have one record process active at a time</p>
     </dt>
     <dd>
         
-<span class="param-type">void</span>
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="unblur"><span class="type-signature"></span>unblur()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Stops the blur process if started for this stream and return the original stream.<br>
+Can be applied on original Stream or on the blurred stream</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
 
 
 
