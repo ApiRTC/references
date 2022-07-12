@@ -2,11 +2,24 @@
 
 All Notable changes to apiRTC are documented in this file.
 
-Latest version : [apiRTC Latest](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-latest.min.js)
+Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-latest.min.js)
 
 apizee_version : 5.0
 
+# [4.7.6](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.6.min.js) - 2022-07-11
+
+### Fixed
+
+- Fixed : image position and sizing for runPostProcessing
+- Fixed : optimize library loading for applyVideoProcessor
+- Fixed : optimize errors management on applyVideoProcessor
+
+### Added
+
+- Added timeout on stream mute/unmute events
+
 # [4.7.5](https://cloud.apizee.com/apiRTC/v4.7/apiRTC-4.7.5.min.js) - 2022-06-29
+
 
 ### Added
 
