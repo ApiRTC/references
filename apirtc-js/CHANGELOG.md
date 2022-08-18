@@ -6,6 +6,15 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-lates
 
 apizee_version : 5.0
 
+# [4.7.7](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.7.min.js) - 2022-08-18
+
+### Fixed
+
+- Fixed : muted status for mesh calls
+- Fixed : stop screenSharing detection from browser 
+- Cleaning code : remove toggleVideoScreen, switchVideoToScreen, switchScreenToVideo
+- Fixed : filename checking to applyVideoProcessor/background when using a data:image file 
+
 # [4.7.6](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.6.min.js) - 2022-07-11
 
 ### Fixed
