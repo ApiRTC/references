@@ -793,7 +793,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="fetchProfileInformation"><span class="type-signature"></span>fetchProfileInformation(forceUpdate)</h4>
+    <h4 class="name" id="fetchProfileInformation"><span class="type-signature"></span>fetchProfileInformation(bearerToken, forceUpdate)</h4>
     
     
 </dt>
@@ -835,6 +835,34 @@ Profile information is accessible whether contact is online or offline as long a
     </thead>
 
     <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bearerToken</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>cloud bearerToken</p></td>
+        </tr>
+
     
 
         <tr>
@@ -3382,7 +3410,7 @@ Answer comes as CONTACT_EVENTCENTER_DATA_ANSWER event</p>
             
 <hr>
 <dt>
-    <h4 class="name" id="sendFile"><span class="type-signature"></span>sendFile(fileInfo, data, options)</h4>
+    <h4 class="name" id="sendFile"><span class="type-signature"></span>sendFile(fileInfo, data)</h4>
     
     
 </dt>
@@ -3467,30 +3495,6 @@ Answer comes as CONTACT_EVENTCENTER_DATA_ANSWER event</p>
             
 
             <td class="description last"><p>Data to be sent</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
 
     

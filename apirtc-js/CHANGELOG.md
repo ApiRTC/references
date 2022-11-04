@@ -6,6 +6,24 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-lates
 
 apizee_version : 5.0
 
+# [4.7.8](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.8.min.js) - 2022-11-02
+
+### Added
+- Added applicationUUID on connexion
+- Added bearerToken to Contact#fetchProfileInformation
+- Added bearerToken to Enterprise#fetchEnterpriseInformation
+- Added bearerToken to UserAgent#fetchProfileInformation
+- Added JWTApzToken management
+- Added FileInfo on DataChannel#sendData
+- Added captcha_token parameter on UserAgent#register
+
+### Changed
+- Changed : no leaveGroup on conversation presence group if done by application / API
+- Changed : no unsubscribe on conversation presence group if done by application / API
+- Changed error on UserAgent#register to add response from Cloud when registering a Cloud User
+- Update libJsCloud to 0.1.39
+- Removed call to cloudApi.getUserPhotoUrl()
+
 # [4.7.7](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.7.min.js) - 2022-08-18
 
 ### Fixed
