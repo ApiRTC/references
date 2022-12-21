@@ -6,6 +6,26 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-lates
 
 apizee_version : 5.0
 
+
+# [5.0.0](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.0.min.js) - 2022-12-21
+
+### Added
+- Added noise reduction feature
+- Added noiseReduction capability on UserAgent
+- Added event Stream#release
+- Stream#release also apply on children and parent streams by default
+
+### Changed
+- Changed : add security in Cloud interaction
+- Updated : upgrade to UAParser 1.0.32
+- Removed : ApiCCCoBrowsingClient 
+- Changed : CDN path for blur files
+
+### Fixed
+- Remove deprecated usage of ScriptProcessorNode for activeSpeaker detection
+- Code smells from SonarQube 
+
+
 # [4.7.8](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.8.min.js) - 2022-11-02
 
 ### Added

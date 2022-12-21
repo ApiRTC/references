@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Class: ReceivedInvitation</title>
+	<title>Documentation Class: ApplyAudioProcessorError</title>
 	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 	
 	<!--[if lt IE 9]>
@@ -87,17 +87,16 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: ReceivedInvitation</h1>
+	<h1 class="page-title">Class: ApplyAudioProcessorError</h1>
 <section>
 
 <header>
     
         <h2>
-        ReceivedInvitation
+        ApplyAudioProcessorError
         </h2>
         
-            <div class="class-description"><p>ReceivedInvitation<br>
-Defines an invitation received by this client</p></div>
+            <div class="class-description"><p>ApplyAudioProcessorError</p></div>
         
     
 </header>
@@ -109,7 +108,7 @@ Defines an invitation received by this client</p></div>
         
 <hr>
 <dt>
-    <h4 class="name" id="ReceivedInvitation"><span class="type-signature">&lt;abstract> </span>new ReceivedInvitation()</h4>
+    <h4 class="name" id="ApplyAudioProcessorError"><span class="type-signature"></span>new ApplyAudioProcessorError()</h4>
     
     
 </dt>
@@ -126,6 +125,86 @@ Defines an invitation received by this client</p></div>
 
     
 <dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>appliedAudioProcessorType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">'none'</span>
+|
+
+<span class="param-type">'noiseReduction'</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The type of effect applied on the stream present in this error</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>stream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>available stream. In case of error, apiRTC tries to restore previous applied effect</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
     
 
 	
@@ -166,11 +245,6 @@ Defines an invitation received by this client</p></div>
 
     
 
-    
-    <h5>Fires:</h5>
-    <ul>
-        <li><a href="ReceivedInvitation.html#event:statusChange">ReceivedInvitation#event:statusChange</a></li>
-    </ul>
     
 
     
@@ -194,7 +268,7 @@ Defines an invitation received by this client</p></div>
 
 
     <ul>
-        <li><a href="Observable.html">Observable</a></li>
+        <li>Error</li>
     </ul>
 
 
@@ -211,997 +285,9 @@ Defines an invitation received by this client</p></div>
     
 
     
-        <h3 class="subsection-title">Methods</h3>
 
-        <dl>
-            
-<hr>
-<dt>
-    <h4 class="name" id="accept"><span class="type-signature"></span>accept()</h4>
     
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Accepts this invitation &amp; notifies sender</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise.&lt;any></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="decline"><span class="type-signature"></span>decline(reason)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Declines this invitation &amp; notifies sender</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>reason</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Void</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="getId"><span class="type-signature"></span>getId()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Returns invitation id</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="getReceiveTime"><span class="type-signature"></span>getReceiveTime()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Returns invitation receive time</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Date</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="getSender"><span class="type-signature"></span>getSender()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Returns invitation / request sender</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Contact.html">Contact</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="on"><span class="type-signature"></span>on(listener)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Adds a listener to a Observable event</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>listener</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Observable.html#on">Observable#on</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Observable.html#on">Observable#on</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>this instance for chaining</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Observable.html">Observable</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="removeListener"><span class="type-signature"></span>removeListener(eventType, listener)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Remove existing listener to Observable event</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>eventType</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>listener</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="Observable.html#removeListener">Observable#removeListener</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Observable.html#removeListener">Observable#removeListener</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <p>this instance for chaining</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Observable.html">Observable</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        </dl>
-    
-
-    
-
-    
-        <h3 class="subsection-title">Events</h3>
-
-        <dl>
-            
-<hr>
-<dt>
-    <h4 class="name" id="event:statusChange">statusChange</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Emitted invitation status change</p>
-    </div>
-    
-
-    
-
-    
-        <h5>Type: 
-<span class="param-type"><a href="global.html#StatusChangeInfo">StatusChangeInfo</a></span>
-
-
-</h5>
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
 
-        </dl>
     
 </article>
 
