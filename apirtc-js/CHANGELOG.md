@@ -2,7 +2,7 @@
 
 All Notable changes to apiRTC are documented in this file.
 
-Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-latest.min.js)
+Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min.js)
 
 apizee_version : 5.0
 
