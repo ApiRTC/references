@@ -6,6 +6,21 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.1](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.1.min.js) - 2023-01-11
+
+### Added
+- Added Stream#isAudioEnabled, Stream#isVideoEnabled to reflect MediaStreamTrack.enabled parameter
+- Added Stream#flowStatusChanged event
+
+### Changed
+- Changed Stream#isAudioMuted, Stream#isVideoMuted to reflect MediaStreamTrack.muted parameter instead of MediaStreamTrack.enabled parameter : /!\ YOU MAY NOW USE Stream#isAudioEnabled, Stream#isVideoEnabled
+
+### Fixed
+- Fixed Stream#isAudioMuted when stream has no audio
+- Fixed Stream#isVideoMuted when stream has no video
+- Fixed cloudConvId for screensharing calls
+- Fixed reconnection with calls without 200OK received
+
 
 # [5.0.0](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.0.min.js) - 2022-12-21
 
