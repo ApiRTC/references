@@ -6,6 +6,13 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.2](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.2.min.js) - 2023-01-12
+
+### Fixed
+- Fixed set resolution for Edge/Chrome
+- Fixed apirtc.d.ts description
+
+
 # [5.0.1](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.1.min.js) - 2023-01-11
 
 ### Added
