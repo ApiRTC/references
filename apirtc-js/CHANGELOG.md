@@ -6,6 +6,33 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.5](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.5.min.js) - 2023-03-07
+
+### Added
+- Possibility to remotely control a user computer (Windows 10+ only) - Remote Access feature
+- Add ReceivedRemoteControlInvitation and SentRemoteControlInvitation
+- Add Stream#isScreensharingRemoteAccess()
+- Add reason on stop event for remote Access
+
+### Fixed
+- Error on checkstopAudioNodeCtxConditions()
+- Fix remoteAccess pointer depending of video display
+- Fix unsubscribed stream due to CALL_ABORTED (SFU transition with simultaneous replacePublishStream() )
+
+# [5.0.4](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.4.min.js) - 2023-02-07
+
+### Fixed
+- screenSharing issue on P2P call
+
+# [5.0.3](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.3.min.js) - 2023-01-27
+
+### Added
+- Possibility to remotely apply enable/disable media
+
+### Fixed
+- Blur compatibility test on Firefox
+- Issue on presence update on CCS on leavePresenceGroup and subscribePresenceGroup
+
 # [5.0.2](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.2.min.js) - 2023-01-12
 
 ### Fixed
