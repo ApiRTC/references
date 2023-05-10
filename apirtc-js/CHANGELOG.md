@@ -6,6 +6,18 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.11](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.11.min.js) - 2023-05-09
+
+### Added
+- Build apiRTC-with-sio : socket.io is embedded. This is usefull for Salesforce integration.
+
+### Fixed
+- Remove XSS filtering : this has to been managed at application level (remove apiRTC.sanitizeString())
+
+### Changed
+- Update CDN link for apiRTC_NR_Worklet
+
+
 # [5.0.10](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.10.min.js) - 2023-04-24
 
 ### Fixed
