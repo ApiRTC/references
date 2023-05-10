@@ -6,6 +6,12 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.6](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.6.min.js) - 2023-03-14
+
+### Added
+- Add Conversation#replacePublishStream()
+- Add reason on Stream trackStopped event
+
 # [5.0.5](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.5.min.js) - 2023-03-07
 
 ### Added

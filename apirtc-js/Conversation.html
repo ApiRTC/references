@@ -6550,6 +6550,258 @@ The stream will be able to be subscribed by other contacts within the conversati
             
 <hr>
 <dt>
+    <h4 class="name" id="replacePublishedStream"><span class="type-signature"></span>replacePublishedStream(oldStream, newStream, callbacks)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Replaces the currently published stream by a given one.<br>
+If the first parameter is null then the second parameter must provides a property named<br>
+getStream. The getStream property shall be a function returning a Promise of a Stream.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>oldStream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Stream that was published</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>newStream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Stream.html">Stream</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>New stream to be published</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callbacks</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Callbacks.</p>
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>getStream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A function returning a promise of a stream.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>The newly assigned stream.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="Stream.html">Stream</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
     <h4 class="name" id="sendCustomEvent"><span class="type-signature"></span>sendCustomEvent(event, content)</h4>
     
     
