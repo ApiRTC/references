@@ -6,10 +6,21 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.9](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.9.min.js) - 2023-04-06
+
+### Fixed
+- Fix declarations in apiRTC.d.ts
+- Revert XSS checking method to avoid any integration issues
+- add apiRTC.sanitizeString() usage on Contact#sendMessage() and Conversation#sendMessage()
+
+### Added
+- Added apiRTC.sanitizeString()
+
+
 # [5.0.8](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.8.min.js) - 2023-04-05
 
 ### Fixed
-- Issue on XSS checking
+- Fix issue on XSS checking
 
 
 # [5.0.7](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.7.min.js) - 2023-04-04
