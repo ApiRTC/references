@@ -6,6 +6,12 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.8](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.8.min.js) - 2023-04-05
+
+### Fixed
+- Issue on XSS checking
+
+
 # [5.0.7](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.7.min.js) - 2023-04-04
 
 ### Fixed
