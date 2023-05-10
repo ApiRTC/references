@@ -6,6 +6,17 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.10](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.10.min.js) - 2023-04-24
+
+### Fixed
+- Fix audio only issue in mesh mode with noiseReduction activated
+- Fix double clic issue on remoteAccess
+- Fix on XSS filtering
+
+### Changed
+- RemoteAccess : wait for screensharing before starting connexion to application
+
+
 # [5.0.9](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.9.min.js) - 2023-04-06
 
 ### Fixed
