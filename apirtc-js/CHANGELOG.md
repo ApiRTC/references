@@ -6,6 +6,23 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.7](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.7.min.js) - 2023-04-04
+
+### Fixed
+- Fix declaration / docs errors on Stream
+- Fix no call restart when participant is ejected from conversation
+- Fix no UserAgent events removal on unregister()
+- Fix no keyboard event handling on application elements for remote access
+
+### Changed
+- upgrade remoteAccess application v1.0.1
+
+### Added
+- Add XSS checking on Contact#sendMessage()
+- Add XSS checking on Conversation#sendMessage()
+- Add handshake with remoteAccess application
+- Manage close from remoteAccess application
+
 # [5.0.6](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.6.min.js) - 2023-03-14
 
 ### Added
