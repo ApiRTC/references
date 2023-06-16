@@ -6,6 +6,24 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+
+# [5.0.13](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.13.min.js) - 2023-06-07
+
+### Added
+- No connection retries on unauthorized applicationUUID
+- Call statistics monitoring for Safari (macOS and iOS) and Edge
+- use only promise version of getStats() for Chrome > 112
+- Deprecation of QoSMonitor (was only for Chrome <= 112) : Calls stats monitoring -> enableCallStatsMonitoring() as to be used in replacement.
+
+### Fixed
+- Restore apiCC.getAudioContext(), apiCC.listenToAudioSources(), apiCC.stopAudioSourceListening() for retrocompatibility - API v3
+
+
+# [5.0.12](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.12.min.js) - 2023-05-17
+
+### Fixed
+- Keep mute status synchronised on linked streams (Streams with audio or video filters)
+
 # [5.0.11](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.11.min.js) - 2023-05-09
 
 ### Added
