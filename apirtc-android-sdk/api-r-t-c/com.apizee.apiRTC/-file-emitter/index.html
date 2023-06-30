@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>FileEmitter</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>apiRTC</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="apiRTC::com.apizee.apiRTC/FileEmitter///PointingToDeclaration//-1771995431">
+  <div class="breadcrumbs"><a href="../../../index.html">apiRTC</a><span class="delimiter">/</span><a href="../index.html">com.apizee.apiRTC</a><span class="delimiter">/</span><a href="index.html">FileEmitter</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span>File</span><wbr></wbr><span><span>Emitter</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">FileEmitter</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;invitation<span class="token operator">: </span><a href="../-sent-invitation/index.html">SentInvitation</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;conversationCall<span class="token operator">: </span><a href="../-conversation-call/index.html">ConversationCall</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;dataChannel<span class="token operator">: </span><span data-unresolved-link="org.webrtc/DataChannel///PointingToDeclaration/">DataChannel</span></span></span><span class="token punctuation">)</span> : <a href="../-base-file-emitter/index.html">BaseFileEmitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="222534205%2FConstructors%2F-1771995431" anchor-label="FileEmitter" id="222534205%2FConstructors%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-file-emitter.html"><span>File</span><wbr></wbr><span><span>Emitter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="222534205%2FConstructors%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-file-emitter.html"><span class="token function">FileEmitter</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;invitation<span class="token operator">: </span><a href="../-sent-invitation/index.html">SentInvitation</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;conversationCall<span class="token operator">: </span><a href="../-conversation-call/index.html">ConversationCall</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;dataChannel<span class="token operator">: </span><span data-unresolved-link="org.webrtc/DataChannel///PointingToDeclaration/">DataChannel</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="70197064%2FClasslikes%2F-1771995431" anchor-label="Companion" id="70197064%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="70197064%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="594384878%2FFunctions%2F-1771995431" anchor-label="getNextDataChunk" id="594384878%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/get-next-data-chunk.html"><span>get</span><wbr></wbr><span>Next</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Chunk</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="594384878%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-base-file-emitter/get-next-data-chunk.html"><span class="token function">getNextDataChunk</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="653900652%2FFunctions%2F-1771995431" anchor-label="progress" id="653900652%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="progress.html"><span><span>progress</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="653900652%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="progress.html"><span class="token function">progress</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Emit progress information</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1298706980%2FFunctions%2F-1771995431" anchor-label="sendChunk" id="-1298706980%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-chunk.html"><span>send</span><wbr></wbr><span><span>Chunk</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1298706980%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-chunk.html"><span class="token function">sendChunk</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Send 1 chunk of data</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1745592164%2FFunctions%2F-1771995431" anchor-label="sendHeader" id="1745592164%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-header.html"><span>send</span><wbr></wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1745592164%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-header.html"><span class="token function">sendHeader</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="432298300%2FFunctions%2F-1771995431" anchor-label="sendToDataChannel" id="432298300%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/send-to-data-channel.html"><span>send</span><wbr></wbr><span>To</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Channel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="432298300%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-base-file-emitter/send-to-data-channel.html"><span class="token function">sendToDataChannel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-base-file-emitter/send-to-data-channel.html"><span class="token function">sendToDataChannel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Send data to dataChannel. It might trigger event &quot;onBufferedAmountChange&quot; and make the code reentrant if this event is used</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="139280%2FFunctions%2F-1771995431" anchor-label="start" id="139280%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="139280%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-base-file-emitter/start.html"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1026817791%2FFunctions%2F-1771995431" anchor-label="succeed" id="1026817791%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="succeed.html"><span><span>succeed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1026817791%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="succeed.html"><span class="token function">succeed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1104120047%2FProperties%2F-1771995431" anchor-label="chunkNb" id="-1104120047%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/chunk-nb.html"><span>chunk</span><wbr></wbr><span><span>Nb</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1104120047%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-1104120047%2FProperties%2F-1771995431" anchor-label="chunkNb" id="-1104120047%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/chunk-nb.html">chunkNb</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2062508900%2FProperties%2F-1771995431" anchor-label="chunkSize" id="2062508900%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/chunk-size.html"><span>chunk</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2062508900%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="2062508900%2FProperties%2F-1771995431" anchor-label="chunkSize" id="2062508900%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/chunk-size.html">chunkSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">12000</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-365404519%2FProperties%2F-1771995431" anchor-label="content" id="-365404519%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/content.html"><span><span>content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-365404519%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-365404519%2FProperties%2F-1771995431" anchor-label="content" id="-365404519%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/content.html">content</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="849356415%2FProperties%2F-1771995431" anchor-label="contentType" id="849356415%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/content-type.html"><span>content</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="849356415%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="849356415%2FProperties%2F-1771995431" anchor-label="contentType" id="849356415%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/content-type.html">contentType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1689351528%2FProperties%2F-1771995431" anchor-label="currentSize" id="-1689351528%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/current-size.html"><span>current</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1689351528%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-1689351528%2FProperties%2F-1771995431" anchor-label="currentSize" id="-1689351528%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/current-size.html">currentSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-287278467%2FProperties%2F-1771995431" anchor-label="name" id="-287278467%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-287278467%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-287278467%2FProperties%2F-1771995431" anchor-label="name" id="-287278467%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1223639853%2FProperties%2F-1771995431" anchor-label="originalDataType" id="-1223639853%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/original-data-type.html"><span>original</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1223639853%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-1223639853%2FProperties%2F-1771995431" anchor-label="originalDataType" id="-1223639853%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/original-data-type.html">originalDataType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="756417991%2FProperties%2F-1771995431" anchor-label="size" id="756417991%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/size.html"><span><span>size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="756417991%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="756417991%2FProperties%2F-1771995431" anchor-label="size" id="756417991%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/size.html">size</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="693788506%2FProperties%2F-1771995431" anchor-label="startingDate" id="693788506%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/starting-date.html"><span>starting</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="693788506%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="693788506%2FProperties%2F-1771995431" anchor-label="startingDate" id="693788506%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/starting-date.html">startingDate</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1404731211%2FProperties%2F-1771995431" anchor-label="transferFinished" id="1404731211%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/transfer-finished.html"><span>transfer</span><wbr></wbr><span><span>Finished</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1404731211%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="1404731211%2FProperties%2F-1771995431" anchor-label="transferFinished" id="1404731211%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/transfer-finished.html">transferFinished</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="642496686%2FProperties%2F-1771995431" anchor-label="type" id="642496686%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="642496686%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="642496686%2FProperties%2F-1771995431" anchor-label="type" id="642496686%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/type.html">type</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-112806067%2FProperties%2F-1771995431" anchor-label="uuid" id="-112806067%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-base-file-emitter/uuid.html"><span><span>uuid</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-112806067%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-112806067%2FProperties%2F-1771995431" anchor-label="uuid" id="-112806067%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-base-file-emitter/uuid.html">uuid</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

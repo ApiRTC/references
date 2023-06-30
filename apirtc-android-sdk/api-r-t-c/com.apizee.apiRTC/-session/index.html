@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Session</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>apiRTC</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="apiRTC::com.apizee.apiRTC/Session///PointingToDeclaration//-1771995431">
+  <div class="breadcrumbs"><a href="../../../index.html">apiRTC</a><span class="delimiter">/</span><a href="../index.html">com.apizee.apiRTC</a><span class="delimiter">/</span><a href="index.html">Session</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Session</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Session</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;userAgent<span class="token operator">: </span><a href="../-user-agent/index.html">UserAgent</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;options<span class="token operator">: </span><a href="../-user-agent/-register-information/index.html">UserAgent.RegisterInformation</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;ccs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;apiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;apiRTCVersionName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Session represent the connected environment of an UA. It's created after UA registration.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Parameters</h2>
+      <div data-togglable="Parameters">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>ccs</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">CCS URL</p></div></div></div></div></div><div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>api</span><wbr></wbr><span><span>Key</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"></div></div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1777112331%2FConstructors%2F-1771995431" anchor-label="Session" id="1777112331%2FConstructors%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-session.html"><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1777112331%2FConstructors%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-session.html"><span class="token function">Session</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;userAgent<span class="token operator">: </span><a href="../-user-agent/index.html">UserAgent</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;options<span class="token operator">: </span><a href="../-user-agent/-register-information/index.html">UserAgent.RegisterInformation</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;ccs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;apiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;apiRTCVersionName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="1637406933%2FClasslikes%2F-1771995431" anchor-label="CloudMediaInfo" id="1637406933%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-cloud-media-info/index.html"><span>Cloud</span><wbr></wbr><span>Media</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1637406933%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-cloud-media-info/index.html">CloudMediaInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Cloud media info</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="336321540%2FClasslikes%2F-1771995431" anchor-label="Companion" id="336321540%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="336321540%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="237580147%2FClasslikes%2F-1771995431" anchor-label="DataMessage" id="237580147%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-data-message/index.html"><span>Data</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="237580147%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-data-message/index.html">DataMessage</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>sender<span class="token operator">: </span><a href="../-contact/index.html">Contact</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>content<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Data message</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-750312984%2FClasslikes%2F-1771995431" anchor-label="FileInfo" id="-750312984%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-file-info/index.html"><span>File</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-750312984%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-file-info/index.html">FileInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">File information</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-19526871%2FClasslikes%2F-1771995431" anchor-label="Message" id="-19526871%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-message/index.html"><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-19526871%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-message/index.html">Message</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>sender<span class="token operator">: </span><a href="../-contact/index.html">Contact</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>content<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>uuid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>time<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator"> = </span>Date()</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Instant message</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-844601729%2FClasslikes%2F-1771995431" anchor-label="PushDataBufferDescriptor" id="-844601729%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-push-data-buffer-descriptor/index.html"><span>Push</span><wbr></wbr><span>Data</span><wbr></wbr><span>Buffer</span><wbr></wbr><span><span>Descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-844601729%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-push-data-buffer-descriptor/index.html">PushDataBufferDescriptor</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">var </span>buffer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>filename<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>filetype<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>overwrite<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>ttl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="638703023%2FClasslikes%2F-1771995431" anchor-label="TransferInformation" id="638703023%2FClasslikes%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-transfer-information/index.html"><span>Transfer</span><wbr></wbr><span><span>Information</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="638703023%2FClasslikes%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-transfer-information/index.html">TransferInformation</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>uuid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>fileSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>remainingSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>percentage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>sendChunkNb<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>transferDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html">Number</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">val </span>lastPacket<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Transfer information</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-2077004476%2FFunctions%2F-1771995431" anchor-label="destroyConversation" id="-2077004476%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="destroy-conversation.html"><span>destroy</span><wbr></wbr><span><span>Conversation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2077004476%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="destroy-conversation.html"><span class="token function">destroyConversation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1246322190%2FFunctions%2F-1771995431" anchor-label="emit" id="1246322190%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1246322190%2FFunctions%2F-1771995431"><span><span>emit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1246322190%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1246322190%2FFunctions%2F-1771995431"><span class="token function">emit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>args<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Executes each of listeners with the given args.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1720206451%2FFunctions%2F-1771995431" anchor-label="getContacts" id="1720206451%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-contacts.html"><span>get</span><wbr></wbr><span><span>Contacts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1720206451%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-contacts.html"><span class="token function">getContacts</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-contact/index.html">Contact</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns contact list</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1598554813%2FFunctions%2F-1771995431" anchor-label="getConversation" id="-1598554813%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-conversation.html"><span>get</span><wbr></wbr><span><span>Conversation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1598554813%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace strikethrough"><strike><span class="token keyword"></span></strike><strike><span class="token keyword">fun </span></strike><a href="get-conversation.html"><strike><span class="token function">getConversation</span></strike></a><strike><span class="token punctuation">(</span></strike><span class="parameters "><span class="parameter ">conversationName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><strike><span class="token punctuation">)</span></strike><strike><span class="token operator">: </span></strike><a href="../-conversation/index.html">Conversation</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Gets a conversation from name for N-N communication. Deprecated in favor of getOrCreateConversation().</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1768753308%2FFunctions%2F-1771995431" anchor-label="getEnterpriseConfig" id="-1768753308%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-enterprise-config.html"><span>get</span><wbr></wbr><span>Enterprise</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1768753308%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-enterprise-config.html"><span class="token function">getEnterpriseConfig</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns this session's enterpriseConfig</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-751408478%2FFunctions%2F-1771995431" anchor-label="getIceServers" id="-751408478%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-ice-servers.html"><span>get</span><wbr></wbr><span>Ice</span><wbr></wbr><span><span>Servers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-751408478%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-ice-servers.html"><span class="token function">getIceServers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns this session's iceServers</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="655512780%2FFunctions%2F-1771995431" anchor-label="getId" id="655512780%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-id.html"><span>get</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="655512780%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-id.html"><span class="token function">getId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns this session's id</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-52954286%2FFunctions%2F-1771995431" anchor-label="getOrCreateContact" id="-52954286%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-or-create-contact.html"><span>get</span><wbr></wbr><span>Or</span><wbr></wbr><span>Create</span><wbr></wbr><span><span>Contact</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-52954286%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-or-create-contact.html"><span class="token function">getOrCreateContact</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-contact/index.html">Contact</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns contact from id. Contact will be created if doesn't exist.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1981836571%2FFunctions%2F-1771995431" anchor-label="getOrCreateConversation" id="-1981836571%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-or-create-conversation.html"><span>get</span><wbr></wbr><span>Or</span><wbr></wbr><span>Create</span><wbr></wbr><span><span>Conversation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1981836571%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-or-create-conversation.html"><span class="token function">getOrCreateConversation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">active<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-conversation/index.html">Conversation</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Gets or creates a conversation for a given name.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="967759562%2FFunctions%2F-1771995431" anchor-label="getPhotoUrl" id="967759562%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-photo-url.html"><span>get</span><wbr></wbr><span>Photo</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="967759562%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-photo-url.html"><span class="token function">getPhotoUrl</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Gets this session's photo URL</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1848876434%2FFunctions%2F-1771995431" anchor-label="getUserData" id="1848876434%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-user-data.html"><span>get</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1848876434%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-user-data.html"><span class="token function">getUserData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-user-data/index.html">UserData</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Gets user data for this user session</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1417874959%2FFunctions%2F-1771995431" anchor-label="getUsername" id="-1417874959%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-username.html"><span>get</span><wbr></wbr><span><span>Username</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1417874959%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-username.html"><span class="token function">getUsername</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Gets this session's username</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="569149588%2FFunctions%2F-1771995431" anchor-label="hasListeners" id="569149588%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#569149588%2FFunctions%2F-1771995431"><span>has</span><wbr></wbr><span><span>Listeners</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569149588%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#569149588%2FFunctions%2F-1771995431"><span class="token function">hasListeners</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Check if this emitter has listeners for the specified event.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1587616233%2FFunctions%2F-1771995431" anchor-label="initSession" id="-1587616233%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="init-session.html"><span>init</span><wbr></wbr><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1587616233%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="init-session.html"><span class="token function">initSession</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-promise/index.html">Promise</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-834685668%2FFunctions%2F-1771995431" anchor-label="joinGroup" id="-834685668%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="join-group.html"><span>join</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-834685668%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="join-group.html"><span class="token function">joinGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Joins and subscribes to a group The user will be visible to both users inside the group and users who subscribed to it</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1860641937%2FFunctions%2F-1771995431" anchor-label="leaveGroup" id="-1860641937%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="leave-group.html"><span>leave</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1860641937%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="leave-group.html"><span class="token function">leaveGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Leaves and unsubscribes from a group Users within the group and users who subscribed to it will be notified</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1073968446%2FFunctions%2F-1771995431" anchor-label="listeners" id="1073968446%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1073968446%2FFunctions%2F-1771995431"><span><span>listeners</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1073968446%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1073968446%2FFunctions%2F-1771995431"><span class="token function">listeners</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-emitter/-listener/index.html">Emitter.Listener</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns a list of listeners for the specified event.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2102459719%2FFunctions%2F-1771995431" anchor-label="off" id="-2102459719%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-emitter/off.html"><span><span>off</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2102459719%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-emitter/off.html"><span class="token function">off</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Removes all registered listeners.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-533746066%2FFunctions%2F-1771995431"><span class="token function">off</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Removes all listeners of the specified event.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2044203113%2FFunctions%2F-1771995431"><span class="token function">off</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="../-emitter/-listener/index.html">Emitter.Listener</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Removes the listener.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2124829225%2FFunctions%2F-1771995431" anchor-label="on" id="-2124829225%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-2124829225%2FFunctions%2F-1771995431"><span><span>on</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2124829225%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2124829225%2FFunctions%2F-1771995431"><span class="token function">on</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="../-emitter/-listener/index.html">Emitter.Listener</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Listens on the event.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="332475765%2FFunctions%2F-1771995431" anchor-label="once" id="332475765%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#332475765%2FFunctions%2F-1771995431"><span><span>once</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="332475765%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#332475765%2FFunctions%2F-1771995431"><span class="token function">once</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="../-emitter/-listener/index.html">Emitter.Listener</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-emitter/index.html">Emitter</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Adds a one time listener for the event.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1574090106%2FFunctions%2F-1771995431" anchor-label="setPhotoUrl" id="-1574090106%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-photo-url.html"><span>set</span><wbr></wbr><span>Photo</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1574090106%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-photo-url.html"><span class="token function">setPhotoUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set session's photo URL</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="521627801%2FFunctions%2F-1771995431" anchor-label="setUserData" id="521627801%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-user-data.html"><span>set</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="521627801%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-user-data.html"><span class="token function">setUserData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userData<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Sets user data for this user session User data is visible from other users</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-601045313%2FFunctions%2F-1771995431" anchor-label="setUsername" id="-601045313%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set-username.html"><span>set</span><wbr></wbr><span><span>Username</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-601045313%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-username.html"><span class="token function">setUsername</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">username<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set session's username</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-179696639%2FFunctions%2F-1771995431" anchor-label="subscribeToGroup" id="-179696639%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="subscribe-to-group.html"><span>subscribe</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-179696639%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="subscribe-to-group.html"><span class="token function">subscribeToGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Subscribe to a group and know who is present in the group Unless you also joined the group, the user will not be visible to others within this group</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2105331162%2FFunctions%2F-1771995431" anchor-label="unsubscribeToGroup" id="2105331162%2FFunctions%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="unsubscribe-to-group.html"><span>unsubscribe</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2105331162%2FFunctions%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unsubscribe-to-group.html"><span class="token function">unsubscribeToGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Unsubscribe to a group, the session will no longer receive events from user joining and leaving this group</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="86706158%2FProperties%2F-1771995431" anchor-label="context" id="86706158%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="context.html"><span><span>context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="86706158%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="86706158%2FProperties%2F-1771995431" anchor-label="context" id="86706158%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-193341044%2FProperties%2F-1771995431" anchor-label="sessionId" id="-193341044%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":apiRTC:dokkaHtml/release" data-filterable-set=":apiRTC:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="session-id.html"><span>session</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-193341044%2FProperties%2F-1771995431"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":apiRTC:dokkaHtml/release"><a data-name="-193341044%2FProperties%2F-1771995431" anchor-label="sessionId" id="-193341044%2FProperties%2F-1771995431" data-filterable-set=":apiRTC:dokkaHtml/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="session-id.html">sessionId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
