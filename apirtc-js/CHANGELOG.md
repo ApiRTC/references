@@ -6,6 +6,28 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.14](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.14.min.js) - 2023-07-12
+
+### Added
+- Conversation#getMedia(). This function manage authorization token to access media file
+- Update libJsCloud to 0.1.40
+- Added Conversation#getContactsArray()
+- Added Stream#constraintsChanged event
+- Added Contact CONTACT_CHANGED_CONSTRAINTS_IDENTIFIER case management
+- Added UserAgent#getStreamWithMediaStreamId()
+- Added Contact#getLocalStreamWithMediaStreamId()
+
+### Changed
+- Updated : upgrade to UAParser 1.0.35
+- Move PendingPromise methods in ApiCC_Methods
+- Contact CONTACT_GET_SETTINGS_IDENTIFIER case to add possibility to find stream with mediaStreamId
+- Contact CONTACT_GET_CAPABILITIES_IDENTIFIER case to add possibility to find stream with mediaStreamId
+- Contact CONTACT_APPLY_CONSTRAINTS_IDENTIFIER case to add possibility to find stream with mediaStreamId
+
+### Fixed
+- Fixed callId value on stream on Call
+- Fixed typo on newAvailableStream that may lead to subscribe issue
+- Fixed release all calls on a subscribe timeout in case of network disconnection
 
 # [5.0.13](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.13.min.js) - 2023-06-07
 
