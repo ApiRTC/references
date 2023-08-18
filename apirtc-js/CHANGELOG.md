@@ -6,6 +6,16 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.15](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.15.min.js) - 2023-08-16
+
+### Added
+- Added Call#remoteStreamIdUpdated event to be informed of streamId changes in case of replacePublishedStream() on a remote Contact
+- Added Conversation#remoteStreamIdUpdated event to be informed of streamId changes in case of replacePublishedStream() on a remote Contact
+
+### Changed
+- Internal WebRTCClient#addMedia now return an object with userMediaStreamIds 
+
+
 # [5.0.14](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.14.min.js) - 2023-07-12
 
 ### Added
