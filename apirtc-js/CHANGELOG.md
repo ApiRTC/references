@@ -6,6 +6,17 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.16](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.16.min.js) - 2023-09-07
+
+### Fixed
+- Fixed early streamTrackChanged muted event
+- Fixed wrong Silent state on updateMediaProperties function
+
+### Added
+- Added support of react-native for Conversation
+- Added support for selectedCandidate with react-native
+- Added support of screenSharing with react-native
+
 # [5.0.15](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.15.min.js) - 2023-08-16
 
 ### Added
