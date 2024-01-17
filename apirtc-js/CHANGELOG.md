@@ -6,6 +6,12 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.18](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.18.min.js) - 2023-12-06
+
+### Added
+- add bearer token on webRTCClient.takeSnapshot() 
+- add remoteMediaStreamId management for remote media control on record - APIRTC-1280
+
 # [5.0.17](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.17.min.js) - 2023-09-19
 
 ### Added
