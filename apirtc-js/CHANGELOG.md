@@ -6,6 +6,14 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.17](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.17.min.js) - 2023-09-19
+
+### Added
+- emit constraintsChanged event if torch is ON when user switch browser in background (Torch is switched OFF by Android)
+
+### Fixed
+- Fixed remote torch if video only call
+
 # [5.0.16](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.16.min.js) - 2023-09-07
 
 ### Fixed
@@ -16,6 +24,7 @@ apizee_version : 5.0
 - Added support of react-native for Conversation
 - Added support for selectedCandidate with react-native
 - Added support of screenSharing with react-native
+
 
 # [5.0.15](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.15.min.js) - 2023-08-16
 
@@ -51,6 +60,7 @@ apizee_version : 5.0
 - Fixed release all calls on a subscribe timeout in case of network disconnection
 
 # [5.0.13](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.13.min.js) - 2023-06-07
+
 
 ### Added
 - No connection retries on unauthorized applicationUUID
@@ -124,11 +134,13 @@ apizee_version : 5.0
 - Add handshake with remoteAccess application
 - Manage close from remoteAccess application
 
+
 # [5.0.6](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.6.min.js) - 2023-03-14
 
 ### Added
 - Add Conversation#replacePublishStream()
 - Add reason on Stream trackStopped event
+
 
 # [5.0.5](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.5.min.js) - 2023-03-07
 
@@ -143,10 +155,12 @@ apizee_version : 5.0
 - Fix remoteAccess pointer depending of video display
 - Fix unsubscribed stream due to CALL_ABORTED (SFU transition with simultaneous replacePublishStream() )
 
+
 # [5.0.4](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.4.min.js) - 2023-02-07
 
 ### Fixed
 - screenSharing issue on P2P call
+
 
 # [5.0.3](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.3.min.js) - 2023-01-27
 
@@ -156,6 +170,7 @@ apizee_version : 5.0
 ### Fixed
 - Blur compatibility test on Firefox
 - Issue on presence update on CCS on leavePresenceGroup and subscribePresenceGroup
+
 
 # [5.0.2](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.2.min.js) - 2023-01-12
 
@@ -216,6 +231,7 @@ apizee_version : 5.0
 - Changed error on UserAgent#register to add response from Cloud when registering a Cloud User
 - Update libJsCloud to 0.1.39
 - Removed call to cloudApi.getUserPhotoUrl()
+
 
 # [4.7.7](https://cdn.apirtc.com/apiRTC/v4.7/apiRTC-4.7.7.min.js) - 2022-08-18
 
