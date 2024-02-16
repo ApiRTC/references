@@ -6,6 +6,12 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.19](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.19.min.js) - 2024-01-17
+
+### Added
+- Updated : upgrade to UAParser 2.0.0 (PRO version)
+- Add usage of clientHints to get Android version and Model
+
 # [5.0.18](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.18.min.js) - 2023-12-06
 
 ### Added
