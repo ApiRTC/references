@@ -6,6 +6,14 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.20](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.20.min.js) - 2024-02-16
+
+### Added
+- Update libJsCloud to 0.1.41
+- Add tryAudioCallAfterUserMediaError on UserAgent#register()
+- Add tryAudioCallAfterUserMediaError on createStream()
+- Update typescript description file
+
 # [5.0.19](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.19.min.js) - 2024-01-17
 
 ### Added

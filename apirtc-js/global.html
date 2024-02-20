@@ -3923,6 +3923,8 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
         
 
         
+        <th>Default</th>
+        
 
         <th class="last">Description</th>
     </tr>
@@ -3949,6 +3951,10 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last"><p>add possibility to create an enhanced audio flow (echoCancellation deactivated, noiseReduction deactivated ...) - Only supported on Chrome</p></td>
         </tr>
@@ -3973,8 +3979,42 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last"><p>facingMode should be equal to 'user', 'environment', 'left', 'right' or 'deactivated'.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tryAudioOnlyAfterUserMediaError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>whether apiRTC should try the call in audio if a userMediaError was detected</p></td>
         </tr>
 
     
@@ -4067,6 +4107,8 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
         
 
         
+        <th>Default</th>
+        
 
         <th class="last">Description</th>
     </tr>
@@ -4096,6 +4138,10 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last"><p>audio input device id (obtained from UserAgent.fetchUserMediaDevices); set to false if audio track is not requested</p></td>
         </tr>
@@ -4123,6 +4169,10 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last"><p>video input device id (obtained from UserAgent.fetchUserMediaDevices); set to false if video track is not requested</p></td>
         </tr>
@@ -4146,6 +4196,10 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
 
             
 
+            
+                <td class="default">
+                
+                </td>
             
 
             <td class="description last"><p>other MediaTrackConstraints</p></td>
@@ -4171,6 +4225,10 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last"><p>add possibility to create an enhanced audio flow (echoCancellation deactivated, noiseReduction deactivated ...) - Only supported on Chrome</p></td>
         </tr>
@@ -4194,6 +4252,10 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
 
             
 
+            
+                <td class="default">
+                
+                </td>
             
 
             <td class="description last"><p>facingMode should be equal to 'user', 'environment', 'left', 'right' or 'deactivated'.</p></td>
@@ -4219,8 +4281,42 @@ Value can be : VIDEO (audio and video will be muted), AUDIOONLY (only audio will
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last"><p>descriptors of media stream filters</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tryAudioOnlyAfterUserMediaError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>whether apiRTC should try the call in audio if a userMediaError was detected. This parameters is prioritary on the registerInformation parameter</p></td>
         </tr>
 
     
@@ -10177,6 +10273,36 @@ This parameter is a hint for the encoder(s) and the total value might be surpass
             
 
             <td class="description last"><p>captcha_token parameter to be used for user authentication</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tryAudioOnlyAfterUserMediaError</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>whether apiRTC should try the call in audio if a userMediaError was detected</p></td>
         </tr>
 
     
