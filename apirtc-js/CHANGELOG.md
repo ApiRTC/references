@@ -6,12 +6,31 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.21](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.21.min.js) - 2024-07-17
+
+### Added
+- Several fix on applyAudioProcessor() when applied on parent stream to keep applied effects
+- Added posibility to Contact#takeSnapshot() remotely. Snapshot is transfered to requester using an apiRTC internal datachannel call.
+- Added ApplicationUUID for react Native
+
+### Changed
+- Modify createIncomingCallEvent() interface to give a JSON object
+- Add ERROR_ON_SAVE reason on Conversation#sendMessage() error
+
+### Fixed
+- Fix sonarQube on Misc#parseRecordingEvent()
+- Fix sonarQube on ApiCCDataClient
+- Fix Datachannel for blob object
+- Fix to avoid UAParser for react-native
+- Fix log on calls
+- Fix error on processDistantCallEstablished() if call is not found
+
 # [5.0.20](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.20.min.js) - 2024-02-16
 
 ### Added
 - Update libJsCloud to 0.1.41
-- Add tryAudioCallAfterUserMediaError on UserAgent#register()
-- Add tryAudioCallAfterUserMediaError on createStream()
+- Add tryAudioOnlyAfterUserMediaError on UserAgent#register()
+- Add tryAudioOnlyAfterUserMediaError on createStream()
 - Update typescript description file
 
 # [5.0.19](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.19.min.js) - 2024-01-17
