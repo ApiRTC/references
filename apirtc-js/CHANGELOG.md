@@ -6,7 +6,15 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
-# [5.0.24](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.23.min.js) - 2025-03-06
+# [5.0.25](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.25.min.js) - 2025-05-09
+
+### Changed
+- Calls restart improvment in sfu mode after WS reconnection
+- UAParser.js upgrade to v2.0.3 - Pro Edition
+- Usage of ClientHints to get browser versions
+- Add handover check for mobile Calls Restart
+
+# [5.0.24](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.24.min.js) - 2025-03-06
 
 ### Fixed
 - Fix meshOnlyEnabled option no more activated
