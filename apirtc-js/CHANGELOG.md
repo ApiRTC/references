@@ -6,6 +6,11 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.24](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.23.min.js) - 2025-03-06
+
+### Fixed
+- Fix meshOnlyEnabled option no more activated
+
 # [5.0.23](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.23.min.js) - 2025-02-24
 
 ### Changed
