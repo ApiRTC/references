@@ -6,6 +6,19 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.22](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.22.min.js) - 2024-10-10
+
+### Added
+- End to End encryption using ApzFrame (implementation of SFrame) - (Feature is in Beta for now)
+- Manage streamListChanged events storage when listener is not yet set
+
+### Changed
+- Set Entreprise#uploadFile() as deprecated. Check pushMedia() in Conversation or Contact
+
+### Fixed
+- Fix for datachannel with arrayBuffer message (Uncaught TypeError)
+- Fix QoS info on resolution and modification on the getStats() logs so that it is only displayed once
+
 # [5.0.21](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.21.min.js) - 2024-07-17
 
 ### Added
@@ -122,7 +135,7 @@ apizee_version : 5.0
 - Build apiRTC-with-sio : socket.io is embedded. This is usefull for Salesforce integration.
 
 ### Fixed
-- Remove XSS filtering : this has to been managed at application level (remove apiRTC.sanitizeString())
+- Remove XSS filtering : this has to be managed at application level (remove apiRTC.sanitizeString())
 
 ### Changed
 - Update CDN link for apiRTC_NR_Worklet
