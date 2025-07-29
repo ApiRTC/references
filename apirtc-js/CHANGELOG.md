@@ -6,6 +6,18 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.26](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.26.min.js) - 2025-07-29
+### Changed
+- Modification for simulcast Modifications :
+  - Modify configureSimulcastEncodings function
+  - Disable VP9 simulcast on Safari Browser
+- Remove EventTarget heritage for E2EEManager
+
+### Fixed
+- Fix error on call restarting with capableCodec set
+- Fix nullable operator replaced
+- Fix Chrome M138 (removes the ability to remove an entire m= section via SDP munging)
+
 # [5.0.25](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.25.min.js) - 2025-05-09
 
 ### Changed
