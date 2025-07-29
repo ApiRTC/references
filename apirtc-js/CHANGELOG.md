@@ -6,6 +6,16 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.23](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.23.min.js) - 2025-02-24
+
+### Changed
+- Improvement of pushData error
+- Manage applicationUUID for ionic apps
+- Mark Conversation#getFriendlyName() and Conference#getFriendlyName() as deprecated
+
+### Fixed
+- Fix on userData parsing if user is not found
+
 # [5.0.22](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.22.min.js) - 2024-10-10
 
 ### Added
