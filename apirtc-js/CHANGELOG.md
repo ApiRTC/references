@@ -6,6 +6,36 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.31](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.31.min.js) - 2025-11-24
+### Added
+- Added for react native :
+  - Add Simulcast and callStatsMonitoring support for react-native
+- Check maxBitrate property in sanitizeSimulcastEncoding function
+- Bypass device detection if stream was created from MediaStream
+- Fix callSelectedCandidate not sended on Mobile Samsung Browser
+- Improve audiocomposite tests
+- Add test for recording without streams
+
+# [5.0.30](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.29.min.js) - 2025-10-08
+### Fixed
+- Fix for react native :
+  - add checkings on restartCall process when "swipe" is used to kill application on Android
+
+# [5.0.29](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.29.min.js) - 2025-10-01
+### Fixed
+- Fix for react native :
+  - manage maintained context for UserAgent, Session, and Conversation when "swipe" is used to kill application on Android
+
+# [5.0.28](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.28.min.js) - 2025-08-08
+### Fixed
+- Fix webRTCClient checking in disputableEntryTimeout()
+- Fix webRTCClient checking in publish()
+- Fix ua-parser has() fonction  
+
+# [5.0.27](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.27.min.js) - 2025-08-05
+### Fixed
+- Fix Chrome M138 : switch camera need "exact" constraints
+
 # [5.0.26](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.26.min.js) - 2025-07-29
 ### Changed
 - Modification for simulcast Modifications :
