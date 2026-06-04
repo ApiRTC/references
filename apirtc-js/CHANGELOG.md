@@ -7,6 +7,13 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 apizee_version : 5.0
 
 
+# [5.0.35](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.35.min.js) - 2026-04-24
+
+### Fixed
+- Add TakePhoto support for Chromium
+- Disconnects all known contacts from all their groups on local network disconnection to ensure contactLeft events are emitted
+
+
 # [5.0.34](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.34.min.js) - 2026-02-03
 
 ### Added
