@@ -6,6 +6,13 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.33](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.33.min.js) - 2026-01-08
+### Fixed
+- Fix for Edge video enhance mode (VSR)
+
+### Changed
+- Code cleaning : Remove support for Chrome version < 55 and Firefox < 50 (released in 2017)
+
 # [5.0.32](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.32.min.js) - 2025-12-18
 ### Fixed
 - Fix issue of no reconnectContext send when user has no established calls
