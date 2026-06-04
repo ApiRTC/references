@@ -2313,6 +2313,108 @@ Use getUserMediaDevices() instead of this function</p>
             
 <hr>
 <dt>
+    <h4 class="name" id="getBrowserCapabilities"><span class="type-signature"></span>getBrowserCapabilities()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Get the capabilities status according to your browser</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>capabilities with their status</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Record.&lt;string, boolean></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
     <h4 class="name" id="getBrowserDetails"><span class="type-signature"></span>getBrowserDetails()</h4>
     
     
@@ -2729,7 +2831,8 @@ Use getUserMediaDevices() instead of this function</p>
 
     
     <div class="description">
-        <p>get UserAgent capabilities.</p>
+        <p>Get the capabilities status according to your browser<br>
+use getBrowserCapabilities() instead</p>
     </div>
     
 
@@ -2759,6 +2862,15 @@ Use getUserMediaDevices() instead of this function</p>
     
 
 	
+	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Deprecated:</dt>
+	
+    <dd class="yes-def tag-deprecated">
+        <ul class="dummy">
+            <li>Yes</li>
+        </ul>
+    </dd>
+    
+    
 
 	
 
@@ -2794,6 +2906,10 @@ Use getUserMediaDevices() instead of this function</p>
     <h5>Returns:</h5>
     
             
+<div class="param-desc">
+    <p>capabilities with their status</p>
+</div>
+
 
 
 <dl>
@@ -2802,7 +2918,7 @@ Use getUserMediaDevices() instead of this function</p>
     </dt>
     <dd>
         
-<span class="param-type"><a href="global.html#UserAgentCapabities">UserAgentCapabities</a></span>
+<span class="param-type">Record.&lt;string, string></span>
 
 
 
@@ -3121,7 +3237,7 @@ Use getUserMediaDevices() instead of this function</p>
             
 <hr>
 <dt>
-    <h4 class="name" id="getDeviceModel"><span class="type-signature"></span>getDeviceModel()</h4>
+    <h4 class="name" id="getDeviceModel"><span class="type-signature">&lt;async> </span>getDeviceModel()</h4>
     
     
 </dt>
@@ -3195,7 +3311,7 @@ Use getUserMediaDevices() instead of this function</p>
     
             
 <div class="param-desc">
-    <p>Returns device model</p>
+    <p>Promise Returns a Promise with device model</p>
 </div>
 
 

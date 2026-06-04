@@ -6,6 +6,34 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+
+# [5.0.34](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.34.min.js) - 2026-02-03
+
+### Added
+- Add UserAgent#getBrowserCapabilities()
+- Add BrowserCapabilities class to manage browser's supported features
+  - Add capability whiteboardCursor
+  - Add capability mediaDeviceChanged
+  - Add capability webRTCCompliant
+  - Add capability screenSharingCompliant
+  - Add capability qoSStatCompliant
+  - Add capability callStatsCompliant
+  - Add capability backgroundRemoval
+  - Add capability noiseReduction
+  - Add capability streamCapabilities
+  - Add capability remoteAccessUser
+  - Add capability e2eeCompliant
+  - Add capability takePhoto
+- Add fullResolution support on Stream#takeSnapshot()
+
+### Fixed
+- Fix UserAgent#getCPUArchitecture, getDeviceVendor, getDeviceModel, getEngineName, getEngineVersion
+
+### Changed
+- UAParser.js upgrade to v2.0.6 - PRO Enterprise License
+- Mark UserAgent#getCapabilities() as deprecated
+
+
 # [5.0.33](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.33.min.js) - 2026-01-08
 ### Fixed
 - Fix for Edge video enhance mode (VSR)

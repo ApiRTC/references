@@ -12194,6 +12194,42 @@ If this argument is anything else, the default values 0.92 and 0.80 are used for
 
         <tr>
             
+                <td class="name"><code>fillLightMode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The fill light mode to use when taking the photo. Default is &quot;auto&quot;. Other values can be &quot;off&quot; or &quot;flash&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>applyRemotely</code></td>
             
 
@@ -12225,8 +12261,177 @@ If this argument is anything else, the default values 0.92 and 0.80 are used for
                 </td>
             
 
-            <td class="description last"><p>This can be used on a remote stream. Set to true if takesnapshot has to be applied remotely.<br>
+            <td class="description last"><p>This can be used on a remote stream. Set to true if takesnapshot has to be applied remotely.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fullResolution</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>If set to true, the snapshot will be taken with the full resolution of the video track. (Only available for supported browsers)<br>
 ie : it will be applied on contact side and then transfered to the resquester using datachannel.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+            
+                
+<hr>
+<dt class="name" id="SnapshotTakePhotoOptions">
+    <h4 id="SnapshotTakePhotoOptions">SnapshotTakePhotoOptions</h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Object</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>output</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Enable to select the output format . Default format is a Data URI with image/png type. Value can be set to blob<br>
+output === 'blob'</p></td>
         </tr>
 
     
@@ -14761,294 +14966,6 @@ Values setted by apiRTC can be :</p>
             
 
             <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-</dl>
-
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-            
-                
-<hr>
-<dt class="name" id="UserAgentCapabities">
-    <h4 id="UserAgentCapabities">UserAgentCapabities</h4>
-
-    
-</dt>
-<dd>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Object</span>
-
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>whiteboardCursor</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' whether cursor on whiteboard is supported on device. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>mediaDeviceChanged</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' whether mediaDeviceChanged event is supported on device. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>webRTCCompliant</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' whether WebRTC is supported on browser. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>screenSharingCompliant</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' whether screenSharing is supported on browser. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>qoSStatCompliant</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' whether QoS Statitics are supported on browser. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>backgroundRemoval</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' whether backgroundRemoval functions (blur/imageBackground) are supported on browser. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>streamCapabilities</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' wether Stream capabilities functions are supported on browser. 'OFF' if not supported</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>noiseReduction</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value is 'ON' wether Noise Reduction functions are supported on browser. 'OFF' if not supported</p></td>
         </tr>
 
     
