@@ -6,6 +6,10 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.32](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.32.min.js) - 2025-12-18
+### Fixed
+- Fix issue of no reconnectContext send when user has no established calls
+
 # [5.0.31](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.31.min.js) - 2025-11-24
 ### Added
 - Added for react native :
