@@ -6,6 +6,16 @@ Latest version : [apiRTC Latest](https://cdn.apirtc.com/apiRTC/apiRTC-latest.min
 
 apizee_version : 5.0
 
+# [5.0.36](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.36.min.js) - 2026-08-14
+
+### Fixed
+- Add TakePhoto support for Chrome on MacOS
+- Improve Jest tests execution
+- Fix for UA token Expired (Cloud UA)
+- Fix to support socket.io query with type object
+
+### Changed
+- E2EE : use of vodozemac lib
 
 # [5.0.35](https://cdn.apirtc.com/apiRTC/v5.0/apiRTC-5.0.35.min.js) - 2026-04-24
 
